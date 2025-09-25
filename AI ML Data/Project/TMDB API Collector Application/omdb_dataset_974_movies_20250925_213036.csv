@@ -1,0 +1,975 @@
+id,imdb_rating,imdb_votes,rotten_tomatoes_score,metacritic_score,awards,writer,rated,country
+259693,7.3,326018.0,80.0,65.0,4 wins & 13 nominations total,"Chad Hayes, Carey W. Hayes, James Wan",R,"Canada, United States, United Kingdom"
+550,8.8,2506733.0,81.0,67.0,Nominated for 1 Oscar. 12 wins & 38 nominations total,"Chuck Palahniuk, Jim Uhls",R,"United States, Germany"
+76600,7.5,544072.0,76.0,67.0,Won 1 Oscar. 73 wins & 152 nominations total,"James Cameron, Rick Jaffa, Amanda Silver",PG-13,United States
+933260,7.2,334591.0,89.0,78.0,Won 1 Oscar. 142 wins & 287 nominations total,Coralie Fargeat,R,"United Kingdom, France"
+597,7.9,1354930.0,88.0,75.0,Won 11 Oscars. 126 wins & 84 nominations total,James Cameron,PG-13,United States
+496243,8.5,1100523.0,99.0,97.0,Won 4 Oscars. 309 wins & 260 nominations total,"Bong Joon Ho, Han Jin-won",R,South Korea
+1865,6.6,592745.0,32.0,45.0,3 wins & 31 nominations total,"Ted Elliott, Terry Rossio, Stuart Beattie",PG-13,"United States, United Kingdom"
+603692,7.6,391433.0,94.0,78.0,38 wins & 51 nominations total,"Shay Hatten, Michael Finch, Derek Kolstad",R,"United States, Germany"
+575264,7.6,309576.0,96.0,81.0,Nominated for 2 Oscars. 18 wins & 68 nominations total,"Bruce Geller, Christopher McQuarrie, Erik Jendresen",PG-13,United States
+675,7.5,674703.0,78.0,71.0,Nominated for 2 BAFTA 17 wins & 50 nominations total,"Michael Goldenberg, J.K. Rowling",PG-13,"United Kingdom, United States"
+286217,8.0,979541.0,91.0,80.0,Nominated for 7 Oscars. 40 wins & 199 nominations total,"Drew Goddard, Andy Weir",PG-13,"United States, United Kingdom, Hungary, Jordan"
+269149,8.0,590170.0,98.0,78.0,Won 1 Oscar. 49 wins & 75 nominations total,"Byron Howard, Rich Moore, Jared Bush",PG,United States
+497,8.6,1511405.0,79.0,61.0,Nominated for 4 Oscars. 15 wins & 37 nominations total,"Stephen King, Frank Darabont",R,United States
+10191,8.1,864250.0,99.0,75.0,Nominated for 2 Oscars. 25 wins & 63 nominations total,"William Davies, Dean DeBlois, Chris Sanders",PG,"United States, France, United Kingdom"
+809,7.4,538651.0,89.0,75.0,Nominated for 2 Oscars. 18 wins & 52 nominations total,"William Steig, Andrew Adamson, Joe Stillman",PG,United States
+210577,8.1,1136209.0,88.0,79.0,Nominated for 1 Oscar. 64 wins & 189 nominations total,Gillian Flynn,R,United States
+475557,8.3,1637986.0,68.0,59.0,Won 2 Oscars. 120 wins & 246 nominations total,"Todd Phillips, Scott Silver, Bob Kane",R,"United States, Canada, Australia"
+640,8.1,1185162.0,96.0,75.0,Nominated for 2 Oscars. 16 wins & 46 nominations total,"Frank Abagnale Jr., Stan Redding, Jeff Nathanson",PG-13,"United States, Canada"
+22881,7.6,378385.0,66.0,53.0,Won 1 Oscar. 9 wins & 30 nominations total,"John Lee Hancock, Michael Lewis",PG-13,United States
+17880,6.4,13359.0,55.0,54.0,2 nominations total,"Kate DiCamillo, Joan Singleton",PG,United States
+156022,7.3,453309.0,61.0,57.0,1 win & 9 nominations total,"Richard Wenk, Michael Sloan, Richard Lindheim",R,United States
+453395,6.9,526980.0,73.0,60.0,10 wins & 28 nominations total,"Michael Waldron, Stan Lee, Steve Ditko",PG-13,United States
+6977,8.2,1136999.0,93.0,92.0,Won 4 Oscars. 165 wins & 139 nominations total,"Joel Coen, Ethan Coen, Cormac McCarthy",R,United States
+9479,7.9,398227.0,95.0,82.0,Nominated for 1 Oscar. 7 wins & 17 nominations total,"Tim Burton, Michael McDowell, Caroline Thompson",PG,United States
+10681,8.4,1279502.0,95.0,95.0,Won 1 Oscar. 96 wins & 95 nominations total,"Andrew Stanton, Pete Docter, Jim Reardon",G,"United States, Japan"
+396535,7.6,289975.0,94.0,73.0,36 wins & 42 nominations total,"Park Joo-suk, Yeon Sang-ho",Not Rated,South Korea
+260514,6.7,141123.0,70.0,59.0,3 wins & 24 nominations total,"Brian Fee, Ben Queen, Eyal Podell",G,"United States, Japan, Australia"
+857,8.6,1589732.0,94.0,91.0,Won 5 Oscars. 79 wins & 75 nominations total,Robert Rodat,R,United States
+167032,5.6,46270.0,78.0,58.0,2 wins & 1 nomination total,Don Mancini,R,"United States, Canada"
+484468,6.9,22974.0,,,1 win & 3 nominations total,Antonin Baudry,TV-14,France
+119450,7.6,503917.0,91.0,79.0,Nominated for 1 Oscar. 17 wins & 48 nominations total,"Mark Bomback, Rick Jaffa, Amanda Silver",PG-13,"United States, United Kingdom, Canada"
+976573,7.0,153364.0,73.0,58.0,Nominated for 1 Oscar. 2 wins & 68 nominations total,"John Hoberg, Kat Likkel, Brenda Hsueh",PG,United States
+653346,6.8,159281.0,80.0,66.0,Nominated for 1 Oscar. 4 wins & 62 nominations total,"Josh Friedman, Rick Jaffa, Amanda Silver",PG-13,United States
+9502,7.6,557974.0,87.0,74.0,Nominated for 1 Oscar. 15 wins & 39 nominations total,"Jonathan Aibel, Glenn Berger, Ethan Reiff",PG,"United States, Japan, China, Russia"
+426063,7.2,224748.0,84.0,78.0,Nominated for 4 Oscars. 58 wins & 195 nominations total,"Robert Eggers, Henrik Galeen, Bram Stoker",R,United States
+718930,7.3,504102.0,52.0,49.0,2 wins & 19 nominations total,"Zak Olkewicz, Kôtarô Isaka",R,"United States, Japan"
+91314,5.6,343497.0,18.0,32.0,5 wins & 23 nominations total,Ehren Kruger,PG-13,"United States, China, Hong Kong"
+1562,6.9,341152.0,73.0,78.0,3 wins & 16 nominations total,"Rowan Joffe, Juan Carlos Fresnadillo, Enrique López Lavigne",R,"United Kingdom, Spain"
+572802,5.6,110777.0,33.0,42.0,1 win & 6 nominations total,"David Leslie Johnson-McGoldrick, James Wan, Jason Momoa",PG-13,"United States, United Kingdom, Canada, Australia, Iceland"
+37165,8.2,1310024.0,94.0,90.0,Nominated for 3 Oscars. 41 wins & 69 nominations total,Andrew Niccol,PG,United States
+280,8.6,1251094.0,91.0,75.0,Won 4 Oscars. 39 wins & 33 nominations total,"James Cameron, William Wisher",R,"United States, France"
+128,8.3,467820.0,93.0,78.0,14 wins & 6 nominations total,Hayao Miyazaki,PG-13,Japan
+135397,6.9,713850.0,71.0,59.0,15 wins & 58 nominations total,"Rick Jaffa, Amanda Silver, Colin Trevorrow",PG-13,"Japan, United States"
+8681,7.7,661427.0,60.0,51.0,2 wins & 2 nominations total,"Luc Besson, Robert Mark Kamen",PG-13,"France, United Kingdom, United States"
+507086,5.6,235077.0,29.0,38.0,1 win & 25 nominations total,"Emily Carmichael, Colin Trevorrow, Derek Connolly",PG-13,"United States, China"
+131631,6.6,530835.0,70.0,64.0,21 wins & 32 nominations total,"Peter Craig, Danny Strong, Suzanne Collins",PG-13,"United States, Canada, France"
+10674,7.7,336334.0,92.0,72.0,Nominated for 1 Oscar. 17 wins & 21 nominations total,"Robert D. San Souci, Rita Hsiao, Chris Sanders",G,United States
+698508,6.7,18365.0,11.0,32.0,1 win & 1 nomination total,"Francine Rivers, D.J. Caruso",PG-13,United States
+62213,6.2,289219.0,35.0,55.0,3 wins & 12 nominations total,"Seth Grahame-Smith, John August, Dan Curtis",PG-13,"United States, Australia, United Kingdom"
+76338,6.7,759902.0,67.0,54.0,4 wins & 21 nominations total,"Christopher L. Yost, Christopher Markus, Stephen McFeely",PG-13,"United States, Iceland"
+333339,7.4,525610.0,71.0,64.0,Nominated for 1 Oscar. 11 wins & 58 nominations total,"Zak Penn, Ernest Cline",PG-13,"United States, India, Singapore, Canada, United Kingdom, Japan, Australia"
+47971,5.2,99890.0,46.0,42.0,2 wins & 7 nominations total,"Rich Wilkes, F. Scott Frazier",PG-13,"China, Canada, United States"
+8587,8.5,1219191.0,92.0,88.0,Won 2 Oscars. 43 wins & 35 nominations total,"Irene Mecchi, Jonathan Roberts, Linda Woolverton",G,United States
+118,6.7,557021.0,83.0,72.0,Nominated for 1 Oscar. 15 wins & 52 nominations total,"Roald Dahl, John August",PG,"United Kingdom, United States"
+324552,7.4,551916.0,89.0,75.0,4 wins & 10 nominations total,Derek Kolstad,R,"United States, Italy, Hong Kong, Canada"
+50619,4.9,266157.0,26.0,45.0,11 wins & 22 nominations total,"Melissa Rosenberg, Stephenie Meyer",PG-13,United States
+953,6.9,465147.0,55.0,57.0,4 wins & 32 nominations total,"Mark Burton, Billy Frolick, Eric Darnell",PG,"United States, Canada, United Kingdom"
+566525,7.3,469596.0,92.0,71.0,Nominated for 1 Oscar. 19 wins & 67 nominations total,"Dave Callaham, Destin Daniel Cretton, Andrew Lanham",PG-13,United States
+12155,6.4,459548.0,51.0,53.0,Won 2 Oscars. 35 wins & 65 nominations total,"Linda Woolverton, Lewis Carroll",PG,"United States, Italy, Canada, Japan, United Kingdom"
+41154,7.9,7.0,,,N/A,N/A,N/A,USA
+310,6.8,457859.0,48.0,46.0,7 wins & 9 nominations total,"Steve Koren, Mark O'Keefe, Steve Oedekerk",PG-13,United States
+568124,7.2,286569.0,,75.0,Won 1 Oscar. 58 wins & 86 nominations total,"Charise Castro Smith, Jared Bush, Byron Howard",PG,United States
+799583,6.8,145407.0,68.0,55.0,1 win & 2 nominations total,"Paul Tamasy, Eric Johnson, Arash Amel",R,"United States, United Kingdom, Turkey"
+739405,6.3,104579.0,51.0,51.0,N/A,"Guy Ritchie, Ivan Atkinson, Marn Davies",R,"United Kingdom, United States, China, Indonesia, Turkey"
+98368,5.4,3008.0,,,2 wins & 9 nominations,Joko Anwar,R,Indonesia
+466420,7.6,288611.0,93.0,89.0,Nominated for 10 Oscars. 136 wins & 424 nominations total,"Eric Roth, Martin Scorsese, David Grann",R,United States
+4995,7.9,294236.0,94.0,86.0,Nominated for 3 Oscars. 36 wins & 64 nominations total,Paul Thomas Anderson,R,United States
+384018,6.5,251536.0,67.0,60.0,1 win & 25 nominations total,"Chris Morgan, Drew Pearce, Gary Scott Thompson",PG-13,"United States, Japan"
+438695,7.3,97271.0,72.0,49.0,2 wins & 21 nominations total,Garth Jennings,PG,"Japan, United States"
+298618,6.6,238589.0,63.0,55.0,5 wins & 7 nominations total,"Christina Hodson, John Francis Daley, Jonathan Goldstein",PG-13,"United States, Canada, Australia, New Zealand"
+98,8.5,1788589.0,80.0,67.0,Won 5 Oscars. 60 wins & 104 nominations total,"David Franzoni, John Logan, William Nicholson",R,"United States, United Kingdom, Malta, Morocco"
+260346,6.0,211406.0,13.0,26.0,3 wins & 3 nominations total,"Luc Besson, Robert Mark Kamen",PG-13,"France, Spain, United States"
+74,6.6,496392.0,76.0,73.0,Nominated for 3 Oscars. 16 wins & 49 nominations total,"Josh Friedman, David Koepp, H.G. Wells",PG-13,United States
+9794,5.6,51956.0,20.0,36.0,2 nominations total,"Don Calame, Chris Conroy, Greg Coolidge",PG-13,United States
+76341,8.1,1179214.0,97.0,90.0,Won 6 Oscars. 245 wins & 234 nominations total,"George Miller, Brendan McCarthy, Nick Lathouris",R,"Australia, United States"
+396422,6.5,162360.0,70.0,62.0,1 win & 8 nominations total,Gary Dauberman,R,United States
+168259,7.1,431080.0,82.0,67.0,36 wins & 36 nominations total,"Chris Morgan, Gary Scott Thompson",PG-13,"United States, China, Japan, Canada, United Arab Emirates"
+667538,6.0,125200.0,51.0,42.0,2 wins & 10 nominations total,"Joby Harold, Darnell Metayer, Josh Peters",PG-13,"United States, Canada, United Kingdom, New Zealand, Hungary, Peru, China"
+62177,7.1,467171.0,78.0,69.0,Won 1 Oscar. 20 wins & 48 nominations total,"Brenda Chapman, Mark Andrews, Steve Purcell",PG,"United States, Japan, United Kingdom"
+1495,7.3,339424.0,39.0,63.0,5 wins & 15 nominations total,William Monahan,R,"United Kingdom, Germany, Spain, Morocco, United States, Italy, France"
+10195,7.0,944817.0,77.0,57.0,5 wins & 30 nominations total,"Ashley E. Miller, Zack Stentz, Don Payne",PG-13,"United States, France"
+756999,,,,,N/A,N/A,N/A,N/A
+9787,7.1,59243.0,55.0,56.0,1 win & 7 nominations total,Stacy Peralta,PG-13,"Germany, United States"
+2043,6.4,99408.0,32.0,42.0,1 win & 1 nomination total,"James Patterson, Marc Moss",R,"United States, Germany, Canada"
+3049,6.9,342014.0,48.0,37.0,5 wins & 6 nominations total,"Jack Bernstein, Tom Shadyac, Jim Carrey",PG-13,United States
+250546,5.5,186283.0,28.0,37.0,3 wins & 7 nominations total,Gary Dauberman,R,United States
+489,8.3,1156864.0,97.0,71.0,Won 2 Oscars. 25 wins & 61 nominations total,"Matt Damon, Ben Affleck",R,United States
+926393,6.8,151651.0,76.0,58.0,6 nominations total,"Richard Wenk, Michael Sloan, Richard Lindheim",R,"United States, Italy, Australia"
+20352,7.6,616759.0,80.0,72.0,Nominated for 1 BAFTA Award3 wins & 41 nominations total,"Cinco Paul, Ken Daurio, Sergio Pablos",PG,"United States, France"
+49521,7.1,851213.0,57.0,55.0,Nominated for 1 BAFTA Award7 wins & 46 nominations total,"David S. Goyer, Christopher Nolan, Jerry Siegel",PG-13,"United States, United Kingdom, Canada"
+10140,6.3,173240.0,50.0,53.0,2 wins & 19 nominations total,"Christopher Markus, Stephen McFeely, Michael Petroni",PG,"United States, United Kingdom, Canada, Australia, Germany"
+957452,4.7,37754.0,87.0,30.0,1 win & 2 nominations total,"James O'Barr, Zach Baylin, William Josef Schneider",R,"United States, United Kingdom, France, Czech Republic, Germany"
+698687,7.6,56562.0,89.0,65.0,25 nominations total,"Eric Pearson, Andrew Barrer, Gabriel Ferrari",PG,United States
+50014,8.1,516093.0,75.0,62.0,Won 1 Oscar. 79 wins & 121 nominations total,"Tate Taylor, Kathryn Stockett",PG-13,"United States, India"
+1724,6.6,551341.0,68.0,61.0,2 wins & 10 nominations total,"Zak Penn, Stan Lee, Jack Kirby",PG-13,"United States, Canada, Japan"
+9820,6.7,165056.0,87.0,63.0,2 wins & 7 nominations total,"Erich Kästner, David Swift, Nancy Meyers",PG,"United States, United Kingdom"
+11544,7.4,236124.0,86.0,75.0,Nominated for 1 Oscar. 12 wins & 28 nominations total,"Chris Sanders, Dean DeBlois",PG,"United States, Japan"
+1100782,6.7,117068.0,86.0,67.0,5 wins & 17 nominations total,Parker Finn,R,"United States, Canada"
+68726,6.9,549323.0,72.0,65.0,Nominated for 1 BAFTA Award7 wins & 48 nominations total,"Travis Beacham, Guillermo del Toro",PG-13,"United States, Mexico"
+141052,6.0,495831.0,39.0,45.0,2 wins & 14 nominations total,"Jerry Siegel, Joe Shuster, Chris Terrio",PG-13,"United States, Canada, United Kingdom"
+1138194,7.0,173241.0,90.0,71.0,Nominated for 1 BAFTA Award3 wins & 39 nominations total,"Scott Beck, Bryan Woods",R,"United States, Canada"
+585083,,,,,N/A,N/A,N/A,N/A
+840326,6.9,98820.0,94.0,70.0,10 wins & 10 nominations total,Jalmari Helander,R,"Finland, United Kingdom, United States"
+954,7.2,505041.0,67.0,59.0,3 wins & 17 nominations total,"Bruce Geller, David Koepp, Steven Zaillian",PG-13,United States
+11688,7.4,239774.0,86.0,70.0,Nominated for 1 Oscar. 7 wins & 27 nominations total,"Chris Williams, Mark Dindal, David Reynolds",G,"United States, Japan, France"
+32657,5.9,210964.0,48.0,47.0,11 nominations total,"Craig Titley, Rick Riordan",PG,"United Kingdom, Canada, United States"
+1008042,,40.0,,,N/A,"C.L. Lowry, Christopher McClean",N/A,United States
+383498,7.6,724382.0,83.0,66.0,6 wins & 52 nominations total,"Rhett Reese, Paul Wernick, Ryan Reynolds",R,"United States, Canada"
+937287,7.0,160875.0,88.0,82.0,74 wins & 151 nominations total,Justin Kuritzkes,R,"Italy, United States"
+127585,7.9,776258.0,90.0,75.0,Nominated for 1 Oscar. 16 wins & 48 nominations total,"Simon Kinberg, Jane Goldman, Matthew Vaughn",PG-13,"United Kingdom, United States, Canada"
+351286,6.1,370368.0,47.0,51.0,5 wins & 26 nominations total,"Derek Connolly, Colin Trevorrow, Michael Crichton",PG-13,"United States, China"
+335983,6.6,587479.0,31.0,35.0,2 wins & 9 nominations total,"Jeff Pinkner, Scott Rosenberg, Kelly Marcel",PG-13,"United States, China"
+675353,6.5,110441.0,69.0,47.0,2 wins & 3 nominations total,"Pat Casey, Josh Miller, John Whittington",PG,"United States, Japan, United Kingdom"
+527774,7.3,183292.0,93.0,74.0,Nominated for 1 Oscar. 13 wins & 62 nominations total,"Qui Nguyen, Adele Lim, Paul Briggs",PG,United States
+337404,7.3,284637.0,75.0,59.0,Won 1 Oscar. 28 wins & 43 nominations total,"Dana Fox, Tony McNamara, Aline Brosh McKenna",PG-13,"United States, United Kingdom, Canada, Ireland"
+110415,7.1,410909.0,94.0,84.0,35 wins & 108 nominations total,"Jacques Lob, Benjamin Legrand, Jean-Marc Rochette",R,"South Korea, Czech Republic"
+507089,5.4,118178.0,33.0,33.0,22 nominations total,"Scott Cawthon, Seth Cuddeback, Emma Tammi",PG-13,United States
+581528,7.0,29943.0,97.0,65.0,1 win & 2 nominations total,Lee Won-tae,Not Rated,South Korea
+271110,7.8,898384.0,90.0,75.0,16 wins & 73 nominations total,"Christopher Markus, Stephen McFeely, Joe Simon",PG-13,"United States, Germany, Puerto Rico"
+474350,6.5,330727.0,62.0,58.0,7 wins & 34 nominations total,"Stephen King, Gary Dauberman",R,"United States, Canada"
+9532,6.7,322750.0,49.0,39.0,3 wins & 5 nominations total,"Glen Morgan, James Wong, Jeffrey Reddick",R,"United States, Canada"
+438148,6.5,100677.0,69.0,56.0,1 win & 17 nominations total,"Matthew Fogel, Brian Lynch",PG,United States
+301528,7.6,303191.0,96.0,84.0,Won 1 Oscar. 61 wins & 65 nominations total,"John Lasseter, Andrew Stanton, Josh Cooley",G,United States
+338953,6.2,185466.0,46.0,47.0,7 nominations total,"J.K. Rowling, Steve Kloves",PG-13,"United Kingdom, United States"
+75656,7.2,748088.0,51.0,50.0,1 win & 3 nominations total,"Ed Solomon, Boaz Yakin, Edward Ricourt",PG-13,"United States, France"
+283995,7.6,806353.0,85.0,67.0,Nominated for 1 Oscar. 15 wins & 60 nominations total,"James Gunn, Dan Abnett, Andy Lanning",PG-13,United States
+10192,6.3,237152.0,58.0,58.0,1 win & 13 nominations total,"Josh Klausner, Darren Lemke, William Steig",PG,"United States, France"
+68718,8.5,1817589.0,87.0,81.0,Won 2 Oscars. 58 wins & 158 nominations total,Quentin Tarantino,R,United States
+4951,7.4,430258.0,71.0,70.0,2 wins & 13 nominations total,"Karen McCullah, Kirsten Smith, William Shakespeare",PG-13,United States
+68737,5.5,82521.0,12.0,30.0,2 wins & 1 nomination total,"Charles Leavitt, Steven Knight, Matt Greenberg",PG-13,"United Kingdom, China, Canada, United States"
+950,6.8,311073.0,56.0,59.0,8 wins & 16 nominations total,"Peter Gaulke, Gerry Swallow, Jim Hecht",PG,"United States, United Kingdom"
+77338,8.5,994142.0,75.0,57.0,Nominated for 1 BAFTA Award38 wins & 40 nominations total,"Olivier Nakache, Éric Toledano, Philippe Pozzo di Borgo",R,France
+46195,6.9,265100.0,72.0,63.0,Nominated for 1 Oscar. 3 wins & 31 nominations total,"Carlos Saldanha, Earl Richey Jones, Todd R. Jones",G,"United States, United Kingdom"
+14161,5.8,413925.0,40.0,49.0,5 wins & 21 nominations total,"Roland Emmerich, Harald Kloser",PG-13,United States
+57158,7.8,737915.0,74.0,66.0,Nominated for 3 Oscars. 19 wins & 90 nominations total,"Fran Walsh, Philippa Boyens, Peter Jackson",PG-13,"New Zealand, United States"
+2277,6.9,129540.0,37.0,42.0,Nominated for 1 Oscar. 2 wins & 8 nominations total,"Isaac Asimov, Robert Silverberg, Nicholas Kazan",PG,"United States, Germany"
+9286,5.9,175540.0,44.0,43.0,6 nominations total,"Glen Morgan, James Wong, Jeffrey Reddick",R,"United States, Canada"
+337339,6.6,266672.0,67.0,56.0,2 wins & 16 nominations total,"Gary Scott Thompson, Chris Morgan",PG-13,"China, Japan, United States, Mexico"
+713704,6.5,159757.0,85.0,69.0,4 wins & 32 nominations total,Lee Cronin,R,"Ireland, New Zealand, United States"
+72190,7.0,761337.0,67.0,63.0,3 wins & 25 nominations total,"Matthew Michael Carnahan, Drew Goddard, Damon Lindelof",PG-13,"United States, United Kingdom"
+45243,6.5,560685.0,35.0,44.0,5 wins & 18 nominations total,"Craig Mazin, Scot Armstrong, Todd Phillips",R,United States
+10802,5.1,79630.0,24.0,25.0,10 wins & 10 nominations total,Joe Eszterhas,NC-17,"France, United States"
+4247,6.3,307378.0,51.0,48.0,7 wins & 6 nominations total,"Shawn Wayans, Marlon Wayans, Buddy Johnson",R,United States
+262500,6.2,266472.0,29.0,42.0,4 wins & 18 nominations total,"Brian Duffield, Akiva Goldsman, Mark Bomback",PG-13,"United States, Canada"
+920,7.3,513360.0,74.0,73.0,Nominated for 2 Oscars. 28 wins & 34 nominations total,"John Lasseter, Joe Ranft, Jorgen Klubien",G,United States
+2501,7.8,599763.0,84.0,68.0,3 wins & 6 nominations total,"Tony Gilroy, William Blake Herron, Robert Ludlum",PG-13,"Czech Republic, Germany, United States"
+436270,6.2,296173.0,39.0,41.0,1 win & 12 nominations total,"Adam Sztykiel, Rory Haines, Sohrab Noshirvani",PG-13,"United States, Canada, New Zealand, Hungary"
+417859,6.6,204347.0,85.0,65.0,Nominated for 1 Oscar. 9 wins & 43 nominations total,"Tom Wheeler, Brian Lynch, William Davies",PG,United States
+101,8.5,1315429.0,75.0,64.0,5 wins & 16 nominations total,Luc Besson,R,"France, United States"
+49444,7.3,344896.0,82.0,67.0,Nominated for 1 Oscar. 5 wins & 47 nominations total,"Jonathan Aibel, Glenn Berger, Ethan Reiff",PG,"United States, Canada"
+561,7.0,397839.0,46.0,50.0,2 wins & 11 nominations total,"Jamie Delano, Garth Ennis, Kevin Brodbin",R,"United States, Germany"
+81481,8.0,25666.0,100.0,,4 wins & 10 nominations total,"Ji-young Gong, Hwang Dong-hyuk",Not Rated,South Korea
+856289,6.7,5959.0,60.0,,45 wins & 45 nominations total,"Xixing Lu, Jianan Ran, Ping Ran",Not Rated,China
+70981,7.0,683991.0,73.0,64.0,Nominated for 1 Oscar. 6 wins & 47 nominations total,"Jon Spaihts, Damon Lindelof, Dan O'Bannon",R,"United Kingdom, United States"
+346364,7.3,651434.0,85.0,69.0,12 wins & 49 nominations total,"Chase Palmer, Cary Joji Fukunaga, Gary Dauberman",R,"United States, Canada"
+458156,7.4,463411.0,89.0,73.0,18 wins & 29 nominations total,"Derek Kolstad, Shay Hatten, Chris Collins",R,"United States, Morocco, Ukraine, Italy"
+854,7.0,454382.0,80.0,59.0,Nominated for 1 Oscar. 6 wins & 22 nominations total,"Michael Fallon, Mark Verheiden, Mike Werb",PG-13,United States
+96239,5.7,319.0,,56.0,2 wins & 9 nominations,"Raymond Lee, Jade Castro, Michiko Yamamoto",Not Rated,Philippines
+616037,6.1,443961.0,63.0,57.0,4 wins & 21 nominations total,"Taika Waititi, Jennifer Kaytin Robinson, Stan Lee",PG-13,"Australia, United States"
+297802,6.8,542959.0,66.0,55.0,3 wins & 36 nominations total,"David Leslie Johnson-McGoldrick, Will Beall, Geoff Johns",PG-13,United States
+927342,8.1,18756.0,,,N/A,Rajkumar Periasamy,N/A,India
+6877,5.7,92001.0,23.0,47.0,5 nominations total,"Tom J. Astle, Matt Ember",PG-13,United States
+238636,6.4,169236.0,58.0,50.0,3 wins & 6 nominations total,James DeMonaco,R,"France, United States"
+524,8.2,600461.0,79.0,73.0,Nominated for 1 Oscar. 4 wins & 11 nominations total,"Nicholas Pileggi, Martin Scorsese",R,"United States, France"
+140607,6.7,6.0,,,N/A,Scott Bromley,N/A,USA
+512200,6.6,308473.0,72.0,58.0,2 wins & 10 nominations total,"Jake Kasdan, Jeff Pinkner, Scott Rosenberg",PG-13,"United States, India, Australia, New Zealand, Thailand, Canada, South Korea, China, Netherlands"
+10020,8.0,496955.0,95.0,95.0,Won 2 Oscars. 33 wins & 32 nominations total,"Linda Woolverton, Brenda Chapman, Chris Sanders",G,"United States, Japan"
+9472,6.7,278904.0,72.0,55.0,2 wins & 9 nominations total,Rawson Marshall Thurber,PG-13,"Germany, United States"
+4232,7.4,425175.0,77.0,66.0,12 wins & 11 nominations total,Kevin Williamson,R,United States
+254,7.2,461263.0,84.0,81.0,Won 3 Oscars. 47 wins & 104 nominations total,"Fran Walsh, Philippa Boyens, Peter Jackson",PG-13,"United States, New Zealand, Germany"
+16094,6.5,17324.0,94.0,76.0,3 wins & 10 nominations total,Reginald Hudlin,R,United States
+419430,7.8,774824.0,98.0,85.0,Won 1 Oscar. 154 wins & 214 nominations total,Jordan Peele,R,"Japan, United States"
+363088,7.0,480241.0,87.0,70.0,2 wins & 21 nominations total,"Chris McKenna, Erik Sommers, Paul Rudd",PG-13,"United States, Canada"
+9769,6.8,71694.0,69.0,46.0,2 wins & 4 nominations total,"Vladimir Nabokov, Stephen Schiff",R,"France, United States, United Kingdom"
+158015,5.8,253257.0,41.0,41.0,2 wins & 6 nominations total,James DeMonaco,R,"France, United States"
+242582,7.8,647047.0,95.0,76.0,Nominated for 1 Oscar. 46 wins & 126 nominations total,Dan Gilroy,R,United States
+359724,8.1,539559.0,92.0,81.0,Won 2 Oscars. 26 wins & 86 nominations total,"Jez Butterworth, John-Henry Butterworth, Jason Keller",PG-13,United States
+109418,5.4,182785.0,8.0,19.0,5 wins & 15 nominations total,"Fred Wolf, Adam Sandler, Tim Herlihy",PG-13,United States
+93456,7.3,448848.0,75.0,62.0,Nominated for 2 Oscars. 12 wins & 66 nominations total,"Cinco Paul, Ken Daurio",PG,"United States, France"
+162,7.8,551433.0,90.0,74.0,Nominated for 1 Oscar. 11 wins & 25 nominations total,"Tim Burton, Caroline Thompson",PG-13,United States
+930564,7.0,248413.0,72.0,61.0,Nominated for 5 BAFTA 15 wins & 107 nominations total,Emerald Fennell,R,"United Kingdom, United States"
+550988,7.1,471209.0,80.0,62.0,Nominated for 1 Oscar. 6 wins & 30 nominations total,"Matt Lieberman, Zak Penn",PG-13,"United States, Canada"
+495764,6.1,277271.0,79.0,60.0,18 wins & 77 nominations total,"Christina Hodson, Paul Dini, Bruce Timm",R,"United States, United Kingdom"
+18240,6.8,383990.0,45.0,48.0,7 wins & 20 nominations total,Peter Chiarelli,PG-13,United States
+615656,5.0,96117.0,27.0,40.0,3 wins & 5 nominations total,"Jon Hoeber, Erich Hoeber, Dean Georgaris",PG-13,"United States, China, Thailand, Germany, Canada, United Kingdom"
+81188,7.2,203325.0,74.0,58.0,14 wins & 32 nominations total,"David Lindsay-Abaire, William Joyce, Chris Appelhans",PG,"United States, India"
+62211,7.2,413988.0,80.0,65.0,Nominated for 2 BAFTA 9 wins & 58 nominations total,"Dan Scanlon, Daniel Gerson, Robert L. Baird",G,"United States, Japan"
+10625,7.1,470889.0,84.0,66.0,7 wins & 25 nominations total,"Rosalind Wiseman, Tina Fey",PG-13,"United States, Canada"
+545611,7.8,590278.0,93.0,81.0,Won 7 Oscars. 397 wins & 379 nominations total,"Daniel Kwan, Daniel Scheinert",R,United States
+889737,5.2,170586.0,31.0,45.0,7 wins & 19 nominations total,"Scott Silver, Todd Phillips, Bob Kane",R,"United States, Canada"
+940551,6.6,42510.0,73.0,56.0,1 win & 8 nominations total,"Mike White, Benjamin Renner, Ken Daurio",PG,"Japan, United States"
+284053,7.9,869301.0,93.0,74.0,6 wins & 50 nominations total,"Eric Pearson, Craig Kyle, Christopher L. Yost",PG-13,United States
+670,8.3,692231.0,82.0,78.0,44 wins & 28 nominations total,"Garon Tsuchiya, Nobuaki Minegishi, Park Chan-wook",R,South Korea
+810,6.1,351701.0,41.0,58.0,Nominated for 1 BAFTA Award5 wins & 17 nominations total,"William Steig, Andrew Adamson, Jeffrey Price",PG,United States
+956,6.9,415882.0,73.0,66.0,7 wins & 14 nominations total,"Alex Kurtzman, Roberto Orci, J.J. Abrams",PG-13,"United States, Germany, China, Italy"
+787,6.5,574331.0,60.0,55.0,9 wins & 18 nominations total,Simon Kinberg,PG-13,United States
+6479,7.2,858848.0,68.0,65.0,9 wins & 23 nominations total,"Mark Protosevich, Akiva Goldsman, Richard Matheson",PG-13,"United States, United Kingdom"
+38365,6.0,302341.0,10.0,30.0,3 wins & 4 nominations total,"Adam Sandler, Fred Wolf",PG-13,United States
+508883,7.4,101198.0,96.0,91.0,Won 1 Oscar. 34 wins & 86 nominations total,Hayao Miyazaki,PG-13,Japan
+2322,7.1,65345.0,80.0,65.0,2 nominations total,"Phil Alden Robinson, Lawrence Lasker, Walter F. Parkes",PG-13,United States
+1041613,5.8,56107.0,72.0,57.0,8 nominations total,Andrew Lobel,R,United States
+166426,6.5,371251.0,30.0,39.0,1 win & 14 nominations total,"Jeff Nathanson, Terry Rossio, Ted Elliott",PG-13,"United States, Australia, United Kingdom, Canada"
+9487,7.2,331002.0,92.0,78.0,Nominated for 1 Oscar. 14 wins & 21 nominations total,"John Lasseter, Andrew Stanton, Joe Ranft",G,United States
+10198,7.2,180621.0,86.0,73.0,Nominated for 3 Oscars. 10 wins & 42 nominations total,"Ron Clements, John Musker, Greg Erb",G,"United States, Brazil, Canada"
+454626,6.5,185523.0,64.0,47.0,3 wins & 12 nominations total,"Pat Casey, Josh Miller, Yuji Naka",PG,"United States, Japan, Canada, United Kingdom"
+792307,7.8,352566.0,92.0,88.0,Won 4 Oscars. 120 wins & 424 nominations total,"Tony McNamara, Alasdair Gray",R,"Ireland, United Kingdom, United States, Hungary"
+1734,6.4,358313.0,46.0,48.0,6 wins & 19 nominations total,Stephen Sommers,PG-13,"United States, Morocco, United Kingdom, Jordan"
+1035048,5.6,25442.0,55.0,50.0,N/A,"John Glenn, Jacob Roman, Kenny Ryan",R,United States
+22828,6.9,8648.0,88.0,84.0,3 wins & 6 nominations total,David Mamet,R,United States
+1813,7.5,427718.0,63.0,60.0,2 wins & 7 nominations total,"Andrew Neiderman, Jonathan Lemkin, Tony Gilroy",R,United States
+254128,6.1,269770.0,48.0,43.0,2 wins & 10 nominations total,"Carlton Cuse, Andre Fabrizio, Jeremy Passmore",PG-13,United States
+10330,6.4,170069.0,88.0,70.0,5 wins & 11 nominations total,"Mary Rodgers, Heather Hach, Leslie Dixon",PG,United States
+38,8.3,1150325.0,93.0,89.0,Won 1 Oscar. 73 wins & 111 nominations total,"Charlie Kaufman, Michel Gondry, Pierre Bismuth",R,United States
+350,7.0,509456.0,75.0,62.0,Nominated for 2 Oscars. 21 wins & 53 nominations total,"Aline Brosh McKenna, Lauren Weisberger",PG-13,"United States, France"
+605,6.7,565444.0,33.0,47.0,5 wins & 36 nominations total,"Lilly Wachowski, Lana Wachowski",R,"United States, Australia"
+205596,8.0,860739.0,90.0,71.0,Won 1 Oscar. 49 wins & 167 nominations total,"Graham Moore, Andrew Hodges",PG-13,United States
+7551,7.8,7.0,,,N/A,Carlos Alberto Gomes,N/A,Portugal
+249397,6.6,101515.0,58.0,61.0,14 wins & 31 nominations total,Lars von Trier,Not Rated,"Denmark, Germany, Belgium, United Kingdom, France, Sweden"
+1402,8.0,601035.0,67.0,64.0,Nominated for 1 Oscar. 12 wins & 26 nominations total,Steve Conrad,PG-13,United States
+9509,7.7,406070.0,39.0,47.0,1 win & 7 nominations total,"A.J. Quinnell, Brian Helgeland",R,"Switzerland, United Kingdom, United States, Mexico"
+760104,6.5,210580.0,94.0,80.0,4 wins & 49 nominations total,Ti West,R,"United States, New Zealand"
+284054,7.3,889185.0,96.0,88.0,Won 3 Oscars. 124 wins & 289 nominations total,"Ryan Coogler, Joe Robert Cole, Stan Lee",PG-13,United States
+29963,6.9,29294.0,83.0,81.0,Nominated for 1 Oscar. 16 wins & 54 nominations total,"Jane Campion, Andrew Motion",PG,"Australia, United Kingdom, France"
+321612,7.1,350888.0,71.0,65.0,Nominated for 2 Oscars. 16 wins & 81 nominations total,"Stephen Chbosky, Evan Spiliotopoulos, Linda Woolverton",PG,United States
+1160956,5.1,1670.0,43.0,,N/A,"Wei Xu, Meng Yida, Luan Zhang",N/A,China
+103332,7.2,107157.0,79.0,67.0,1 win & 11 nominations total,Zoe Kazan,R,United States
+840705,6.5,116569.0,75.0,66.0,5 wins & 22 nominations total,"Zoë Kravitz, E.T. Feigenbaum",R,"United States, Mexico"
+126889,6.4,332786.0,65.0,65.0,3 wins & 18 nominations total,"Dan O'Bannon, Ronald Shusett, Jack Paglen",R,"United Kingdom, United States"
+753342,6.3,177473.0,58.0,64.0,Nominated for 3 Oscars. 6 wins & 47 nominations total,David Scarpa,R,"United Kingdom, United States"
+198184,6.8,279076.0,32.0,41.0,3 nominations total,"Neill Blomkamp, Terri Tatchell",R,"United States, South Africa, Mexico"
+508,7.5,562203.0,64.0,55.0,Won 1 BAFTA Award11 wins & 29 nominations total,Richard Curtis,R,"United Kingdom, France, United States"
+181812,,,,,N/A,N/A,N/A,United States
+9273,6.4,243437.0,23.0,43.0,7 wins & 6 nominations total,"Jack Bernstein, Steve Oedekerk",PG-13,United States
+762441,6.3,161086.0,86.0,68.0,5 wins & 12 nominations total,"Michael Sarnoski, John Krasinski, Bryan Woods",PG-13,"United States, United Kingdom, Canada"
+524434,6.2,415580.0,47.0,52.0,7 wins & 18 nominations total,"Chloé Zhao, Patrick Burleigh, Ryan Firpo",PG-13,United States
+330457,6.8,210898.0,77.0,64.0,Nominated for 1 Oscar. 18 wins & 95 nominations total,"Jennifer Lee, Hans Christian Andersen, Chris Buck",PG,"United States, Japan"
+524047,6.4,148828.0,77.0,64.0,1 win & 2 nominations total,Chris Sparling,PG-13,"United States, United Kingdom"
+9471,4.9,136835.0,41.0,48.0,9 wins & 21 nominations total,"Ivan Goff, Ben Roberts, John August",PG-13,United States
+10483,6.4,224973.0,41.0,43.0,1 win & 5 nominations total,"Paul W.S. Anderson, Robert Thom, Charles B. Griffith",R,"United Kingdom, Germany, United States"
+985939,6.4,126919.0,79.0,62.0,4 nominations total,"Jonathan Frank, Scott Mann",PG-13,"United Kingdom, United States"
+76492,7.0,301057.0,45.0,47.0,2 wins & 15 nominations total,"Peter Baynham, Robert Smigel, Todd Durham",PG,"United States, Canada"
+4922,7.8,726412.0,72.0,70.0,Won 3 Oscars. 85 wins & 160 nominations total,"Eric Roth, Robin Swicord, F. Scott Fitzgerald",PG-13,United States
+197,8.3,1139840.0,76.0,68.0,Won 5 Oscars. 34 wins & 34 nominations total,Randall Wallace,R,United States
+13448,6.7,319918.0,36.0,48.0,1 win & 5 nominations total,"David Koepp, Akiva Goldsman, Dan Brown",PG-13,"United States, Italy"
+4248,5.4,185695.0,13.0,29.0,3 wins & 5 nominations total,"Shawn Wayans, Marlon Wayans, Buddy Johnson",R,United States
+82690,7.7,485308.0,87.0,72.0,Nominated for 1 Oscar. 33 wins & 42 nominations total,"Rich Moore, Phil Johnston, Jim Reardon",PG,United States
+607,7.3,647030.0,91.0,72.0,Won 1 Oscar. 22 wins & 39 nominations total,"Lowell Cunningham, Ed Solomon",PG-13,United States
+44896,7.3,307725.0,88.0,75.0,Won 1 Oscar. 46 wins & 25 nominations total,"John Logan, Gore Verbinski, James Ward Byrkit",PG,"United States, United Kingdom"
+5174,6.2,193672.0,17.0,44.0,9 nominations total,"Jeff Nathanson, Ross LaManna",PG-13,"United States, Germany"
+917496,6.6,159082.0,75.0,62.0,9 wins & 48 nominations total,"Michael McDowell, Larry Wilson, Alfred Gough",PG-13,"United States, France"
+57695,6.5,4331.0,85.0,78.0,2 wins & 9 nominations,"Jean Cosmos, Madame de La Fayette, François-Olivier Rousseau",Not Rated,"France, Germany"
+902,7.4,73866.0,80.0,73.0,5 wins & 14 nominations total,"Gilles Adrien, Jean-Pierre Jeunet, Marc Caro",R,"France, Germany, Spain, Belgium"
+480414,5.3,62410.0,26.0,41.0,1 win & 7 nominations total,"Mikki Daughtry, Tobias Iaconis",R,United States
+568,7.7,329412.0,94.0,78.0,Won 2 Oscars. 31 wins & 59 nominations total,"Jim Lovell, Jeffrey Kluger, William Broyles Jr.",PG,United States
+2109,7.0,317011.0,61.0,61.0,6 wins & 9 nominations total,"Ross LaManna, Jim Kouf",PG-13,United States
+2907,7.0,192418.0,67.0,57.0,Nominated for 1 Oscar. 5 wins & 23 nominations total,"Charles Addams, Caroline Thompson, Larry Wilson",PG-13,United States
+980489,7.1,126733.0,,48.0,3 nominations total,"Jason Hall, Zach Baylin, Alex Tse",PG-13,"Japan, United States"
+1029235,5.4,11984.0,71.0,52.0,1 nomination total,Simon Barrett,R,"United States, Estonia"
+787699,6.9,181228.0,82.0,66.0,Nominated for 1 BAFTA Award6 wins & 45 nominations total,"Roald Dahl, Paul King, Simon Farnaby",PG,"United States, United Kingdom, Canada"
+507241,5.8,19161.0,46.0,36.0,1 win & 3 nominations total,"Rand Ravich, James Coyne, Jay Bonansinga",R,"Spain, United States, United Kingdom, Hungary"
+9072,4.5,61671.0,12.0,26.0,6 wins & 15 nominations total,"Keenen Ivory Wayans, Shawn Wayans, Marlon Wayans",PG-13,United States
+1064486,7.8,20415.0,95.0,81.0,Nominated for 1 Oscar. 17 wins & 71 nominations total,Adam Elliot,R,Australia
+262543,6.0,60974.0,31.0,37.0,6 nominations total,"Gabe Ibáñez, Igor Legarreta, Javier Sánchez Donate",R,"Spain, Bulgaria"
+591,6.6,474936.0,25.0,46.0,8 wins & 21 nominations total,"Akiva Goldsman, Dan Brown",PG-13,"United States, Malta, France, United Kingdom"
+346910,5.3,156053.0,34.0,48.0,1 win & 8 nominations total,"Fred Dekker, Shane Black, Jim Thomas",R,"Canada, United States, United Kingdom, India, Australia, Brazil, China"
+32221,6.5,5746.0,100.0,,Nominated for 2 Oscars. 6 wins & 15 nominations total,Calder Willingham,R,United States
+353081,7.7,407970.0,98.0,87.0,Nominated for 1 BAFTA Award26 wins & 41 nominations total,"Bruce Geller, Christopher McQuarrie",PG-13,"United States, China, France, Norway"
+187,8.0,812897.0,76.0,74.0,38 wins & 54 nominations total,"Frank Miller, Robert Rodriguez",R,United States
+1579,7.8,345985.0,65.0,68.0,Nominated for 3 Oscars. 9 wins & 23 nominations total,"Mel Gibson, Farhad Safinia",R,"United States, Mexico"
+10202,6.0,103714.0,26.0,33.0,3 wins & 5 nominations total,"Matt Lopez, Tim Herlihy",PG,"United States, United Kingdom, Australia"
+77,8.4,1397080.0,94.0,83.0,Nominated for 2 Oscars. 57 wins & 59 nominations total,"Christopher Nolan, Jonathan Nolan",R,United States
+1417,8.2,731539.0,95.0,98.0,Won 3 Oscars. 109 wins & 115 nominations total,Guillermo del Toro,R,"Mexico, Spain"
+497698,6.6,461309.0,79.0,68.0,14 wins & 34 nominations total,"Eric Pearson, Jac Schaeffer, Ned Benson",PG-13,United States
+189,6.5,175697.0,42.0,46.0,4 wins & 6 nominations total,Frank Miller,R,"United States, United Kingdom"
+242,7.6,443540.0,66.0,60.0,Nominated for 7 Oscars. 6 wins & 23 nominations total,"Mario Puzo, Francis Ford Coppola",R,United States
+480530,7.1,165560.0,83.0,66.0,1 win & 12 nominations total,"Juel Taylor, Sylvester Stallone, Sascha Penn",PG-13,United States
+96721,8.1,544257.0,89.0,74.0,Won 1 BAFTA Award6 wins & 66 nominations total,Peter Morgan,R,"United Kingdom, United States"
+1084736,7.8,5731.0,,,1 nomination total,N/A,N/A,"France, Italy"
+80321,6.8,208827.0,78.0,60.0,3 wins & 20 nominations total,"Eric Darnell, Noah Baumbach, Alejandro Bien-Willner",PG,"United States, India, United Kingdom"
+11888,5.2,29177.0,26.0,29.0,1 win total,"Jim Kouf, Tommy Swerdlow, Michael Goldberg",PG,"Canada, United States"
+180,7.6,608813.0,89.0,80.0,Nominated for 1 Oscar. 20 wins & 91 nominations total,"Scott Frank, Jon Cohen, Philip K. Dick",PG-13,United States
+204082,6.5,137983.0,42.0,40.0,1 nomination total,"Sylvester Stallone, Chuck Logan",R,United States
+13475,7.9,631604.0,94.0,82.0,Won 1 Oscar. 27 wins & 95 nominations total,"Roberto Orci, Alex Kurtzman, Gene Roddenberry",PG-13,"United States, Germany"
+294254,6.3,296320.0,48.0,43.0,2 wins & 5 nominations total,"T.S. Nowlin, James Dashner",PG-13,United States
+7345,8.2,680717.0,91.0,93.0,Won 2 Oscars. 114 wins & 138 nominations total,"Paul Thomas Anderson, Upton Sinclair",R,United States
+2655,6.6,141301.0,49.0,51.0,7 wins & 7 nominations total,"Clark Gregg, Sarah Kernochan",PG-13,United States
+1124,8.5,1538383.0,77.0,66.0,Nominated for 2 Oscars. 6 wins & 44 nominations total,"Jonathan Nolan, Christopher Nolan, Christopher Priest",PG-13,"United Kingdom, United States"
+663712,6.0,77082.0,87.0,59.0,6 wins & 12 nominations total,Damien Leone,Unrated,United States
+1032823,5.8,149877.0,57.0,52.0,3 wins & 6 nominations total,M. Night Shyamalan,PG-13,"United States, Canada"
+39514,7.0,334085.0,72.0,60.0,4 wins & 19 nominations total,"Warren Ellis, Cully Hamner, Jon Hoeber",PG-13,United States
+955,6.1,404699.0,,59.0,12 wins & 20 nominations total,"Bruce Geller, Ronald D. Moore, Brannon Braga",PG-13,"Germany, United States"
+176,7.6,496080.0,50.0,46.0,9 wins & 10 nominations total,"Leigh Whannell, James Wan",R,United States
+142,7.7,405033.0,88.0,87.0,Won 3 Oscars. 141 wins & 133 nominations total,"Annie Proulx, Larry McMurtry, Diana Ossana",R,"Canada, United States"
+8363,7.6,672775.0,88.0,76.0,11 wins & 24 nominations total,"Seth Rogen, Evan Goldberg",R,United States
+530915,8.2,741317.0,88.0,78.0,Won 3 Oscars. 135 wins & 200 nominations total,"Sam Mendes, Krysty Wilson-Cairns",R,"United Kingdom, United States, India, Spain, Canada"
+940721,7.7,177204.0,99.0,81.0,Won 1 Oscar. 43 wins & 62 nominations total,"Takashi Yamazaki, Ishirô Honda, Takeo Murata",PG-13,Japan
+81005,6.3,152466.0,52.0,51.0,1 win & 4 nominations total,"Darren Lemke, Christopher McQuarrie, Dan Studney",PG-13,United States
+9358,6.2,210690.0,52.0,38.0,4 nominations total,"J. Mackye Gruber, Eric Bress, Jeffrey Reddick",R,"United States, Canada"
+297,7.2,287417.0,47.0,43.0,3 wins & 6 nominations total,"Ron Osborn, Jeff Reno, Kevin Wade",PG-13,United States
+2668,7.3,401630.0,71.0,65.0,Won 1 Oscar. 28 wins & 44 nominations total,"Washington Irving, Kevin Yagher, Andrew Kevin Walker",R,"United States, Germany, United Kingdom"
+23483,7.6,613199.0,78.0,66.0,19 wins & 63 nominations total,"Jane Goldman, Matthew Vaughn, Mark Millar",R,"United Kingdom, United States"
+964980,7.4,186369.0,93.0,73.0,5 wins & 48 nominations total,Alex Convery,R,United States
+399402,6.6,78776.0,38.0,43.0,1 win total,"Arne Schmidt, Jamie Moss, George Wallace",R,"United Kingdom, China, France, United States"
+772,6.9,434118.0,35.0,46.0,3 wins & 3 nominations total,John Hughes,PG,United States
+580489,5.9,293352.0,58.0,49.0,1 win & 6 nominations total,"Kelly Marcel, Tom Hardy",PG-13,United States
+613504,5.1,41903.0,13.0,14.0,1 win total,"Anna Todd, Mario Celaya",R,United States
+9902,6.1,141534.0,41.0,32.0,3 nominations total,Alan B. McElroy,R,"United States, Germany, Canada"
+577922,7.3,641768.0,70.0,69.0,Won 1 Oscar. 49 wins & 134 nominations total,Christopher Nolan,PG-13,"United States, United Kingdom"
+1985,7.3,152681.0,83.0,82.0,Won 1 Oscar. 35 wins & 70 nominations total,"Jeffrey Caine, John le Carré",R,"United Kingdom, Germany, Kenya, France, United States, Switzerland"
+273481,7.7,517253.0,92.0,82.0,Nominated for 3 Oscars. 15 wins & 157 nominations total,Taylor Sheridan,R,"United States, Mexico, Hong Kong"
+109451,6.3,122321.0,71.0,59.0,Nominated for 1 BAFTA Award16 nominations total,"Erica Rivinoja, John Francis Daley, Jonathan Goldstein",PG,"United States, Canada"
+335797,7.1,206430.0,71.0,59.0,3 wins & 25 nominations total,Garth Jennings,PG,"Japan, United States"
+102651,6.9,416024.0,54.0,56.0,Nominated for 1 Oscar. 12 wins & 44 nominations total,"Linda Woolverton, Charles Perrault, Milt Banta",PG,"United States, Canada, United Kingdom"
+23168,7.5,437147.0,92.0,74.0,Nominated for 1 Oscar. 9 wins & 46 nominations total,"Peter Craig, Ben Affleck, Aaron Stockard",R,"United States, United Kingdom"
+246655,6.8,483756.0,47.0,52.0,1 win & 19 nominations total,"Simon Kinberg, Bryan Singer, Michael Dougherty",PG-13,United States
+1064028,5.4,30869.0,49.0,,1 nomination total,"Will Honley, April Maguire",R,United States
+464052,5.3,305637.0,57.0,60.0,27 wins & 48 nominations total,"Patty Jenkins, Geoff Johns, Dave Callaham",PG-13,United States
+8961,6.6,282675.0,23.0,38.0,5 wins & 13 nominations total,"George Gallo, Marianne Wibberley, Cormac Wibberley",R,United States
+166424,4.3,187077.0,9.0,27.0,8 wins & 4 nominations total,"Jeremy Slater, Simon Kinberg, Josh Trank",PG-13,"United States, Germany, United Kingdom, Canada"
+508442,8.0,415027.0,95.0,83.0,Won 2 Oscars. 124 wins & 91 nominations total,"Pete Docter, Mike Jones, Kemp Powers",PG,United States
+333669,4.6,4934.0,,,N/A,"Christian Clavier, Jean-Marie Poiré",N/A,"France, Belgium, Czech Republic"
+169917,6.5,129214.0,68.0,57.0,1 nomination total,"Lawrence Block, Scott Frank",R,United States
+549509,7.3,98729.0,93.0,90.0,Won 3 Oscars. 135 wins & 344 nominations total,"Brady Corbet, Mona Fastvold",R,"United States, United Kingdom, Canada"
+11237,4.7,35550.0,26.0,40.0,2 nominations total,"Hans Bauer, Jim Cash, Jack Epps Jr.",PG-13,"United States, Australia"
+193893,6.4,141849.0,18.0,30.0,2 nominations total,"Luke Greenfield, Nicholas Thomas",R,United States
+424694,7.9,629645.0,60.0,49.0,Won 4 Oscars. 50 wins & 80 nominations total,"Anthony McCarten, Peter Morgan",PG-13,"United Kingdom, United States"
+5255,6.6,258908.0,55.0,61.0,Nominated for 3 Oscars. 5 wins & 26 nominations total,"Chris Van Allsburg, Robert Zemeckis, William Broyles Jr.",G,"United States, Australia"
+375588,5.3,83968.0,14.0,32.0,4 nominations total,"Ben Chandler, David James Kelly",PG-13,"United States, Hong Kong, United Kingdom, France"
+77877,6.4,116791.0,20.0,39.0,5 wins & 7 nominations total,"Will Fetters, Nicholas Sparks",PG-13,United States
+10315,7.9,289573.0,93.0,83.0,Nominated for 2 Oscars. 32 wins & 63 nominations total,"Roald Dahl, Wes Anderson, Noah Baumbach",PG,"United States, United Kingdom"
+339403,7.5,653117.0,92.0,86.0,Nominated for 3 Oscars. 43 wins & 66 nominations total,Edgar Wright,R,"United Kingdom, United States"
+334,8.0,340400.0,82.0,78.0,Nominated for 3 Oscars. 28 wins & 59 nominations total,Paul Thomas Anderson,R,United States
+839033,6.3,35328.0,49.0,54.0,2 nominations total,"Jeffrey Addiss, Will Matthews, Phoebe Gittins",PG-13,"United States, New Zealand, Japan"
+284052,7.5,855819.0,89.0,72.0,Nominated for 1 Oscar. 21 wins & 68 nominations total,"Jon Spaihts, Scott Derrickson, C. Robert Cargill",PG-13,"United States, Hong Kong, Nepal"
+27,4.7,24468.0,23.0,43.0,1 win & 2 nominations total,Michael Winterbottom,Not Rated,United Kingdom
+493529,7.2,264987.0,,72.0,4 wins & 21 nominations total,"Jonathan Goldstein, John Francis Daley, Michael Gilio",PG-13,"United States, Canada, United Kingdom, Iceland, Ireland, Australia"
+913290,7.0,237152.0,92.0,78.0,5 wins & 38 nominations total,Zach Cregger,R,"Bulgaria, United States"
+13183,7.6,602792.0,64.0,56.0,12 wins & 24 nominations total,"Dave Gibbons, David Hayter, Alex Tse",R,United States
+758323,6.1,98266.0,51.0,45.0,1 win & 3 nominations total,"Michael Petroni, Evan Spiliotopoulos, R. Dean McCreary",R,"United States, Spain, United Kingdom"
+49047,7.7,888181.0,96.0,96.0,Won 7 Oscars. 240 wins & 188 nominations total,"Alfonso Cuarón, Jonás Cuarón",PG-13,"United Kingdom, United States"
+140300,7.1,208416.0,87.0,66.0,1 win & 10 nominations total,"Jonathan Aibel, Glenn Berger, Ethan Reiff",PG,"United States, China"
+949,8.3,773511.0,84.0,76.0,15 nominations total,Michael Mann,R,United States
+27578,6.4,375197.0,41.0,45.0,3 wins & 5 nominations total,"Dave Callaham, Sylvester Stallone",R,"United States, Bulgaria, Spain, Germany"
+181533,6.2,144555.0,48.0,47.0,1 win & 5 nominations total,"David Guion, Michael Handelman, Mark Friedman",PG,"United Kingdom, United States"
+49530,6.7,470484.0,36.0,53.0,2 nominations total,Andrew Niccol,PG-13,United States
+650,7.8,164419.0,96.0,76.0,Nominated for 2 Oscars. 12 wins & 28 nominations total,John Singleton,R,United States
+19912,5.1,135432.0,28.0,30.0,2 wins & 2 nominations total,"Eric Bress, Jeffrey Reddick",R,United States
+9737,6.8,308258.0,44.0,41.0,1 win & 3 nominations total,"George Gallo, Michael Barrie, Jim Mulholland",R,United States
+333484,6.9,240021.0,64.0,54.0,5 wins & 12 nominations total,"Akira Kurosawa, Shinobu Hashimoto, Hideo Oguni",PG-13,"United States, Australia"
+843,8.1,181324.0,92.0,87.0,Nominated for 1 BAFTA Award45 wins & 50 nominations total,Wong Kar-Wai,PG,"Hong Kong, France"
+1278,7.1,139212.0,59.0,63.0,2 wins & 11 nominations total,Gilbert Adair,NC-17,"United Kingdom, France, Italy, United States"
+9614,7.0,293294.0,64.0,31.0,1 win & 4 nominations total,"Tim Herlihy, Adam Sandler",PG-13,United States
+467244,7.3,138090.0,93.0,92.0,Won 2 Oscars. 71 wins & 185 nominations total,"Jonathan Glazer, Martin Amis",PG-13,"United Kingdom, Poland, United States"
+4348,7.8,361619.0,87.0,82.0,Nominated for 4 Oscars. 13 wins & 59 nominations total,"Deborah Moggach, Jane Austen, Emma Thompson",PG,"United Kingdom, France, United States"
+677179,6.7,101983.0,89.0,73.0,2 wins & 26 nominations total,"Keenan Coogler, Zach Baylin, Ryan Coogler",PG-13,United States
+1359,7.6,793967.0,68.0,64.0,7 wins & 11 nominations total,"Bret Easton Ellis, Mary Harron, Guinevere Turner",R,United States
+37724,7.8,756423.0,92.0,81.0,Won 2 Oscars. 69 wins & 125 nominations total,"Neal Purvis, Robert Wade, John Logan",PG-13,"United Kingdom, United States, Turkey, China"
+312221,7.6,326630.0,95.0,82.0,Nominated for 1 Oscar. 45 wins & 66 nominations total,"Ryan Coogler, Aaron Covington, Sylvester Stallone",PG-13,United States
+546554,7.9,831264.0,97.0,82.0,Nominated for 1 Oscar. 52 wins & 113 nominations total,Rian Johnson,PG-13,United States
+227159,6.3,190776.0,35.0,40.0,1 win & 6 nominations total,"Sean Anders, John Morris, Jonathan Goldstein",R,United States
+508943,7.4,213710.0,91.0,71.0,Nominated for 1 Oscar. 6 wins & 82 nominations total,"Enrico Casarosa, Jesse Andrews, Simon Stephenson",PG,United States
+420817,6.9,307065.0,57.0,53.0,9 wins & 39 nominations total,"John August, Guy Ritchie",PG,"United States, United Kingdom, Singapore, Canada, Czech Republic, Serbia, China"
+639933,7.0,285900.0,90.0,82.0,5 wins & 54 nominations total,"Sjón, Robert Eggers",R,"United Kingdom, China, United States"
+73723,6.4,138604.0,,46.0,4 wins & 8 nominations total,"Dr. Seuss, Cinco Paul, Ken Daurio",PG,"United States, France"
+629,8.5,1203191.0,87.0,76.0,Won 2 Oscars. 37 wins & 17 nominations total,Christopher McQuarrie,R,"United States, Germany"
+38575,6.3,220844.0,67.0,61.0,5 wins & 12 nominations total,"Christopher Murphey, Robert Mark Kamen",PG,"United States, China, Hong Kong"
+318846,7.8,521325.0,89.0,81.0,Won 1 Oscar. 37 wins & 81 nominations total,"Charles Randolph, Adam McKay, Michael Lewis",R,United States
+281957,8.0,920664.0,78.0,76.0,Won 3 Oscars. 94 wins & 193 nominations total,"Mark L. Smith, Alejandro G. Iñárritu, Michael Punke",R,"United States, Hong Kong, Taiwan, Argentina"
+9339,6.4,377519.0,34.0,45.0,Nominated for 1 Oscar. 3 wins & 12 nominations total,"Steve Koren, Mark O'Keefe",PG-13,United States
+1440,7.5,119602.0,81.0,75.0,Nominated for 3 Oscars. 20 wins & 61 nominations total,"Todd Field, Tom Perrotta",R,United States
+718821,6.5,182187.0,75.0,65.0,36 nominations total,"Mark L. Smith, Joseph Kosinski, Michael Crichton",PG-13,"Japan, United States"
+10764,6.5,486264.0,63.0,58.0,Nominated for 2 BAFTA 4 wins & 32 nominations total,"Paul Haggis, Neal Purvis, Robert Wade",PG-13,"United Kingdom, United States, Italy"
+10527,6.6,261941.0,64.0,61.0,4 wins & 11 nominations total,"Etan Cohen, Eric Darnell, Tom McGrath",PG,"United States, United Kingdom"
+64690,7.8,740334.0,93.0,79.0,Nominated for 1 Oscar. 79 wins & 180 nominations total,"Hossein Amini, James Sallis",R,United States
+24,8.2,1268217.0,85.0,69.0,Nominated for 5 BAFTA 30 wins & 103 nominations total,"Quentin Tarantino, Uma Thurman",R,United States
+893723,5.9,6081.0,72.0,49.0,1 win & 8 nominations total,"Cal Brunker, Bob Barlen, Shane Morris",PG,"Canada, United States"
+447332,7.5,637961.0,96.0,82.0,Nominated for 1 Oscar. 38 wins & 129 nominations total,"Bryan Woods, Scott Beck, John Krasinski",PG-13,United States
+10528,7.5,695036.0,70.0,57.0,Nominated for 2 Oscars. 10 wins & 31 nominations total,"Michael Robert Johnson, Anthony Peckham, Simon Kinberg",PG-13,"United States, Germany"
+400535,7.1,183382.0,62.0,61.0,1 win & 8 nominations total,Taylor Sheridan,R,United States
+2024,7.2,305970.0,61.0,63.0,Nominated for 3 Oscars. 9 wins & 23 nominations total,Robert Rodat,R,"Germany, United States"
+345,7.5,406208.0,76.0,69.0,12 wins & 30 nominations total,"Stanley Kubrick, Frederic Raphael, Arthur Schnitzler",TV-MA,"United Kingdom, United States"
+341174,4.6,118174.0,11.0,33.0,3 wins & 13 nominations total,"Niall Leonard, E.L. James",R,"China, Japan, United States"
+520763,,,91.0,,N/A,N/A,N/A,N/A
+259316,7.2,528580.0,74.0,66.0,Won 1 Oscar. 15 wins & 54 nominations total,J.K. Rowling,PG-13,"United Kingdom, United States, Canada"
+763215,6.1,112340.0,57.0,46.0,1 win & 1 nomination total,Dan Mazeau,PG-13,United States
+75780,7.0,382263.0,64.0,50.0,1 win & 6 nominations total,"Lee Child, Christopher McQuarrie",PG-13,United States
+240832,6.4,564764.0,67.0,62.0,1 win & 12 nominations total,Luc Besson,R,"France, Germany, Taiwan, Canada, United Kingdom"
+296,6.3,430830.0,70.0,66.0,3 wins & 24 nominations total,"John Brancato, Michael Ferris, Tedi Sarafian",R,"United Kingdom, Germany, United States"
+70,8.1,752495.0,90.0,86.0,Won 4 Oscars. 68 wins & 86 nominations total,"Paul Haggis, F.X. Toole",PG-13,United States
+181808,4.3,72.0,,,N/A,N/A,N/A,United States
+335977,6.5,224125.0,71.0,58.0,Nominated for 1 Oscar. 10 wins & 39 nominations total,"Jez Butterworth, John-Henry Butterworth, David Koepp",PG-13,United States
+420818,6.8,286086.0,52.0,55.0,Nominated for 1 Oscar. 21 wins & 44 nominations total,"Jeff Nathanson, Irene Mecchi, Jonathan Roberts",PG,"United States, United Kingdom, Kenya"
+365177,4.7,53038.0,10.0,26.0,1 win & 12 nominations total,"Eli Roth, Joe Abercrombie",PG-13,"United States, Hungary"
+615777,7.1,197711.0,57.0,61.0,Nominated for 3 Oscars. 45 wins & 158 nominations total,Damien Chazelle,R,United States
+270303,,,,,N/A,"Jonathan Elliot Levy, Casey Smith",N/A,United States
+9693,7.9,552433.0,92.0,84.0,Nominated for 3 Oscars. 49 wins & 89 nominations total,"Alfonso Cuarón, Timothy J. Sexton, David Arata",R,"United States, United Kingdom, Japan"
+712,7.1,175654.0,92.0,81.0,Nominated for 2 Oscars. 24 wins & 27 nominations total,Richard Curtis,R,United Kingdom
+56292,7.4,555260.0,94.0,73.0,5 wins & 30 nominations total,"Bruce Geller, Josh Appelbaum, André Nemec",PG-13,"United States, United Arab Emirates, Russia, Canada, Czech Republic, India"
+313369,8.0,732274.0,91.0,94.0,Won 6 Oscars. 242 wins & 307 nominations total,Damien Chazelle,PG-13,"United States, Hong Kong"
+22794,6.9,275114.0,85.0,66.0,1 win & 14 nominations total,"Phil Lord, Christopher Miller, Judi Barrett",PG,United States
+13499,5.5,31236.0,6.0,38.0,2 wins & 5 nominations total,"Ron Burch, David Kidd, Melville Shavelson",PG,United States
+795,6.7,132626.0,,54.0,10 wins & 14 nominations total,"Wim Wenders, Peter Handke, Richard Reitinger",PG-13,"United States, Germany"
+50839,7.1,155284.0,87.0,76.0,Nominated for 1 Oscar. 8 wins & 24 nominations total,J.C. Chandor,R,United States
+257344,5.6,172697.0,18.0,27.0,5 wins & 9 nominations total,"Tim Herlihy, Timothy Dowling, Patrick Jean",PG-13,"China, United States, Canada"
+25748,4.4,10069.0,30.0,18.0,3 nominations total,"A L Katz, Gilbert Adler, Stephen King",R,United States
+937278,7.5,196354.0,70.0,51.0,1 win & 10 nominations total,"Fredrik Backman, Hannes Holm, David Magee",PG-13,"United States, Sweden, Canada, Ireland, United Kingdom"
+1593,6.5,398868.0,42.0,48.0,2 wins & 8 nominations total,"Robert Ben Garant, Thomas Lennon, Milan Trenc",PG,"United States, United Kingdom"
+61791,7.6,596881.0,82.0,68.0,Nominated for 1 Oscar. 21 wins & 45 nominations total,"Rick Jaffa, Amanda Silver, Pierre Boulle",PG-13,"United States, United Kingdom, Canada"
+299537,6.7,642599.0,79.0,64.0,10 wins & 56 nominations total,"Anna Boden, Ryan Fleck, Geneva Robertson-Dworet",PG-13,"United States, Australia"
+1271,,,61.0,,N/A,"Bill Corbett, Kevin Murphy, Michael J. Nelson",N/A,N/A
+177677,7.4,436474.0,94.0,75.0,6 wins & 26 nominations total,"Bruce Geller, Christopher McQuarrie, Drew Pearce",PG-13,"United States, China, United Kingdom, Austria, Morocco, Hong Kong"
+278154,5.7,81982.0,18.0,34.0,2 wins total,"Michael J. Wilson, Michael Berg, Yoni Brenner",PG,"United States, United Kingdom"
+381284,7.8,278285.0,93.0,74.0,Nominated for 3 Oscars. 37 wins & 94 nominations total,"Allison Schroeder, Theodore Melfi, Margot Lee Shetterly",PG,United States
+594,7.4,520335.0,61.0,55.0,7 wins & 8 nominations total,"Andrew Niccol, Sacha Gervasi, Jeff Nathanson",PG-13,United States
+746036,6.8,233596.0,82.0,73.0,23 wins & 48 nominations total,"Glen A. Larson, Drew Pearce",PG-13,"Canada, Australia, United States"
+2758,6.8,117795.0,75.0,61.0,Nominated for 1 Oscar. 3 wins & 17 nominations total,"Charles Addams, Paul Rudnick",PG-13,United States
+402900,6.3,255078.0,69.0,61.0,3 wins & 17 nominations total,"Gary Ross, Olivia Milch, George Clayton Johnson",PG-13,United States
+184345,4.7,24902.0,8.0,17.0,2 nominations total,"Marlon Wayans, Rick Alvarez",R,United States
+339964,6.4,205729.0,47.0,51.0,11 nominations total,"Pierre Christin, Jean-Claude Mézières, Luc Besson",PG-13,"France, China, Belgium, Germany, United Arab Emirates, United States, Canada, Qatar"
+146216,6.6,186502.0,44.0,47.0,1 win & 3 nominations total,"Jon Hoeber, Erich Hoeber, Warren Ellis",PG-13,"United States, Canada, Russia, France, Hong Kong"
+639720,6.4,59154.0,51.0,46.0,7 nominations total,John Krasinski,PG,"Canada, United States"
+329,8.2,1144780.0,91.0,68.0,Won 3 Oscars. 44 wins & 27 nominations total,"Michael Crichton, David Koepp",PG-13,United States
+1265,7.2,185307.0,85.0,74.0,6 wins & 5 nominations total,"Jeff Stockwell, David Paterson, Katherine Paterson",PG,"United States, New Zealand"
+397415,5.2,9604.0,,,N/A,"John Mankiewicz, Joyce Carol Oates",TV-MA,United States
+22538,7.5,486364.0,83.0,69.0,18 wins & 66 nominations total,"Michael Bacall, Edgar Wright, Bryan Lee O'Malley",PG-13,"United Kingdom, Canada, Japan, United States"
+500,8.3,1144353.0,90.0,81.0,13 wins & 23 nominations total,"Quentin Tarantino, Roger Avary",R,United States
+934433,6.4,142341.0,77.0,61.0,4 wins & 27 nominations total,"James Vanderbilt, Guy Busick, Kevin Williamson",R,"United States, Canada, United Kingdom"
+1690,7.0,75.0,,,N/A,N/A,N/A,USA
+58595,6.1,311610.0,48.0,57.0,Nominated for 2 Oscars. 13 wins & 33 nominations total,"Evan Daugherty, John Lee Hancock, Hossein Amini",PG-13,"United Kingdom, Japan, United States"
+1226578,6.6,196286.0,86.0,77.0,9 wins & 31 nominations total,Osgood Perkins,R,"Canada, United States"
+718032,7.1,149574.0,90.0,90.0,Nominated for 3 Oscars. 61 wins & 197 nominations total,Paul Thomas Anderson,R,"United States, Canada"
+1020822,,311.0,93.0,,2 nominations total,"Emma Benestan, Julie Debiton",N/A,"France, Belgium, Saudi Arabia"
+882598,6.5,223647.0,79.0,68.0,3 wins & 22 nominations total,Parker Finn,R,United States
+26338,5.2,12692.0,49.0,49.0,1 nomination total,Catherine Breillat,Unrated,France
+609681,5.5,155523.0,63.0,50.0,5 wins & 13 nominations total,"Nia DaCosta, Megan McDonnell, Elissa Karasik",PG-13,United States
+119283,6.2,133594.0,42.0,42.0,1 nomination total,"John J. McLaughlin, Donald E. Westlake",R,United States
+8835,6.5,272673.0,72.0,59.0,6 wins & 14 nominations total,"Amanda Brown, Karen McCullah, Kirsten Smith",PG-13,United States
+9722,4.8,77303.0,23.0,34.0,2 wins & 13 nominations total,"Nora Ephron, Delia Ephron, Sol Saks",PG-13,United States
+604,7.2,657470.0,74.0,62.0,8 wins & 34 nominations total,"Lilly Wachowski, Lana Wachowski",R,United States
+38700,6.5,192660.0,76.0,59.0,3 wins & 15 nominations total,"Peter Craig, Joe Carnahan, Chris Bremner",R,United States
+19959,6.3,183342.0,37.0,45.0,N/A,"Michael Ferris, John Brancato, Robert Venditti",PG-13,United States
+114,7.1,391794.0,65.0,51.0,Nominated for 1 Oscar. 8 wins & 11 nominations total,J.F. Lawton,R,United States
+11247,5.9,98256.0,11.0,25.0,6 wins & 8 nominations total,Leigh Dunlap,PG,"United States, Canada"
+300671,7.3,173592.0,51.0,48.0,Nominated for 1 Oscar. 5 nominations total,"Chuck Hogan, Mitchell Zuckoff",R,"United States, Malta"
+18823,5.8,300408.0,27.0,39.0,4 wins & 14 nominations total,"Travis Beacham, Phil Hay, Matt Manfredi",PG-13,"United States, United Kingdom, Australia"
+10591,6.7,256138.0,56.0,47.0,2 wins & 4 nominations total,"David Wagner, Brent Goldberg, Stuart Blumberg",R,United States
+4257,5.1,135303.0,34.0,40.0,1 win & 3 nominations total,"Craig Mazin, Jim Abrahams, Pat Proft",PG-13,United States
+43347,6.7,241330.0,49.0,55.0,1 win & 5 nominations total,"Charles Randolph, Edward Zwick, Marshall Herskovitz",R,United States
+335988,5.2,180678.0,16.0,27.0,3 wins & 21 nominations total,"Art Marcum, Matt Holloway, Ken Nolan",PG-13,"United States, China, Canada"
+1250,5.3,262798.0,28.0,35.0,1 win & 11 nominations total,Mark Steven Johnson,PG-13,"United States, Australia"
+593643,7.2,463869.0,88.0,71.0,2 wins & 66 nominations total,"Seth Reiss, Will Tracy",R,United States
+855,7.7,443641.0,77.0,74.0,Won 2 Oscars. 11 wins & 37 nominations total,"Mark Bowden, Ken Nolan",R,"United States, United Kingdom"
+536554,6.3,173875.0,93.0,72.0,4 wins & 31 nominations total,"Akela Cooper, James Wan",PG-13,"United States, New Zealand"
+107,8.2,955019.0,74.0,55.0,4 wins & 7 nominations total,Guy Ritchie,R,"United Kingdom, United States"
+646385,6.3,178173.0,76.0,60.0,5 wins & 20 nominations total,"James Vanderbilt, Guy Busick, Kevin Williamson",R,United States
+901362,6.0,18609.0,64.0,53.0,5 wins & 6 nominations total,"Elizabeth Tippet, Thomas Dam",PG,"United States, United Kingdom"
+10538,5.9,52508.0,30.0,50.0,N/A,"Stewart Raffill, Dan Gordon, David Loughery",R,United States
+4256,5.6,165688.0,36.0,49.0,2 wins & 4 nominations total,"Craig Mazin, Pat Proft, Shawn Wayans",PG-13,"United States, Canada"
+257211,7.1,298924.0,60.0,51.0,1 win & 9 nominations total,Nancy Meyers,PG-13,United States
+9470,7.7,158974.0,90.0,78.0,Nominated for 1 BAFTA Award25 wins & 47 nominations total,"Stephen Chow, Kan-Cheung Tsang, Xin Huo",R,"Hong Kong, China, United States"
+574060,6.1,54272.0,60.0,47.0,5 nominations total,"Navot Papushado, Ehud Lavski",R,"France, Germany, United States"
+688,7.6,94124.0,90.0,69.0,Nominated for 1 Oscar. 8 wins & 19 nominations total,"Richard LaGravenese, Robert James Waller",PG-13,United States
+82507,6.8,304902.0,64.0,53.0,3 wins & 14 nominations total,"Scott Derrickson, C. Robert Cargill",R,"United States, United Kingdom, Canada"
+45317,7.8,401848.0,91.0,79.0,Won 2 Oscars. 74 wins & 123 nominations total,"Keith Dorrington, Paul Tamasy, Eric Johnson",R,United States
+496450,6.1,7591.0,54.0,,2 nominations total,"Jeremy Zag, Bettina Lopez Mendoza, Thomas Astruc",PG,"France, China, Canada"
+11244,5.2,9213.0,27.0,,1 nomination total,Robert Townsend,PG,United States
+163,6.5,430096.0,55.0,58.0,4 wins & 10 nominations total,"George Nolfi, George Clayton Johnson, Jack Golden Russell",PG-13,United States
+10184,6.4,187974.0,42.0,47.0,1 win & 4 nominations total,"Abby Kohn, Marc Silverstein, Greg Behrendt",PG-13,"Germany, United States"
+22894,5.3,115475.0,20.0,32.0,N/A,"Peter Schink, Scott Stewart",R,United States
+169,6.3,193464.0,30.0,46.0,1 win & 4 nominations total,"Jim Thomas, John Thomas",R,United States
+82695,7.5,356945.0,70.0,63.0,Won 3 Oscars. 85 wins & 177 nominations total,"William Nicholson, Alain Boublil, Claude-Michel Schönberg",PG-13,"United Kingdom, United States"
+13811,6.2,257521.0,35.0,41.0,1 win & 6 nominations total,"Ryne Douglas Pearson, Juliet Snowden, Stiles White",PG-13,"United States, United Kingdom, Australia"
+76,8.1,364986.0,100.0,79.0,1 win & 7 nominations total,"Richard Linklater, Kim Krizan",R,"United States, Austria"
+4588,7.5,47494.0,73.0,61.0,Nominated for 2 BAFTA 28 wins & 56 nominations total,"Eileen Chang, James Schamus, Hui-Ling Wang",NC-17,"Taiwan, United States, Hong Kong, China"
+141,8.0,891869.0,88.0,88.0,12 wins & 17 nominations total,Richard Kelly,R,United States
+10022,5.6,102778.0,21.0,30.0,1 win & 10 nominations total,"Thomas Lennon, Robert Ben Garant",PG,United States
+7131,6.1,299739.0,,35.0,3 wins & 21 nominations total,Stephen Sommers,PG-13,"Czech Republic, United States"
+53182,6.2,324654.0,45.0,48.0,2 wins & 7 nominations total,"Zack Snyder, Kurt Johnstad, Frank Miller",R,"United States, Bulgaria"
+9341,5.5,109024.0,39.0,48.0,N/A,"Cooper Layne, John Rogers",PG-13,"United Kingdom, France, Italy, Germany, Canada, United States"
+207703,7.8,908.0,75.0,,N/A,N/A,N/A,UK
+11808,6.6,118476.0,30.0,47.0,2 nominations total,"Roy Huggins, John Pogue",PG-13,United States
+238615,6.5,106052.0,17.0,34.0,N/A,"Àlex Pastor, David Pastor",PG-13,United States
+50546,6.4,281989.0,19.0,33.0,5 wins & 13 nominations total,"Allan Loeb, Timothy Dowling, I.A.L. Diamond",PG-13,United States
+172385,6.3,107906.0,50.0,49.0,Nominated for 1 BAFTA Award2 wins & 24 nominations total,"Don Rhymer, Carlos Kotkin, Jenny Bicks",G,"United States, Iraq, Canada"
+152601,8.0,709611.0,95.0,91.0,Won 1 Oscar. 83 wins & 187 nominations total,Spike Jonze,R,United States
+447277,7.2,173718.0,67.0,59.0,2 wins & 31 nominations total,"David Magee, Hans Christian Andersen, John Musker",PG,United States
+102899,7.2,761017.0,83.0,64.0,Nominated for 1 BAFTA Award4 wins & 34 nominations total,"Edgar Wright, Joe Cornish, Adam McKay",PG-13,United States
+157350,6.6,508233.0,41.0,48.0,7 wins & 11 nominations total,"Evan Daugherty, Vanessa Taylor, Veronica Roth",PG-13,United States
+801688,7.0,70970.0,77.0,65.0,4 wins & 10 nominations total,Nag Ashwin,Not Rated,India
+82675,6.2,333150.0,22.0,45.0,1 win & 3 nominations total,"Luc Besson, Robert Mark Kamen",PG-13,"France, United States, Turkey, United Kingdom"
+343611,6.2,187811.0,37.0,47.0,1 win total,"Richard Wenk, Edward Zwick, Marshall Herskovitz",PG-13,"United States, China"
+9023,7.2,91688.0,69.0,52.0,Nominated for 1 Oscar. 10 wins & 22 nominations total,John Fusco,G,"United States, Canada"
+322,7.9,509193.0,89.0,84.0,Won 2 Oscars. 57 wins & 144 nominations total,"Brian Helgeland, Dennis Lehane",R,"United States, Australia"
+3597,5.8,171829.0,46.0,52.0,4 wins & 10 nominations total,"Kevin Williamson, Lois Duncan",R,United States
+516729,6.6,29386.0,93.0,65.0,2 wins & 8 nominations total,"Michael Bond, Paul King, Simon Farnaby",PG,"United Kingdom, France, Japan, United States, Colombia"
+12429,7.6,177483.0,91.0,86.0,12 wins & 20 nominations total,Hayao Miyazaki,G,Japan
+138103,6.1,202559.0,32.0,35.0,2 wins & 5 nominations total,"Sylvester Stallone, Creighton Rothenberger, Katrin Benedikt",PG-13,"United States, France, Germany, Bulgaria"
+12201,6.6,101671.0,54.0,55.0,1 nomination total,"William Monahan, Andrew Bovell, Troy Kennedy Martin",R,"United Kingdom, United States"
+614479,5.5,60103.0,39.0,45.0,2 nominations total,"Leigh Whannell, Scott Teems",PG-13,"United States, Canada"
+324849,7.3,186431.0,89.0,75.0,13 wins & 68 nominations total,"Seth Grahame-Smith, Chris McKenna, Erik Sommers",PG,"United States, Denmark, Australia"
+138832,7.0,510697.0,48.0,44.0,4 wins & 17 nominations total,"Bob Fisher, Steve Faber, Sean Anders",R,"United States, United Kingdom"
+9100,6.5,115550.0,57.0,55.0,1 win & 7 nominations total,"Peter Filardi, Andrew Fleming",R,United States
+263115,8.1,901747.0,93.0,77.0,Nominated for 1 Oscar. 28 wins & 82 nominations total,"James Mangold, Scott Frank, Michael Green",R,United States
+2503,8.0,675004.0,92.0,85.0,Won 3 Oscars. 29 wins & 42 nominations total,"Tony Gilroy, Scott Z. Burns, George Nolfi",PG-13,"United States, Germany, France, Spain"
+1573,7.2,398859.0,69.0,67.0,1 win & 1 nomination total,"Steven E. de Souza, Doug Richardson, Walter Wager",R,United States
+159824,6.6,155330.0,58.0,44.0,3 wins & 11 nominations total,"Robert Smigel, Adam Sandler, Todd Durham",PG,"United States, Canada"
+1607,7.8,175866.0,97.0,80.0,1 win & 4 nominations total,Chazz Palminteri,R,United States
+60304,6.1,224018.0,17.0,23.0,3 wins & 4 nominations total,"Tommy Wirkola, Jacob Grimm, Wilhelm Grimm",R,"Germany, United States"
+1771,6.9,945480.0,80.0,66.0,4 wins & 50 nominations total,"Christopher Markus, Stephen McFeely, Joe Simon",PG-13,United States
+1893,6.5,900958.0,54.0,51.0,Nominated for 3 Oscars. 28 wins & 71 nominations total,George Lucas,PG,"United States, United Kingdom"
+565,7.1,392169.0,72.0,57.0,14 wins & 12 nominations total,"Ehren Kruger, Kôji Suzuki, Hiroshi Takahashi",PG-13,"United States, Japan"
+11770,7.3,94426.0,89.0,68.0,12 wins & 19 nominations total,"Stephen Chow, Kan-Cheung Tsang, Min-Hun Fung",PG-13,"Hong Kong, China"
+137,8.0,724276.0,94.0,72.0,Won 1 BAFTA Award7 wins & 17 nominations total,"Danny Rubin, Harold Ramis",PG,United States
+345938,6.3,41656.0,20.0,32.0,3 wins & 2 nominations total,"John Fusco, Andrew Lanham, Destin Daniel Cretton",PG-13,"United States, Canada, Hong Kong"
+493922,7.3,432838.0,90.0,87.0,52 wins & 112 nominations total,Ari Aster,R,United States
+646389,6.5,98989.0,78.0,62.0,N/A,"Charles Cumming, J.P. Davis",R,"United Kingdom, United States, Puerto Rico"
+616,7.8,494296.0,65.0,55.0,Nominated for 4 Oscars. 20 wins & 67 nominations total,"John Logan, Edward Zwick, Marshall Herskovitz",R,"United States, New Zealand, Japan"
+161,7.7,655972.0,83.0,74.0,4 wins & 20 nominations total,"George Clayton Johnson, Jack Golden Russell, Harry Brown",PG-13,United States
+345887,6.7,219726.0,52.0,50.0,1 win & 4 nominations total,"Richard Wenk, Michael Sloan, Richard Lindheim",R,United States
+563,7.3,338275.0,72.0,52.0,Nominated for 1 Oscar. 3 wins & 16 nominations total,"Edward Neumeier, Robert A. Heinlein",R,United States
+245891,7.5,798813.0,86.0,68.0,5 wins & 10 nominations total,Derek Kolstad,R,United States
+526896,5.1,166830.0,15.0,35.0,3 wins & 4 nominations total,"Matt Sazama, Burk Sharpless",PG-13,United States
+601796,6.3,6532.0,87.0,54.0,2 wins & 8 nominations total,Dong-hoon Choi,Not Rated,South Korea
+35,7.3,359193.0,87.0,80.0,Won 1 BAFTA Award5 wins & 34 nominations total,"James L. Brooks, Matt Groening, Al Jean",PG-13,United States
+373571,6.0,222616.0,42.0,48.0,5 wins & 14 nominations total,"Michael Dougherty, Zach Shields, Max Borenstein",PG-13,"United States, Japan, China"
+590995,4.6,17888.0,47.0,54.0,1 win & 2 nominations total,"Zoe Lister-Jones, Peter Filardi",PG-13,United States
+72559,5.7,191010.0,29.0,41.0,1 win & 12 nominations total,"Rhett Reese, Paul Wernick",PG-13,"United States, Canada"
+9880,6.4,175009.0,49.0,52.0,3 wins & 11 nominations total,"Meg Cabot, Gina Wendkos",G,"United States, United Kingdom"
+5915,8.0,686109.0,83.0,73.0,Nominated for 2 Oscars. 23 wins & 106 nominations total,"Sean Penn, Jon Krakauer",R,United States
+19913,7.7,43.0,,,N/A,N/A,Not Rated,USA
+700391,5.4,102425.0,35.0,40.0,1 nomination total,"Scott Beck, Bryan Woods",PG-13,"United States, Ireland, Australia, Canada"
+11423,8.1,247205.0,,82.0,33 wins & 10 nominations total,"Bong Joon Ho, Kwang-rim Kim, Sung-bo Shim",Not Rated,South Korea
+307081,7.3,269542.0,60.0,57.0,11 nominations total,Kurt Sutter,R,"United States, China, Hong Kong"
+49529,6.6,294974.0,52.0,51.0,2 wins & 8 nominations total,"Andrew Stanton, Mark Andrews, Michael Chabon",PG-13,United States
+506680,5.8,3581.0,40.0,39.0,5 nominations total,"Richard Friedenberg, Ken Hixon, Laura Hillenbrand",PG-13,United States
+695721,6.7,165993.0,64.0,54.0,7 wins & 27 nominations total,"Michael Lesslie, Michael Arndt, Suzanne Collins",PG-13,"United States, Canada"
+1995,5.8,226808.0,20.0,33.0,4 wins & 21 nominations total,"Sara B. Cooper, Mike Werb, Michael Colleary",PG-13,"United States, United Kingdom, Japan, Germany"
+666277,7.8,159850.0,95.0,94.0,Nominated for 2 Oscars. 83 wins & 239 nominations total,Celine Song,PG-13,"United States, South Korea"
+370172,7.3,471236.0,83.0,68.0,Won 1 Oscar. 50 wins & 75 nominations total,"Neal Purvis, Robert Wade, Cary Joji Fukunaga",PG-13,"United Kingdom, United States"
+5175,6.7,253444.0,50.0,48.0,10 wins & 22 nominations total,"Ross LaManna, Jeff Nathanson",PG-13,"United States, Hong Kong"
+19404,8.0,81870.0,100.0,,15 wins & 4 nominations total,"Aditya Chopra, Javed Siddiqui",Not Rated,India
+530385,7.1,457462.0,83.0,72.0,27 wins & 74 nominations total,Ari Aster,R,"United States, Sweden"
+974576,7.4,218090.0,93.0,79.0,Won 1 Oscar. 87 wins & 319 nominations total,"Peter Straughan, Robert Harris",PG,"United Kingdom, United States"
+820446,7.4,35321.0,86.0,63.0,4 nominations total,Julian Fellowes,PG,"United Kingdom, United States"
+8872,7.0,178076.0,79.0,57.0,4 wins & 5 nominations total,"Mike Myers, Bonnie Turner, Terry Turner",PG-13,United States
+345940,5.7,222722.0,47.0,46.0,5 wins & 6 nominations total,"Dean Georgaris, Jon Hoeber, Erich Hoeber",PG-13,"United States, China"
+365620,6.4,64242.0,73.0,73.0,Nominated for 1 BAFTA Award7 wins & 42 nominations total,"Troy Kennedy Martin, Brock Yates",R,"United States, United Kingdom, Italy, Saudi Arabia"
+440,4.6,142840.0,12.0,29.0,5 nominations total,"Shane Salerno, Dan O'Bannon, Ronald Shusett",R,United States
+268896,5.6,133845.0,42.0,44.0,6 nominations total,"Steven S. DeKnight, Emily Carmichael, Kira Snyder",PG-13,"United Kingdom, China, Japan, United States, Mexico, Australia"
+190859,7.3,556779.0,71.0,73.0,Won 1 Oscar. 24 wins & 43 nominations total,"Jason Hall, Chris Kyle, Scott McEwen",R,United States
+41513,5.4,101771.0,21.0,30.0,2 wins & 8 nominations total,"J. David Stem, David N. Weiss, Jay Scherick",PG,"United States, Belgium, Canada"
+131634,6.6,400954.0,70.0,65.0,15 wins & 34 nominations total,"Peter Craig, Danny Strong, Suzanne Collins",PG-13,"United States, Germany, Canada, France"
+254470,6.4,176393.0,66.0,63.0,10 wins & 17 nominations total,"Kay Cannon, Mickey Rapkin",PG-13,United States
+614930,7.2,75235.0,95.0,74.0,1 win & 75 nominations total,"Seth Rogen, Evan Goldberg, Jeff Rowe",PG,"United States, Japan, Canada"
+15512,6.3,3520.0,,,1 win & 1 nomination total,"Adam F. Goldberg, Conrad Vernon, Rob Letterman",TV-PG,United States
+37135,7.3,262434.0,90.0,80.0,Won 1 Oscar. 11 wins & 23 nominations total,"Edgar Rice Burroughs, Tab Murphy, Bob Tzudiker",G,"United States, Japan"
+339846,5.5,213683.0,18.0,37.0,5 wins & 11 nominations total,"Michael Berk, Douglas Schwartz, Gregory J. Bonann",R,"United Kingdom, China, United States"
+634492,4.1,106375.0,10.0,26.0,6 wins & 7 nominations total,"Matt Sazama, Burk Sharpless, Claire Parker",PG-13,"United States, Mexico, Canada"
+46529,6.1,250869.0,32.0,36.0,1 win & 1 nomination total,"Alfred Gough, Miles Millar, Marti Noxon",PG-13,"United States, India"
+24150,4.8,62238.0,25.0,35.0,1 win & 1 nomination total,Rob Zombie,R,United States
+62835,6.4,112653.0,29.0,45.0,2 wins & 5 nominations total,"Luc Besson, Robert Mark Kamen",PG-13,"France, United States, United Kingdom, Mexico, Canada"
+979,7.3,158254.0,59.0,51.0,3 wins & 13 nominations total,Gaspar Noé,Not Rated,France
+399579,7.3,315714.0,61.0,53.0,10 wins & 25 nominations total,"James Cameron, Laeta Kalogridis, Yukito Kishiro",PG-13,"Japan, Canada, United States"
+11836,7.2,109245.0,68.0,67.0,1 win & 10 nominations total,"Derek Drymon, Tim Hill, Stephen Hillenburg",PG,"United States, Australia, South Korea"
+9703,5.4,37509.0,15.0,37.0,2 nominations total,"Jez Butterworth, Tom Butterworth, Carlo Carlei",PG-13,"United Kingdom, France, Slovakia, Tunisia, Italy, Bulgaria, United States"
+57800,6.5,237251.0,37.0,49.0,2 wins & 11 nominations total,"Michael Berg, Jason Fuchs, Lori Forte",PG,"United States, United Kingdom, Canada"
+608,6.2,421618.0,38.0,49.0,4 wins & 16 nominations total,"Lowell Cunningham, Robert Gordon, Barry Fanaro",PG-13,United States
+644,7.2,333739.0,76.0,65.0,Nominated for 2 Oscars. 18 wins & 71 nominations total,"Brian Aldiss, Ian Watson, Steven Spielberg",PG-13,"United States, United Kingdom"
+71676,4.3,131213.0,18.0,34.0,4 nominations total,"Scott M. Gimple, Seth Hoffman, David S. Goyer",PG-13,"United Arab Emirates, United States"
+223702,6.1,221851.0,82.0,66.0,1 win & 26 nominations total,"Kyle Hunter, Ariel Shaffir, Seth Rogen",R,"Canada, United States"
+435,6.5,500357.0,45.0,47.0,Won 1 BAFTA Award6 wins & 12 nominations total,"Roland Emmerich, Jeffrey Nachmanoff",PG-13,United States
+602223,5.4,47028.0,49.0,53.0,1 win total,James DeMonaco,R,"China, United States"
+459151,5.9,25274.0,46.0,39.0,7 nominations total,"Michael McCullers, Tom McGrath, Marla Frazee",PG,United States
+337170,7.1,223772.0,85.0,65.0,3 nominations total,Gary Spinelli,R,United States
+76757,5.3,199476.0,27.0,40.0,4 wins & 16 nominations total,"Lilly Wachowski, Lana Wachowski",PG-13,"United States, Australia"
+10707,7.3,93653.0,91.0,82.0,Nominated for 1 Oscar. 23 wins & 49 nominations total,Noah Baumbach,R,United States
+9476,7.0,213272.0,59.0,56.0,4 wins & 13 nominations total,Brian Helgeland,PG-13,United States
+9315,6.3,176590.0,36.0,53.0,2 wins & 6 nominations total,"Peter A. Dowling, Billy Ray",PG-13,United States
+137106,7.7,405835.0,96.0,83.0,Nominated for 1 Oscar. 72 wins & 67 nominations total,"Phil Lord, Christopher Miller, Dan Hageman",PG,"United States, Denmark, Australia, Norway"
+11351,5.7,74562.0,25.0,36.0,6 nominations total,Victor Salva,R,United States
+817,6.7,258479.0,53.0,59.0,Nominated for 1 Oscar. 18 wins & 31 nominations total,"Mike Myers, Michael McCullers",PG-13,United States
+276907,6.9,217324.0,60.0,55.0,6 wins & 12 nominations total,"Brian Helgeland, John Pearson",R,"United Kingdom, France, United States"
+9792,6.4,191132.0,51.0,52.0,2 wins & 13 nominations total,"Wes Craven, Alexandre Aja, Grégory Levasseur",R,"United States, France, Morocco"
+8467,7.3,432617.0,67.0,41.0,5 wins & 3 nominations total,"Peter Farrelly, Bennett Yellin, Bobby Farrelly",PG-13,United States
+87101,6.3,302545.0,26.0,38.0,9 nominations total,"Laeta Kalogridis, Patrick Lussier, James Cameron",PG-13,"United States, Canada"
+120467,8.1,938889.0,92.0,88.0,Won 4 Oscars. 135 wins & 227 nominations total,"Stefan Zweig, Wes Anderson, Hugo Guinness",R,"United States, Germany"
+10439,6.9,165642.0,41.0,43.0,2 wins & 11 nominations total,"David Kirschner, Mick Garris, Neil Cuthbert",PG,United States
+598,8.6,844022.0,91.0,79.0,Nominated for 4 Oscars. 75 wins & 50 nominations total,"Bráulio Mantovani, Paulo Lins",R,"Brazil, France"
+509,7.2,371379.0,84.0,68.0,Won 1 BAFTA Award11 wins & 17 nominations total,Richard Curtis,PG-13,"United Kingdom, United States"
+7518,6.7,198486.0,75.0,67.0,7 wins & 26 nominations total,"Len Blum, Lorne Cameron, David Hoselton",PG,United States
+232672,6.5,154097.0,16.0,31.0,1 win & 10 nominations total,"Ivan Menchell, Clare Sera",PG-13,United States
+1427,7.5,273990.0,59.0,56.0,15 wins & 20 nominations total,"Andrew Birkin, Bernd Eichinger, Tom Tykwer",R,"Germany, France, Spain, United States, Belgium"
+324668,6.6,252354.0,55.0,58.0,3 wins & 20 nominations total,"Paul Greengrass, Christopher Rouse, Robert Ludlum",PG-13,"United States, China, Spain, Japan, Iceland, Germany, Italy"
+438674,,,,,N/A,N/A,N/A,USA
+869,5.7,238729.0,43.0,50.0,Nominated for 2 BAFTA 11 wins & 32 nominations total,"Pierre Boulle, William Broyles Jr., Lawrence Konner",PG-13,United States
+6145,7.2,229983.0,72.0,68.0,1 win & 2 nominations total,"Daniel Pyne, Glenn Gers",R,"Germany, United States"
+34544,6.7,274100.0,48.0,47.0,2 wins & 4 nominations total,"Joe Carnahan, Brian Bloom, Skip Woods",PG-13,"United States, United Kingdom"
+974635,,,,,N/A,N/A,N/A,N/A
+293167,6.7,366550.0,75.0,62.0,Nominated for 1 Oscar. 1 win & 22 nominations total,"Dan Gilroy, Max Borenstein, Derek Connolly",PG-13,"United States, China, Vietnam, Canada, Germany, United Kingdom, Singapore, India, Australia"
+20504,6.8,354627.0,46.0,53.0,3 wins & 16 nominations total,Gary Whitta,R,United States
+201085,6.5,162346.0,72.0,66.0,7 wins & 44 nominations total,"Guillermo del Toro, Matthew Robbins",R,"United States, Mexico, Canada"
+336843,6.3,181539.0,43.0,50.0,7 nominations total,"T.S. Nowlin, James Dashner",PG-13,United States
+812,8.0,490592.0,96.0,86.0,Won 2 Oscars. 35 wins & 22 nominations total,"Ron Clements, John Musker, Ted Elliott",G,United States
+49519,7.1,245602.0,71.0,55.0,Nominated for 1 Oscar. 5 wins & 46 nominations total,"Kirk DeMicco, Chris Sanders, John Cleese",PG,United States
+947891,7.0,43727.0,90.0,74.0,9 wins & 36 nominations total,Megan Park,R,"United Kingdom, Canada, United States"
+481084,5.8,47899.0,46.0,46.0,4 wins & 6 nominations total,"Matt Lieberman, Erica Rivinoja, Conrad Vernon",PG,"Canada, United States, United Kingdom, Vietnam"
+9655,6.4,186946.0,44.0,45.0,2 wins & 5 nominations total,"Ewan Leslie, Karen McCullah, Kirsten Smith",PG-13,"United States, Canada"
+7446,7.1,476779.0,82.0,71.0,Nominated for 1 Oscar. 10 wins & 47 nominations total,"Justin Theroux, Ben Stiller, Etan Cohen",R,"United Kingdom, Germany, United States"
+587792,7.4,202104.0,94.0,83.0,15 wins & 43 nominations total,"Andy Siara, Max Barbakow",R,"United States, Hong Kong"
+385128,5.2,174376.0,59.0,58.0,2 wins & 13 nominations total,"Daniel Casey, Justin Lin, Alfredo Botello",PG-13,"Japan, United States, Georgia, United Kingdom"
+122906,7.8,419148.0,71.0,55.0,3 wins & 9 nominations total,Richard Curtis,R,"United Kingdom, United States"
+59859,6.5,296306.0,33.0,41.0,1 win & 9 nominations total,"Jeff Wadlow, Mark Millar, John Romita Jr.",R,"United Kingdom, Japan, United States"
+6477,5.3,100343.0,28.0,39.0,4 wins & 2 nominations total,"Jon Vitti, Will McRobb, Chris Viscardi",PG,United States
+302946,7.3,381818.0,53.0,51.0,3 wins & 5 nominations total,Bill Dubuque,R,United States
+10386,8.1,250038.0,96.0,85.0,Won 1 BAFTA Award20 wins & 18 nominations total,"Tim McCanlies, Brad Bird, Ted Hughes",PG,"United States, Czech Republic, United Kingdom"
+432602,6.6,8470.0,80.0,68.0,Nominated for 1 BAFTA Award6 wins & 16 nominations total,Al Gore,PG,United States
+615,7.3,264646.0,49.0,47.0,Nominated for 3 Oscars. 30 wins & 24 nominations total,"Benedict Fitzgerald, Mel Gibson",R,United States
+11679,4.5,75636.0,17.0,37.0,1 nomination total,"Rich Wilkes, Simon Kinberg",PG-13,United States
+374720,7.8,785017.0,92.0,94.0,Won 3 Oscars. 68 wins & 236 nominations total,Christopher Nolan,PG-13,"United Kingdom, Netherlands, France, United States"
+41446,6.2,182914.0,60.0,52.0,1 win & 6 nominations total,Kevin Williamson,R,United States
+417417,7.6,358.0,93.0,,2 wins & 1 nomination,N/A,PG,United States
+49049,7.1,306807.0,80.0,60.0,2 wins & 14 nominations total,"John Wagner, Carlos Ezquerra, Alex Garland",R,"United Kingdom, South Africa, United States, India"
+529203,6.9,58520.0,76.0,56.0,31 nominations total,"Kevin Hageman, Dan Hageman, Paul Fisher",PG,"United States, Japan"
+1111873,6.5,102564.0,83.0,62.0,2 wins & 21 nominations total,"Stephen Shields, Guy Busick",R,"Ireland, Canada, United States"
+335787,6.3,288483.0,,45.0,3 nominations total,"Rafe Judkins, Art Marcum, Matt Holloway",PG-13,"Spain, United States"
+11005,7.8,171002.0,81.0,74.0,Nominated for 3 Oscars. 6 wins & 11 nominations total,"Oliver Sacks, Steven Zaillian",PG-13,United States
+8871,6.4,314870.0,49.0,46.0,Won 1 Oscar. 18 wins & 37 nominations total,"Dr. Seuss, Jeffrey Price, Peter S. Seaman",PG,"Germany, United States"
+34851,6.4,255022.0,65.0,51.0,2 wins & 4 nominations total,"Alex Litvak, Michael Finch, Jim Thomas",R,United States
+693,6.4,297208.0,38.0,41.0,2 wins & 7 nominations total,"Jim Herzfeld, Marc Hyman, John Hamburg",PG-13,United States
+415,3.8,277372.0,11.0,29.0,10 wins & 22 nominations total,"Bob Kane, Akiva Goldsman",PG-13,"United States, United Kingdom"
+1895,7.6,897741.0,79.0,68.0,Nominated for 1 Oscar. 29 wins & 64 nominations total,George Lucas,PG-13,"United States, Italy, Switzerland, Thailand, United Kingdom"
+588,6.5,254565.0,34.0,31.0,8 nominations total,Roger Avary,R,"Canada, France, Japan, United States"
+1635,6.8,335463.0,,50.0,1 win & 6 nominations total,"Caspian Tredwell-Owen, Alex Kurtzman, Roberto Orci",PG-13,United States
+534,6.5,387847.0,33.0,49.0,2 wins & 14 nominations total,"John Brancato, Michael Ferris",PG-13,United States
+338970,6.3,236314.0,52.0,48.0,8 nominations total,"Geneva Robertson-Dworet, Alastair Siddons, Evan Daugherty",PG-13,"United Kingdom, United States"
+105864,6.7,135719.0,76.0,66.0,9 wins & 41 nominations total,"Bob Peterson, Peter Sohn, Erik Benson",PG,"United States, Japan"
+101299,7.5,757019.0,90.0,76.0,22 wins & 68 nominations total,"Simon Beaufoy, Michael Arndt, Suzanne Collins",PG-13,United States
+79694,4.1,20965.0,3.0,18.0,1 nomination total,Todd Lincoln,PG-13,"United States, Germany"
+158852,6.4,196890.0,49.0,60.0,2 wins & 19 nominations total,"Damon Lindelof, Brad Bird, Jeff Jensen",PG,United States
+752,7.6,420.0,,,N/A,Richard Brehm,N/A,United States
+20662,6.6,292329.0,43.0,53.0,1 win & 14 nominations total,"Brian Helgeland, Ethan Reiff, Cyrus Voris",PG-13,"United Kingdom, United States"
+1103621,7.9,18271.0,98.0,74.0,7 wins & 16 nominations total,"Pat Boonnitipat, Thodsapon Thiptinnakorn",TV-PG,Thailand
+395991,7.6,85788.0,87.0,72.0,3 nominations total,"Sean Flynn, Ken Nolan, Eric Warren Singer",PG-13,United States
+1079091,6.3,92050.0,54.0,53.0,1 win & 5 nominations total,"Christy Hall, Colleen Hoover",PG-13,United States
+117263,6.5,302488.0,50.0,41.0,1 win & 5 nominations total,"Creighton Rothenberger, Katrin Benedikt",R,United States
+149871,8.0,59346.0,100.0,89.0,Nominated for 1 Oscar. 13 wins & 38 nominations total,"Isao Takahata, Riko Sakaguchi",PG,Japan
+2454,6.5,233863.0,66.0,62.0,4 wins & 21 nominations total,"Andrew Adamson, Christopher Markus, Stephen McFeely",PG,"United States, Poland, Slovenia, Czech Republic, United Kingdom, Australia, Germany, New Zealand"
+133805,5.8,152222.0,51.0,53.0,6 wins & 7 nominations total,"Lawrence D. Cohen, Roberto Aguirre-Sacasa, Stephen King",R,United States
+49524,5.6,147556.0,13.0,25.0,N/A,"Phil Hay, Matt Manfredi, David Dobkin",PG-13,United States
+10438,5.0,30698.0,23.0,,Nominated for 1 Oscar. 5 nominations total,"John Hughes, Amy Holden Jones, Len Blum",PG,United States
+1100099,7.0,61720.0,79.0,59.0,1 win & 4 nominations total,Nick Payne,R,"United Kingdom, France"
+1571,7.1,430314.0,82.0,69.0,3 wins & 16 nominations total,"John Carlin, Roderick Thorp, Mark Bomback",PG-13,"United States, United Kingdom"
+948549,6.6,59554.0,94.0,77.0,Nominated for 1 BAFTA Award5 wins & 49 nominations total,"Rose Glass, Weronika Tofilska",R,"United Kingdom, United States"
+921,8.0,205174.0,80.0,69.0,Nominated for 3 Oscars. 16 wins & 45 nominations total,"Cliff Hollingsworth, Akiva Goldsman",PG-13,United States
+578701,6.0,76904.0,63.0,59.0,1 nomination total,"Michael Koryta, Charles Leavitt, Taylor Sheridan",R,"Canada, United States"
+512195,6.3,345070.0,37.0,37.0,1 nomination total,Rawson Marshall Thurber,PG-13,"United States, United Kingdom, Singapore, Italy, Thailand, Canada"
+19994,5.5,164646.0,47.0,47.0,3 wins & 4 nominations total,Diablo Cody,R,"United States, Canada"
+8909,6.7,422913.0,71.0,64.0,Nominated for 2 Oscars. 4 wins & 28 nominations total,"Michael Brandt, Derek Haas, Chris Morgan",R,"United States, Germany, Russia"
+290859,6.2,206415.0,70.0,54.0,1 win & 12 nominations total,"David S. Goyer, Justin Rhodes, Billy Ray",R,"United States, Spain, Hungary, China"
+339877,7.8,66467.0,84.0,62.0,Nominated for 1 Oscar. 24 wins & 54 nominations total,"DK Welchman, Hugh Welchman, Jacek Dehnel",PG-13,"Poland, United Kingdom, United States, Switzerland, Netherlands"
+76163,6.6,330063.0,68.0,51.0,4 wins & 5 nominations total,"Richard Wenk, Sylvester Stallone, Ken Kaufman",R,"United States, Germany, China"
+10009,6.9,132501.0,38.0,48.0,Nominated for 1 Oscar. 2 wins & 22 nominations total,"Tab Murphy, Lorne Cameron, David Hoselton",G,"United States, Japan"
+558,7.5,759076.0,93.0,83.0,Won 1 Oscar. 25 wins & 60 nominations total,"Stan Lee, Steve Ditko, Alfred Gough",PG-13,United States
+11970,7.3,271712.0,83.0,74.0,Nominated for 1 Oscar. 9 wins & 16 nominations total,"Ron Clements, John Musker, Don McEnery",G,United States
+44833,5.8,264647.0,33.0,41.0,4 wins & 16 nominations total,"Jon Hoeber, Erich Hoeber",PG-13,"Japan, United States"
+360920,6.4,104836.0,60.0,51.0,2 wins & 18 nominations total,"Michael LeSieur, Tommy Swerdlow, Dr. Seuss",PG,United States
+1114513,6.8,119346.0,83.0,66.0,1 win & 5 nominations total,"James Watkins, Christian Tafdrup, Mads Tafdrup",R,"Croatia, Canada, United States"
+587,8.0,472874.0,76.0,58.0,Nominated for 1 Oscar. 69 nominations total,"Daniel Wallace, John August",PG-13,United States
+745,8.2,1108370.0,86.0,64.0,Nominated for 6 Oscars. 37 wins & 56 nominations total,M. Night Shyamalan,PG-13,United States
+22970,6.8,71.0,,,N/A,N/A,N/A,United States
+719221,4.8,33173.0,17.0,36.0,1 win total,"Spenser Cohen, Anna Halberg, Nicholas Adams",PG-13,"Serbia, United States"
+14001,6.1,106735.0,21.0,34.0,N/A,"Leigh Whannell, James Wan",R,"Canada, United States"
+1106739,7.0,112832.0,93.0,72.0,4 wins & 14 nominations total,Jonathan A. Abrams,PG-13,United States
+400155,6.3,95058.0,62.0,54.0,2 wins & 9 nominations total,"Genndy Tartakovsky, Michael McCullers",PG,"United States, South Korea"
+670292,6.7,189832.0,67.0,63.0,Nominated for 2 Oscars. 13 wins & 49 nominations total,"Gareth Edwards, Chris Weitz",PG-13,United States
+8688,6.1,90606.0,42.0,52.0,1 win & 4 nominations total,"Brian De Palma, David Koepp",R,"United States, Canada"
+315011,6.8,43178.0,87.0,66.0,13 wins & 10 nominations total,"Hideaki Anno, Ishirô Honda, Takeo Murata",PG-13,Japan
+8656,6.3,199379.0,45.0,40.0,5 wins & 14 nominations total,"Bruce Joel Rubin, Michael Tolkin",PG-13,United States
+37861,6.0,65717.0,70.0,61.0,4 wins & 9 nominations total,"Nicolas Winding Refn, Roy Jacobsen, Matthew Read",Not Rated,"Denmark, United Kingdom"
+9884,5.5,79897.0,19.0,33.0,N/A,"Ronald Roose, David Griffiths, Peter Griffiths",R,"United States, Mexico"
+19908,7.5,651802.0,89.0,73.0,10 wins & 29 nominations total,"Rhett Reese, Paul Wernick",R,United States
+858485,8.2,107859.0,83.0,,21 wins & 14 nominations total,"Manish Bhavan, Shanil Guru, Anirudh Mahesh",Not Rated,India
+823625,4.9,27169.0,12.0,27.0,1 win & 1 nomination total,"Nick May, Mark Williams, Brandon Reavis",PG-13,"United States, Australia, China"
+2502,7.7,503460.0,81.0,73.0,5 wins & 22 nominations total,"Robert Ludlum, Tony Gilroy",PG-13,"United States, Germany, India, Russia"
+3981,6.5,232782.0,54.0,47.0,5 wins & 9 nominations total,"Josh Goldsmith, Cathy Yuspa, Diane Drake",PG-13,United States
+117251,6.3,245385.0,52.0,52.0,3 wins & 9 nominations total,James Vanderbilt,PG-13,United States
+136799,6.4,97374.0,76.0,55.0,Nominated for 1 Oscar. 4 wins & 37 nominations total,"Jonathan Aibel, Glenn Berger, Erica Rivinoja",PG,"United States, India, United Kingdom, Germany"
+15602,6.7,30963.0,20.0,46.0,2 wins & 2 nominations total,Mark Steven Johnson,PG-13,United States
+11601,6.9,89780.0,69.0,67.0,3 wins & 5 nominations total,"Richard Matheson, David Koepp",R,United States
+453,8.2,1027740.0,74.0,72.0,Won 4 Oscars. 37 wins & 69 nominations total,"Akiva Goldsman, Sylvia Nasar",PG-13,United States
+7512,6.5,203854.0,71.0,66.0,1 nomination total,"Mike Judge, Etan Cohen",R,United States
+504172,7.0,162858.0,70.0,58.0,1 win & 10 nominations total,"Nick Schenk, Sam Dolnick",R,"United States, Canada"
+1487,6.9,362942.0,81.0,72.0,3 wins & 23 nominations total,"Guillermo del Toro, Peter Briggs, Mike Mignola",PG-13,United States
+460465,6.1,199225.0,55.0,44.0,4 wins & 9 nominations total,"Greg Russo, Dave Callaham, Oren Uziel",R,United States
+13179,6.8,12346.0,90.0,,N/A,"Jeffrey M. Howard (screenplay), Jeffrey M. Howard (story), Bradley Raymond (story), J.M. Barrie (characters)",G,USA
+68728,6.3,219135.0,56.0,44.0,6 wins & 31 nominations total,"Mitchell Kapner, David Lindsay-Abaire, L. Frank Baum",PG,United States
+1954,7.6,544979.0,34.0,30.0,1 win & 8 nominations total,"J. Mackye Gruber, Eric Bress",R,"United States, Canada"
+800158,6.7,215074.0,85.0,73.0,2 wins & 46 nominations total,"Alexis Nolent, Luc Jacamon, Andrew Kevin Walker",R,United States
+637,8.6,785025.0,81.0,58.0,Won 3 Oscars. 72 wins & 52 nominations total,"Vincenzo Cerami, Roberto Benigni",PG-13,Italy
+399360,6.6,70207.0,80.0,63.0,2 wins total,"Daniele Wiedenhaupt, Albert Hughes",PG-13,"United States, Canada, China"
+22164,6.7,37392.0,,,N/A,Michael Andrews,R,United States
+709631,5.9,42194.0,75.0,50.0,1 nomination total,Chris Thomas Devlin,R,"United States, Bulgaria"
+14869,5.7,219121.0,33.0,32.0,3 wins & 16 nominations total,"Stuart Beattie, David Elliot, Paul Lovett",PG-13,"United States, Czech Republic, France"
+406759,5.2,107821.0,35.0,41.0,2 nominations total,"Roland Emmerich, Harald Kloser, Spenser Cohen",PG-13,"United States, China, United Kingdom, Canada, Hong Kong"
+15092,6.1,164608.0,64.0,41.0,1 win & 2 nominations total,"Mark Neveldine, Brian Taylor",R,United States
+364689,6.7,68792.0,70.0,58.0,Nominated for 1 Oscar. 2 wins & 22 nominations total,"Robert L. Baird, Tim Federle, Brad Copeland",PG,"United States, United Kingdom, Canada"
+251,7.1,249282.0,74.0,52.0,Won 2 Oscars. 18 wins & 24 nominations total,Bruce Joel Rubin,PG-13,United States
+7555,7.0,252376.0,38.0,46.0,1 win & 1 nomination total,"Art Monterastelli, Sylvester Stallone, David Morrell",R,"Germany, United States"
+481848,6.7,61774.0,63.0,48.0,1 win & 8 nominations total,"Michael Green, Jack London",PG,"United States, Canada"
+206647,6.8,484429.0,63.0,60.0,Won 1 Oscar. 8 wins & 37 nominations total,"John Logan, Neal Purvis, Robert Wade",PG-13,"United Kingdom, United States, Morocco, Italy, Austria, Canada, Mexico"
+13888,5.2,22148.0,0.0,28.0,6 nominations total,"Henry De Vere Stacpoole, Leslie Stevens",PG-13,United States
+109439,5.8,353269.0,21.0,30.0,2 wins & 7 nominations total,"Todd Phillips, Craig Mazin, Jon Lucas",R,United States
+1010600,4.6,24124.0,21.0,43.0,N/A,"Alan R. Cohen, Alan Freedland, Bryan Bertino",R,"United States, United Kingdom, Slovenia, Slovakia, Switzerland, Spain"
+2770,6.5,280801.0,51.0,43.0,8 wins & 7 nominations total,"Adam Herz, David H. Steinberg",R,United States
+676,6.3,363683.0,24.0,44.0,Won 1 Oscar. 14 wins & 51 nominations total,Randall Wallace,PG-13,United States
+949423,7.0,147876.0,93.0,76.0,19 wins & 63 nominations total,"Ti West, Mia Goth",R,"New Zealand, United States"
+8358,7.8,673045.0,88.0,74.0,Nominated for 2 Oscars. 15 wins & 36 nominations total,William Broyles Jr.,PG-13,United States
+57431,5.6,73765.0,22.0,39.0,2 nominations total,"Brian Gatewood, Alessandro Tanaka",R,United States
+5503,7.8,336949.0,96.0,87.0,Won 1 Oscar. 13 wins & 37 nominations total,"Jeb Stuart, David Twohy, Roy Huggins",PG-13,United States
+215,6.6,284501.0,39.0,40.0,4 wins & 11 nominations total,"Leigh Whannell, Darren Lynn Bousman",R,"Canada, United States"
+451915,7.4,117984.0,68.0,62.0,Nominated for 1 BAFTA Award10 wins & 31 nominations total,"Luke Davies, Felix van Groeningen, David Sheff",R,United States
+1824,6.8,404425.0,45.0,48.0,6 wins & 10 nominations total,George Wing,PG-13,United States
+291805,6.4,344529.0,34.0,46.0,5 nominations total,"Ed Solomon, Peter Chiarelli, Boaz Yakin",PG-13,"United States, Hong Kong"
+9645,5.6,114180.0,14.0,28.0,1 nomination total,"Mark Hanlon, John Pogue",R,"United States, Australia"
+9335,6.3,222974.0,,56.0,N/A,"Luc Besson, Robert Mark Kamen",R,"France, Germany, United States"
+7485,7.1,369855.0,47.0,53.0,2 nominations total,"Stephen Hunter, Jonathan Lemkin",R,United States
+115,8.1,895954.0,80.0,71.0,5 wins & 18 nominations total,"Ethan Coen, Joel Coen",R,"United Kingdom, United States"
+388,7.6,417398.0,86.0,76.0,5 wins & 12 nominations total,Russell Gewirtz,R,United States
+13600,6.4,71066.0,53.0,58.0,6 nominations total,"Caroline Thompson, Jeanne Duprau",PG,United States
+10837,6.8,29750.0,67.0,,1 nomination total,"Alan Burnett, Carl Barks, Ted Osborne",G,"United States, France, United Kingdom"
+36647,7.1,320824.0,59.0,47.0,5 wins & 11 nominations total,David S. Goyer,R,United States
+14,8.3,1258807.0,87.0,84.0,Won 5 Oscars. 112 wins & 102 nominations total,Alan Ball,R,United States
+281338,7.4,318910.0,94.0,82.0,Nominated for 1 Oscar. 28 wins & 65 nominations total,"Mark Bomback, Matt Reeves, Rick Jaffa",PG-13,"United States, Canada"
+624860,5.6,295469.0,63.0,63.0,Nominated for 1 BAFTA Award6 wins & 36 nominations total,"Lana Wachowski, David Mitchell, Aleksandar Hemon",R,"United States, Australia"
+451048,6.6,223685.0,62.0,50.0,6 wins & 11 nominations total,"Michael Green, Glenn Ficarra, John Requa",PG-13,"United States, Hungary, Canada"
+10555,6.0,208430.0,35.0,48.0,Nominated for 1 Oscar. 3 wins & 16 nominations total,"Michael J. Wilson, Rob Letterman, Scott Aukerman",PG,"United States, France"
+9802,7.4,372880.0,67.0,58.0,Nominated for 1 Oscar. 9 wins & 10 nominations total,"David Weisberg, Douglas Cook, Mark Rosner",R,United States
+414,5.4,277086.0,41.0,54.0,Nominated for 3 Oscars. 10 wins & 26 nominations total,"Bob Kane, Lee Batchler, Janet Scott Batchler",PG-13,"United States, United Kingdom"
+1637,7.3,413128.0,95.0,78.0,Won 2 Oscars. 20 wins & 20 nominations total,Graham Yost,R,United States
+1160018,7.4,3516.0,,,N/A,Nick Stevens,N/A,United Kingdom
+11362,7.7,156352.0,74.0,61.0,N/A,"Alexandre Dumas, Jay Wolpert",PG-13,"Ireland, Switzerland, United Kingdom, United States"
+364,7.1,343366.0,82.0,68.0,Nominated for 2 Oscars. 2 wins & 29 nominations total,"Bob Kane, Daniel Waters, Sam Hamm",PG-13,"United States, United Kingdom"
+445651,5.7,39140.0,15.0,39.0,1 win & 3 nominations total,"Chad Hodge, Alexandra Bracken",PG-13,United States
+63311,7.6,174540.0,81.0,70.0,Won 1 BAFTA Award28 wins & 69 nominations total,"Pedro Almodóvar, Agustín Almodóvar, Thierry Jonquet",R,"Spain, United States"
+205775,6.9,156142.0,42.0,47.0,1 win & 6 nominations total,"Charles Leavitt, Rick Jaffa, Amanda Silver",PG-13,"United States, Australia, Spain"
+80278,7.5,257301.0,81.0,73.0,Nominated for 1 Oscar. 28 wins & 70 nominations total,"Sergio G. Sánchez, María Belón",PG-13,"Spain, Thailand, United States"
+848538,5.6,95641.0,33.0,35.0,7 nominations total,Jason Fuchs,PG-13,"United Kingdom, United States"
+57214,6.7,249857.0,29.0,46.0,5 nominations total,"Matt Drake, Michael Bacall",R,United States
+744276,4.7,14177.0,0.0,,2 wins & 3 nominations total,"Anna Todd, Sharon Soboil",R,United States
+2100,6.9,88214.0,52.0,43.0,1 win & 4 nominations total,"David Scarpa, Graham Yost",R,United States
+13225,6.6,36113.0,67.0,67.0,3 wins & 1 nomination total,"Jim Cox, Diana Young",G,"Australia, United States, South Korea, Taiwan, United Kingdom, France, Canada, Thailand, Denmark"
+72105,6.9,688837.0,69.0,62.0,Nominated for 1 Oscar. 13 wins & 28 nominations total,"Seth MacFarlane, Alec Sulkin, Wellesley Wild",R,United States
+6878,7.0,54161.0,87.0,,1 nomination total,"Sheila Burnford, Caroline Thompson, Linda Woolverton",G,United States
+10909,6.7,60970.0,59.0,49.0,4 wins & 4 nominations total,"Stephen Levy, Tim Metcalfe",R,United States
+10530,6.7,212648.0,58.0,59.0,Won 2 Oscars. 16 wins & 7 nominations total,"Carl Binder, Susannah Grant, Philip LaZebnik",G,United States
+967847,6.1,96794.0,42.0,46.0,8 nominations total,"Gil Kenan, Jason Reitman, Ivan Reitman",PG-13,"United States, Canada, United Kingdom"
+442249,5.2,76076.0,55.0,54.0,1 nomination total,James DeMonaco,R,"Japan, United States"
+923667,6.9,10938.0,90.0,77.0,20 wins & 27 nominations total,"Kin-Yee Au, Tai-Lee Chan, Li Jun",R,"Hong Kong, China"
+2675,6.8,403491.0,76.0,59.0,3 wins & 34 nominations total,M. Night Shyamalan,PG-13,United States
+640146,6.0,258241.0,46.0,48.0,14 nominations total,"Jeff Loveness, Stan Lee, Larry Lieber",PG-13,"United States, Australia, Canada"
+2274,4.8,15977.0,,38.0,N/A,"John Hodge, Susan Cooper",PG,United States
+278924,5.7,98930.0,30.0,38.0,1 nomination total,"Lewis John Carlino, Philip Shelby, Tony Mosher",R,"United States, France, Bulgaria, Germany"
+747,7.9,625789.0,92.0,76.0,Nominated for 3 BAFTA 14 wins & 20 nominations total,"Simon Pegg, Edgar Wright",R,"United Kingdom, France, United States"
+393,8.0,845685.0,84.0,83.0,23 wins & 84 nominations total,"Quentin Tarantino, Uma Thurman",R,United States
+10431,6.2,100162.0,,36.0,1 nomination total,"Lee Anthony Smith, Gregory J. Bradley",R,"Canada, United States"
+278927,7.3,301491.0,94.0,77.0,Won 1 Oscar. 33 wins & 56 nominations total,"Justin Marks, Rudyard Kipling",PG,"United Kingdom, United States, New Zealand, France, Canada, India"
+861,7.5,371849.0,81.0,60.0,Nominated for 2 Oscars. 7 wins & 16 nominations total,"Philip K. Dick, Ronald Shusett, Dan O'Bannon",R,"United States, Mexico"
+27582,6.5,179832.0,54.0,49.0,1 nomination total,"Richard Wenk, Lewis John Carlino",R,"United States, Germany"
+9360,4.9,118333.0,41.0,37.0,6 wins & 11 nominations total,"Hans Bauer, Jim Cash, Jack Epps Jr.",PG-13,"United States, Brazil"
+8488,6.6,343989.0,68.0,58.0,4 wins & 24 nominations total,Kevin Bisch,PG-13,United States
+153,7.7,514555.0,95.0,91.0,Won 1 Oscar. 97 wins & 133 nominations total,Sofia Coppola,R,"United States, Japan"
+262504,5.7,142696.0,11.0,33.0,3 wins & 12 nominations total,"Noah Oppenheim, Adam Cooper, Bill Collage",PG-13,United States
+7191,7.0,436205.0,78.0,64.0,5 wins & 34 nominations total,Drew Goddard,PG-13,United States
+476669,6.3,190005.0,41.0,44.0,1 win & 4 nominations total,"Matthew Vaughn, Karl Gajdusek, Mark Millar",R,"United Kingdom, United States"
+95,6.7,470671.0,43.0,42.0,Nominated for 4 Oscars. 15 wins & 41 nominations total,"Jonathan Hensleigh, J.J. Abrams, Tony Gilroy",PG-13,United States
+623135,6.2,3181.0,,,3 nominations total,Cheol-Hong Jeon,N/A,South Korea
+430231,6.5,54147.0,91.0,80.0,5 wins & 8 nominations total,Justin Benson,Not Rated,United States
+379149,7.0,129059.0,66.0,55.0,1 nomination total,"David Marconi, Stephen Leather",R,"United Kingdom, China, United States, India, Switzerland"
+11619,6.6,146454.0,72.0,74.0,Nominated for 1 BAFTA Award7 wins & 15 nominations total,"Dick Clement, Ian La Frenais, Christopher Lloyd",PG,"United Kingdom, United States"
+884605,6.3,203832.0,71.0,59.0,1 win & 10 nominations total,"Gene Stupnitsky, John Phillips",R,United States
+2034,7.8,502102.0,74.0,71.0,Won 1 Oscar. 18 wins & 23 nominations total,David Ayer,R,United States
+1991,7.0,327417.0,67.0,,8 nominations total,Quentin Tarantino,R,United States
+1008903,4.5,2447.0,,,N/A,"Paul Lalonde, Jessica Parker, John Patus",Not Rated,"Canada, United Kingdom"
+9522,7.0,389845.0,75.0,64.0,11 wins & 11 nominations total,"Steve Faber, Bob Fisher",R,United States
+50646,7.4,599045.0,79.0,68.0,5 wins & 23 nominations total,Dan Fogelman,PG-13,United States
+974453,5.2,9348.0,56.0,51.0,N/A,Tony Gayton,R,United States
+146,7.9,290075.0,98.0,94.0,Won 4 Oscars. 101 wins & 132 nominations total,"Hui-Ling Wang, James Schamus, Kuo Jung Tsai",PG-13,"China, Taiwan, Hong Kong, United States"
+171274,6.6,115436.0,73.0,81.0,Nominated for 2 Oscars. 15 wins & 99 nominations total,"Paul Thomas Anderson, Thomas Pynchon",R,United States
+1026436,5.2,24681.0,,41.0,N/A,Jade Halley Bartlett,R,United States
+11470,4.5,64767.0,20.0,25.0,1 nomination total,"Todd Farmer, Victor Miller",R,"Canada, United States"
+2567,7.5,397771.0,86.0,77.0,Won 5 Oscars. 89 wins & 131 nominations total,John Logan,PG-13,"United States, Germany"
+479718,7.2,15601.0,91.0,,12 wins & 13 nominations total,Yunsung Kang,Not Rated,South Korea
+1029955,6.5,63470.0,71.0,64.0,3 wins & 8 nominations total,"Yorgos Lanthimos, Efthimis Filippou",R,"Ireland, United Kingdom, United States, Greece"
+9316,7.1,80083.0,85.0,69.0,2 wins & 5 nominations total,"Panna Rittikrai, Prachya Pinkaew, Suphachai Sittiaumponpan",R,Thailand
+45094,7.2,47536.0,67.0,61.0,9 wins & 10 nominations total,Pamela Gray,R,"Switzerland, United Kingdom, United States"
+194,8.3,823687.0,90.0,70.0,Nominated for 5 Oscars. 59 wins & 74 nominations total,"Guillaume Laurant, Jean-Pierre Jeunet",R,"France, Germany"
+2118,8.2,646008.0,99.0,91.0,Won 2 Oscars. 91 wins & 86 nominations total,"James Ellroy, Brian Helgeland, Curtis Hanson",R,United States
+57165,5.7,200944.0,26.0,37.0,2 wins & 3 nominations total,"Dan Mazeau, David Leslie Johnson-McGoldrick, Greg Berlanti",PG-13,"United States, Spain"
+154400,7.0,166265.0,88.0,69.0,4 wins & 5 nominations total,Dennis Lehane,R,United States
+7299,7.3,357577.0,39.0,33.0,2 nominations total,Kurt Wimmer,R,United States
+437342,6.5,67302.0,83.0,65.0,5 wins & 20 nominations total,"Tim Smith, Arkasha Stevenson, Keith Thomas",R,"United States, Italy, Serbia, Canada"
+944,6.6,177572.0,52.0,39.0,4 wins & 11 nominations total,"Shane Black, Jonathan Lemkin, Alfred Gough",R,United States
+1830,7.6,350984.0,62.0,62.0,2 wins & 3 nominations total,Andrew Niccol,R,"Germany, United States, France"
+2289,7.2,161558.0,69.0,73.0,Won 1 Oscar. 20 wins & 101 nominations total,"Charles Frazier, Anthony Minghella",R,"United States, Italy, Romania"
+44912,5.5,304201.0,26.0,39.0,3 wins & 6 nominations total,"Greg Berlanti, Michael Green, Marc Guggenheim",PG-13,United States
+5528,7.8,70236.0,68.0,56.0,Nominated for 2 Oscars. 12 wins & 24 nominations total,"Georges Chaperot, René Wheeler, Noël-Noël",PG-13,"France, Switzerland, Germany"
+308266,7.1,284591.0,62.0,57.0,3 nominations total,"Stephen Chin, Todd Phillips, Jason Smilovic",R,"United States, Romania"
+9823,3.6,60514.0,4.0,11.0,N/A,"Ed Boon, Lawrence Kasanoff, Joshua Wexler",PG-13,United States
+38745,4.9,76502.0,19.0,33.0,3 nominations total,"Joe Stillman, Nicholas Stoller, Jonathan Swift",PG,"United States, United Kingdom"
+594767,5.9,140421.0,49.0,47.0,8 nominations total,"Henry Gayden, Chris Morgan, Bill Parker",PG-13,"United States, Germany, New Zealand, United Kingdom, India, South Korea, Canada"
+412117,6.4,75050.0,60.0,55.0,11 nominations total,"Brian Lynch, Ken Daurio, Cinco Paul",PG,"Japan, United States"
+398818,7.8,345463.0,95.0,94.0,Won 1 Oscar. 107 wins & 263 nominations total,"James Ivory, André Aciman",R,"Brazil, France, Italy, United States"
+65,7.2,343555.0,76.0,77.0,Won 1 Oscar. 17 wins & 21 nominations total,Scott Silver,R,"Germany, United States"
+82703,6.7,82144.0,81.0,59.0,Nominated for 1 BAFTA Award2 wins & 16 nominations total,"Jay Ward, Craig Wright, Robert Ben Garant",PG,"United States, India"
+187017,7.0,427852.0,84.0,71.0,7 wins & 25 nominations total,"Michael Bacall, Oren Uziel, Rodney Rothman",R,United States
+4234,5.7,176302.0,44.0,56.0,6 wins & 5 nominations total,"Kevin Williamson, Ehren Kruger",R,United States
+283366,6.7,203575.0,65.0,57.0,2 wins & 12 nominations total,"Ransom Riggs, Jane Goldman",PG-13,"United States, United Kingdom, Belgium, Canada"
+10200,5.5,183809.0,21.0,40.0,2 wins & 5 nominations total,"David Scarpa, Edmund H. North",PG-13,"United States, Canada"
+21575,7.8,105599.0,96.0,90.0,Nominated for 1 Oscar. 52 wins & 57 nominations total,"Thomas Bidegain, Jacques Audiard, Abdel Raouf Dafri",R,"France, Italy"
+184315,6.0,169029.0,58.0,47.0,2 nominations total,"Ryan J. Condal, Evan Spiliotopoulos, Steve Moore",PG-13,"Hungary, United States"
+445571,6.9,268725.0,85.0,66.0,4 wins & 22 nominations total,Mark Perez,R,United States
+116149,7.3,150160.0,97.0,77.0,Nominated for 2 BAFTA 3 wins & 7 nominations total,"Paul King, Hamish McColl, Michael Bond",PG,"United Kingdom, France, Costa Rica"
+1040148,5.7,12993.0,65.0,50.0,1 win & 3 nominations total,"Pam Brady, Brian C. Brown, Elliott DiGuiseppi",PG,United States
+228326,7.2,81652.0,82.0,67.0,3 wins & 29 nominations total,"Jorge R. Gutiérrez, Doug Langdale",PG,"United States, Mexico"
+458723,6.8,373001.0,93.0,81.0,85 wins & 133 nominations total,Jordan Peele,R,"China, Japan, United States"
+118340,8.0,1332210.0,92.0,76.0,Nominated for 2 Oscars. 52 wins & 103 nominations total,"James Gunn, Nicole Perlman, Dan Abnett",PG-13,"United States, United Kingdom"
+361292,6.7,100858.0,65.0,64.0,28 wins & 75 nominations total,"Dario Argento, Daria Nicolodi, David Kajganich",R,"Italy, United States"
+2164,7.0,214941.0,54.0,42.0,6 wins & 6 nominations total,"Dean Devlin, Roland Emmerich",PG-13,"France, United States"
+73,8.5,1243261.0,84.0,62.0,Nominated for 1 Oscar. 4 wins & 15 nominations total,David McKenna,R,United States
+744275,4.8,23262.0,8.0,,1 nomination total,"Anna Todd, Sharon Soboil",R,"United States, Bulgaria"
+9982,5.7,105928.0,36.0,48.0,4 wins & 15 nominations total,"Mark Dindal, Mark Kennedy, Steve Bencich",G,United States
+1267,6.8,118361.0,68.0,61.0,1 win & 10 nominations total,"Jon Bernstein, Michelle Bochner Spitz, Don Hall",G,United States
+50544,6.5,412672.0,69.0,63.0,1 win & 5 nominations total,"Keith Merryman, David A. Newman, Will Gluck",R,United States
+1102493,6.7,29860.0,94.0,82.0,4 wins & 11 nominations total,"Enda Walsh, Claire Keegan",PG-13,"Ireland, Belgium, United States"
+87421,6.4,183465.0,58.0,49.0,2 nominations total,"David Twohy, Jim Wheat, Ken Wheat",R,"Canada, United States"
+943,6.7,185372.0,60.0,40.0,3 wins & 4 nominations total,"Jeffrey Boam, Robert Mark Kamen, Shane Black",R,United States
+13836,5.7,64902.0,41.0,52.0,1 win & 1 nomination total,"Matt Lopez, Mark Bomback, Alexander Key",PG,United States
+4982,7.8,476397.0,81.0,76.0,Nominated for 2 Oscars. 12 wins & 38 nominations total,"Steven Zaillian, Mark Jacobson",R,"United Kingdom, United States"
+581,8.0,301781.0,87.0,72.0,Won 7 Oscars. 55 wins & 40 nominations total,Michael Blake,PG-13,"United States, United Kingdom"
+565310,7.5,72726.0,97.0,89.0,Nominated for 1 BAFTA Award37 wins & 194 nominations total,Lulu Wang,PG,"United States, China"
+324852,6.3,172871.0,58.0,49.0,33 nominations total,"Cinco Paul, Ken Daurio",PG,"United States, France"
+381289,7.3,84042.0,35.0,43.0,3 nominations total,"W. Bruce Cameron, Cathryn Michon, Audrey Wells",PG,"United States, India"
+4133,7.5,283921.0,56.0,52.0,3 wins & 9 nominations total,"Bruce Porter, David McKenna, Nick Cassavetes",R,United States
+381288,,,,,N/A,N/A,N/A,United States
+49797,7.8,158061.0,83.0,67.0,18 wins & 19 nominations total,"Park Hoon-jung, Kim Jee-woon",Not Rated,South Korea
+241259,6.2,131108.0,29.0,34.0,4 wins & 20 nominations total,"Linda Woolverton, Lewis Carroll",PG,"United States, Thailand, United Kingdom, India, Canada"
+12244,7.0,153689.0,57.0,60.0,9 nominations total,"Pamela Pettler, Shane Acker, Ben Gluck",PG-13,"United States, Canada, Luxembourg, United Kingdom, Russia"
+10096,6.3,238189.0,65.0,57.0,11 nominations total,"Josh Goldsmith, Cathy Yuspa",PG-13,United States
+3176,7.5,202164.0,90.0,81.0,7 wins & 8 nominations total,"Koushun Takami, Kenta Fukasaku",Not Rated,Japan
+522162,6.7,101830.0,42.0,47.0,1 nomination total,Wes Tooke,PG-13,"United States, Canada, China, Hong Kong"
+72570,6.8,209734.0,30.0,43.0,3 wins & 14 nominations total,"Abby Kohn, Marc Silverstein, Jason Katims",PG-13,"United States, Australia, France, Canada, Germany, Brazil, United Kingdom, China"
+23629,6.1,258457.0,22.0,33.0,1 win & 11 nominations total,"Zack Snyder, Steve Shibuya",PG-13,"United States, Canada"
+1023922,6.2,77642.0,73.0,64.0,8 nominations total,Ti West,R,"United States, United Kingdom, New Zealand"
+9836,6.4,208365.0,76.0,77.0,Won 1 Oscar. 20 wins & 26 nominations total,"George Miller, John Collee, Judy Morris",PG,"United States, Australia"
+454640,6.4,39641.0,72.0,60.0,1 win & 3 nominations total,"Peter Ackerman, Eyal Podell, Jonathon E. Stewart",PG,"Finland, United States, Australia, Canada, United Kingdom"
+755,7.2,358974.0,66.0,48.0,7 wins & 13 nominations total,"Robert Kurtzman, Quentin Tarantino",R,"United States, Mexico"
+11621,7.7,111926.0,96.0,83.0,4 wins total,Hayao Miyazaki,PG,Japan
+7445,7.1,164874.0,63.0,58.0,4 wins & 16 nominations total,"David Benioff, Susanne Bier, Anders Thomas Jensen",R,United States
+33909,6.2,108713.0,54.0,59.0,1 win & 4 nominations total,"Allan Loeb, Stephen Schiff, Stanley Weiser",PG-13,United States
+238713,7.0,270173.0,94.0,75.0,6 wins & 31 nominations total,Paul Feig,R,United States
+8960,6.4,529727.0,42.0,49.0,4 wins & 14 nominations total,"Vy Vincent Ngo, Vince Gilligan",R,United States
+348350,6.9,399764.0,69.0,62.0,Nominated for 1 Oscar. 6 wins & 26 nominations total,"Jonathan Kasdan, Lawrence Kasdan, George Lucas",PG-13,United States
+337401,5.8,165234.0,72.0,66.0,Nominated for 2 Oscars. 11 wins & 42 nominations total,"Rick Jaffa, Amanda Silver, Lauren Hynek",PG-13,"United States, China"
+589018,,192.0,100.0,,1 win & 9 nominations total,"Claude Barras, Nancy Huston, Morgan Navarro",N/A,"Switzerland, France, Belgium"
+664,6.6,246056.0,67.0,68.0,Nominated for 2 Oscars. 11 wins & 17 nominations total,"Michael Crichton, Anne-Marie Martin",PG-13,United States
+334541,7.8,338896.0,96.0,96.0,Won 2 Oscars. 128 wins & 268 nominations total,Kenneth Lonergan,R,United States
+51739,7.6,113115.0,94.0,80.0,12 wins & 6 nominations total,"Mary Norton, Hayao Miyazaki, Keiko Niwa",G,Japan
+136797,6.4,183901.0,23.0,39.0,1 win & 6 nominations total,"George Gatins, John Gatins",PG-13,"United States, India"
+100402,7.7,947414.0,90.0,70.0,Nominated for 1 Oscar. 5 wins & 52 nominations total,"Christopher Markus, Stephen McFeely, Joe Simon",PG-13,United States
+35610,4.5,2272.0,,,N/A,"Wallace C. Bennett, Don Jakoby, Kim Steven Ketelsen",PG-13,United States
+11212,6.2,58132.0,24.0,,N/A,John Hughes,PG,United States
+398174,6.7,11029.0,81.0,65.0,Nominated for 3 BAFTA 3 wins & 19 nominations total,"Peter Turner, Matt Greenhalgh",R,"United Kingdom, United States"
+10663,6.2,186927.0,33.0,41.0,6 wins & 6 nominations total,"Tim Herlihy, Adam Sandler",PG-13,United States
+8643,6.7,144914.0,20.0,46.0,4 wins & 9 nominations total,"Paul Harris Boardman, Scott Derrickson",PG-13,United States
+13387,6.1,183051.0,40.0,51.0,2 nominations total,"Luc Besson, Robert Mark Kamen",PG-13,"France, United States, United Kingdom, Ukraine"
+11001,6.4,92561.0,35.0,46.0,N/A,"Michael Berry, John Blumenthal, Stephen Carpenter",PG-13,"United States, Germany"
+423204,6.4,119080.0,38.0,45.0,1 nomination total,"Robert Mark Kamen, Matt Cook, Ric Roman Waugh",R,"United States, United Kingdom, Portugal, Canada, Bulgaria"
+10196,4.0,178394.0,5.0,20.0,8 wins & 12 nominations total,M. Night Shyamalan,PG,"United States, Vietnam, United Kingdom, Canada, Denmark"
+12162,7.5,487234.0,96.0,95.0,Won 6 Oscars. 125 wins & 130 nominations total,Mark Boal,R,"United States, Luxembourg, Canada"
+10047,6.4,71692.0,31.0,54.0,5 wins & 13 nominations total,"Andrew Birkin, Luc Besson",R,"Czech Republic, France, United States"
+517093,6.6,10879.0,,,1 win & 1 nomination total,"Andrey Anaykin, Ivan Naumov, Natalya Nazarova",N/A,"Russia, Serbia"
+9946,5.8,120450.0,11.0,34.0,1 win & 7 nominations total,Andrew W. Marlowe,R,United States
+9757,4.2,82924.0,9.0,27.0,Nominated for 1 Oscar. 8 wins & 9 nominations total,"Eddie Murphy, Charlie Murphy, Jay Scherick",PG-13,United States
+646380,7.2,645876.0,,49.0,Nominated for 4 Oscars. 24 wins & 99 nominations total,"Adam McKay, David Sirota",R,"United States, Canada"
+425909,7.0,235169.0,63.0,45.0,Nominated for 1 BAFTA Award1 win & 21 nominations total,"Gil Kenan, Jason Reitman, Ivan Reitman",PG-13,"United States, Canada"
+36648,5.8,197636.0,24.0,38.0,1 nomination total,"David S. Goyer, Marv Wolfman, Gene Colan",R,United States
+338762,5.7,89177.0,32.0,44.0,1 win & 7 nominations total,"Jeff Wadlow, Eric Heisserer, Kevin VanHook",PG-13,"United States, Canada, South Africa, China"
+676685,5.5,367.0,,,N/A,"Richard Claus, Karsten Kiilerich, Rob Sprackling",Not Rated,"Denmark, Netherlands, France, Germany, Estonia"
+16320,7.8,312098.0,82.0,74.0,9 wins & 10 nominations total,Joss Whedon,PG-13,United States
+2114,6.4,85348.0,44.0,49.0,3 wins & 11 nominations total,"Hironobu Sakaguchi, Al Reinert, Jeff Vintar",PG-13,"Japan, United States"
+686,7.5,305697.0,69.0,62.0,Nominated for 1 Oscar. 14 wins & 32 nominations total,"James V. Hart, Michael Goldenberg, Carl Sagan",PG,United States
+8649,6.9,78459.0,74.0,72.0,2 wins & 5 nominations total,"Joe Connelly, Paul Schrader",R,United States
+49040,6.6,323818.0,56.0,61.0,1 win & 12 nominations total,"Tony Gilroy, Dan Gilroy, Robert Ludlum",PG-13,"United States, Japan, South Korea, Canada, United Arab Emirates, Philippines"
+8277,5.3,62248.0,,,N/A,"Erik Lindsay, Adam Herz (characters)",R,"Canada, USA"
+76493,6.5,354828.0,56.0,58.0,1 win & 1 nomination total,"Sacha Baron Cohen, Alec Berg, David Mandel",R,United States
+50647,5.6,82297.0,58.0,53.0,1 win total,"David Wain, Ken Marino",R,United States
+969492,6.6,54829.0,67.0,57.0,1 nomination total,"David Frigerio, William Eubank",R,"United States, Australia"
+193756,7.5,317510.0,75.0,60.0,Nominated for 2 Oscars. 6 wins & 16 nominations total,"Peter Berg, Marcus Luttrell, Patrick Robinson",R,"United Kingdom, United States"
+602,7.0,634273.0,68.0,59.0,Won 1 Oscar. 35 wins & 35 nominations total,"Dean Devlin, Roland Emmerich",PG-13,United States
+12096,5.7,96320.0,21.0,38.0,1 win & 8 nominations total,"Len Blum, Steve Martin, Michael Saltzman",PG,"Czech Republic, United States"
+2119,6.1,101796.0,37.0,60.0,Nominated for 1 Oscar. 1 win & 2 nominations total,"Robert Towne, Tom Cruise",PG-13,United States
+64682,7.2,627051.0,48.0,55.0,Won 2 Oscars. 51 wins & 86 nominations total,"Baz Luhrmann, Craig Pearce, F. Scott Fitzgerald",PG-13,"Australia, United States"
+274854,5.9,114251.0,18.0,34.0,1 nomination total,"Cory Goodman, Matt Sazama, Burk Sharpless",PG-13,"United States, China, Canada"
+547,6.7,44369.0,73.0,65.0,Nominated for 1 Oscar. 4 wins & 19 nominations total,"Nick Evans, Eric Roth, Richard LaGravenese",PG-13,United States
+46829,7.3,26784.0,77.0,67.0,Nominated for 1 Oscar. 18 wins & 19 nominations total,"Mordecai Richler, Michael Konyves",R,"Italy, Canada"
+641,8.3,949161.0,80.0,71.0,Nominated for 1 Oscar. 37 wins & 69 nominations total,"Hubert Selby Jr., Darren Aronofsky",NC-17,United States
+353486,7.0,485638.0,77.0,58.0,5 wins & 15 nominations total,"Chris McKenna, Erik Sommers, Scott Rosenberg",PG-13,"United States, Australia, Canada, Mexico, India, United Kingdom"
+116745,7.3,360787.0,52.0,54.0,5 wins & 18 nominations total,"Steve Conrad, James Thurber",PG,"United States, United Kingdom"
+536437,5.5,43708.0,32.0,53.0,N/A,"Robert Rodriguez, Max Borenstein",R,"United States, United Kingdom, Canada"
+449443,7.0,148332.0,42.0,49.0,1 nomination total,"Christian Gudegast, Paul T. Scheuring",R,United States
+498248,6.5,6793.0,88.0,52.0,N/A,"Prune de Maistre, William Davies, Gilles de Maistre",PG,"France, Germany, South Africa, Switzerland, Monaco, United States"
+59440,8.1,519204.0,84.0,71.0,Nominated for 1 Oscar. 6 wins & 22 nominations total,"Gavin O'Connor, Anthony Tambakis, Cliff Dorfman",PG-13,United States
+675445,6.1,9229.0,82.0,50.0,3 wins & 4 nominations total,"Billy Frolick, Cal Brunker, Bob Barlen",G,"Canada, United States"
+423,8.5,979960.0,95.0,85.0,Won 3 Oscars. 57 wins & 74 nominations total,"Ronald Harwood, Wladyslaw Szpilman",R,"France, Poland, Germany, United Kingdom, United States"
+9381,5.5,100038.0,7.0,26.0,1 nomination total,"Maurice G. Dantec, Mathieu Kassovitz, Éric Besnard",PG-13,"United Kingdom, France, United States, Czech Republic"
+44214,8.0,868691.0,85.0,79.0,Won 1 Oscar. 98 wins & 279 nominations total,"Mark Heyman, Andres Heinz, John J. McLaughlin",R,United States
+49010,6.1,49910.0,65.0,55.0,1 win & 4 nominations total,John Davies,Not Rated,Canada
+375262,7.5,249847.0,93.0,91.0,Won 1 Oscar. 187 wins & 352 nominations total,"Deborah Davis, Tony McNamara",R,"Ireland, United Kingdom, United States"
+11520,7.0,56163.0,66.0,53.0,1 win & 1 nomination total,Mark Steven Johnson,PG-13,United States
+343668,6.7,391518.0,51.0,44.0,2 wins & 14 nominations total,"Jane Goldman, Matthew Vaughn, Mark Millar",R,"United Kingdom, United States, Italy"
+820525,4.7,10477.0,,,1 win & 1 nomination total,"Castille Landon, Anna Todd",R,United States
+46738,8.3,234966.0,91.0,80.0,Nominated for 1 Oscar. 41 wins & 20 nominations total,"Wajdi Mouawad, Denis Villeneuve, Valérie Beaugrand-Champagne",R,"Canada, France"
+9407,6.3,19339.0,27.0,,4 wins total,Robert King,R,United States
+49849,6.0,238192.0,44.0,50.0,1 win & 17 nominations total,"Roberto Orci, Alex Kurtzman, Damon Lindelof",PG-13,"India, United States"
+661374,,,91.0,,N/A,N/A,N/A,N/A
+201088,5.5,66329.0,33.0,52.0,1 win & 5 nominations total,Morgan Davis Foehl,R,United States
+124905,6.4,457620.0,76.0,62.0,7 wins & 31 nominations total,"Dave Callaham, Max Borenstein",PG-13,"United States, Japan"
+43593,5.5,100426.0,75.0,53.0,2 wins & 12 nominations total,"Pete Goldfinger, Josh Stolberg",R,"France, Japan, United States"
+10377,7.6,149828.0,85.0,68.0,Won 1 Oscar. 5 wins & 6 nominations total,Dale Launer,R,United States
+527641,7.2,92618.0,52.0,53.0,3 wins & 8 nominations total,"Mikki Daughtry, Tobias Iaconis",PG-13,United States
+1572,7.6,422320.0,60.0,58.0,2 wins & 3 nominations total,"Jonathan Hensleigh, Roderick Thorp",R,United States
+10189,6.9,367336.0,,64.0,2 wins & 15 nominations total,"Seth Rogen, Evan Goldberg, Judd Apatow",R,United States
+21208,7.0,271585.0,59.0,42.0,1 win & 7 nominations total,"David Leslie Johnson-McGoldrick, Alex Mace",R,"Canada, United States, Germany, France"
+1710,6.6,79811.0,76.0,54.0,2 wins & 1 nomination total,"Ann Biderman, David Madsen",R,United States
+316029,7.5,333888.0,56.0,48.0,Nominated for 1 Oscar. 17 wins & 32 nominations total,"Jenny Bicks, Bill Condon",PG,"United States, China"
+1581,7.0,351354.0,51.0,52.0,2 wins & 12 nominations total,Nancy Meyers,PG-13,United States
+97370,,,,,1 nomination total,Yana Ivantcheva,N/A,United Kingdom
+297761,5.9,743383.0,26.0,40.0,Won 1 Oscar. 18 wins & 41 nominations total,"David Ayer, John Ostrander",PG-13,United States
+59108,6.2,155364.0,67.0,59.0,3 nominations total,"Adam Cooper, Bill Collage, Ted Griffin",PG-13,"Japan, United States"
+9291,6.4,205685.0,31.0,48.0,3 wins & 17 nominations total,"Albert S. Ruddy, Tracy Keenan Wynn, Sheldon Turner",PG-13,United States
+807172,4.8,47888.0,22.0,39.0,1 win & 22 nominations total,"Peter Sattler, David Gordon Green, Scott Teems",R,United States
+188927,7.0,266131.0,86.0,68.0,Nominated for 1 Oscar. 3 wins & 29 nominations total,"Simon Pegg, Doug Jung, Gene Roddenberry",PG-13,"United States, China"
+1970,5.9,155227.0,41.0,49.0,2 wins & 10 nominations total,"Stephen Susco, Takashi Shimizu",PG-13,"United States, Japan"
+503736,5.8,196663.0,68.0,57.0,1 win & 4 nominations total,"Zack Snyder, Shay Hatten, Joby Harold",R,United States
+30943,6.3,21405.0,42.0,45.0,3 wins & 2 nominations,"Jacquelyn Mitchard, Stephen Schiff",PG-13,United States
+72213,6.9,22082.0,43.0,42.0,2 wins & 2 nominations total,"Alex Kendrick, Stephen Kendrick",PG-13,United States
+376660,7.3,147297.0,94.0,77.0,8 wins & 29 nominations total,Kelly Fremon Craig,R,"United States, China"
+353491,5.6,152284.0,16.0,34.0,4 nominations total,"Akiva Goldsman, Jeff Pinkner, Anders Thomas Jensen",PG-13,United States
+4944,7.0,368434.0,78.0,63.0,Nominated for 3 BAFTA 8 wins & 32 nominations total,"Joel Coen, Ethan Coen",R,"United Kingdom, France, United States"
+1883,7.7,107958.0,89.0,73.0,Nominated for 2 Oscars. 19 wins & 24 nominations total,"Arnold Perl, Spike Lee, Alex Haley",PG-13,"United States, Japan"
+8814,5.2,122288.0,18.0,34.0,3 nominations total,"Dave Callaham, Wesley Strick",R,"United Kingdom, Czech Republic, Germany, United States"
+6114,7.2,268.0,,,1 nomination total,Kincaid Jones,N/A,United States
+205587,7.4,211552.0,49.0,48.0,Nominated for 1 Oscar. 3 wins & 9 nominations total,"Nick Schenk, Bill Dubuque, David Dobkin",R,United States
+853,7.5,288286.0,53.0,53.0,7 nominations total,"Jean-Jacques Annaud, Alain Godard",R,"France, Germany, United Kingdom, Ireland, United States"
+76649,5.5,120263.0,27.0,41.0,9 wins & 4 nominations total,"Janet Scott Batchler, Lee Batchler, Michael Robert Johnson",PG-13,"Canada, Germany, United States, United Kingdom"
+1214509,5.6,27987.0,78.0,68.0,1 win & 7 nominations total,Chris Nash,Not Rated,Canada
+13944,5.8,40432.0,19.0,40.0,N/A,Ronnie Christensen,PG-13,"United States, Canada"
+249070,5.7,99911.0,8.0,28.0,2 nominations total,"Skip Woods, Michael Finch",R,"United States, United Kingdom, Germany, Canada, Singapore"
+796,6.8,215176.0,54.0,56.0,8 wins & 14 nominations total,"Choderlos de Laclos, Roger Kumble",R,United States
+332794,6.6,6388.0,63.0,,1 win & 2 nominations total,"Jérôme Salle, Laurent Turner, Jean-Michel Cousteau",PG,"France, Belgium"
+738652,6.2,43096.0,83.0,61.0,1 nomination total,"Kurt McLeod, Joe Carnahan, Mark Williams",R,United States
+8922,6.2,151695.0,46.0,49.0,5 wins & 7 nominations total,Victor Salva,R,"Germany, United States"
+1089,7.3,217483.0,70.0,60.0,1 win & 2 nominations total,"Rick King, W. Peter Iliff",R,"United States, Japan"
+10830,7.0,188260.0,92.0,72.0,3 wins & 7 nominations total,"Roald Dahl, Nicholas Kazan, Robin Swicord",PG,United States
+37799,7.8,799416.0,96.0,95.0,Won 3 Oscars. 174 wins & 188 nominations total,"Aaron Sorkin, Ben Mezrich",PG-13,United States
+6957,7.1,490095.0,85.0,73.0,10 wins & 19 nominations total,"Judd Apatow, Steve Carell",R,United States
+1894,6.6,800945.0,62.0,54.0,Nominated for 1 Oscar. 21 wins & 71 nominations total,"George Lucas, Jonathan Hales",PG,"United States, United Kingdom"
+1018,7.9,411773.0,84.0,87.0,Nominated for 1 Oscar. 50 wins & 61 nominations total,David Lynch,R,"France, United States"
+77950,6.4,119592.0,68.0,58.0,Nominated for 1 BAFTA Award1 win & 13 nominations total,"David Soren, Darren Lemke, Robert Siegel",PG,"United States, India"
+84892,7.9,577295.0,85.0,67.0,20 wins & 51 nominations total,Stephen Chbosky,PG-13,United States
+466081,6.6,45073.0,63.0,61.0,1 nomination total,"Matt Cook, Rowan Joffe, Andrea Di Stefano",R,"United Kingdom, Canada, United States"
+13510,6.7,103833.0,78.0,65.0,9 wins & 8 nominations total,James Watkins,R,United Kingdom
+36586,6.7,246544.0,57.0,52.0,6 wins & 10 nominations total,"Marv Wolfman, Gene Colan, David S. Goyer",R,"United States, Germany"
+116711,6.6,112986.0,65.0,52.0,2 wins & 21 nominations total,"James V. Hart, William Joyce, Daniel Shere",PG,"United States, United Kingdom"
