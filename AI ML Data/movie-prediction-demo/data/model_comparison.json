@@ -1,0 +1,68 @@
+{
+  "iteration_0": {
+    "name": "Baseline k-NN",
+    "accuracy": 0.5297418630751964,
+    "n_features": 4,
+    "algorithm": "k-NN",
+    "params": {
+      "n_neighbors": 20,
+      "weights": "uniform",
+      "metric": "euclidean"
+    },
+    "description": "Simple baseline with 4 core features",
+    "features_list": [
+      "budget_log",
+      "runtime",
+      "vote_average",
+      "imdb_rating"
+    ]
+  },
+  "iteration_1": {
+    "name": "Random Forest",
+    "accuracy": 0.5061728395061729,
+    "n_features": 4,
+    "algorithm": "Random Forest",
+    "params": {
+      "n_estimators": 100,
+      "class_weight": "balanced"
+    },
+    "description": "Algorithm comparison - tested different approach",
+    "features_list": [
+      "budget_log",
+      "runtime",
+      "vote_average",
+      "imdb_rating"
+    ]
+  },
+  "iteration_2": {
+    "name": "Optimized k-NN",
+    "accuracy": 0.49158249158249157,
+    "cv_score": 0.5274397590361446,
+    "n_features": 12,
+    "algorithm": "k-NN (Optimized)",
+    "params": {
+      "metric": "manhattan",
+      "n_neighbors": 25,
+      "p": 1,
+      "weights": "uniform"
+    },
+    "description": "Feature expansion + hyperparameter tuning (overfitted)",
+    "features_list": [
+      "budget_log",
+      "runtime",
+      "vote_average",
+      "imdb_rating",
+      "rotten_tomatoes_score",
+      "genre_count",
+      "is_summer_movie",
+      "is_holiday_movie",
+      "is_us_movie",
+      "has_awards",
+      "primary_genre_encoded",
+      "budget_category_encoded"
+    ]
+  },
+  "best_iteration": "iteration_0",
+  "worst_iteration": "iteration_2",
+  "total_movies": 2969
+}
