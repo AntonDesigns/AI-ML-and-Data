@@ -67,41 +67,115 @@ def render_prediction_tab(model, scaler, feature_names):
             st.warning("📆 Off-season releases have lower success rates (~25-30%)")
         
         st.markdown("### 🎬 Additional Info")
+        st.caption("*These features can significantly impact success predictions*")
         
-        # Only show if features exist in the model
         genre_encoded = 0
         has_awards_val = False
         is_us = True
         rt_score = 70
+        genre_count = 2
+        budget_category = 1
         
-        if 'primary_genre_encoded' in feature_names:
-            genre = st.selectbox(
-                "Primary Genre", 
-                ["Action", "Comedy", "Drama", "Horror", "Sci-Fi", "Thriller"],
-                help="💡 Animation and Adventure perform best, Drama has lowest success rate"
-            )
-            genre_encoded = ["Action", "Comedy", "Drama", "Horror", "Sci-Fi", "Thriller"].index(genre)
-        
-        if 'has_awards' in feature_names:
-            has_awards_val = st.checkbox(
-                "Award Season Potential", 
-                False,
-                help="💡 Awards create buzz and extend theatrical runs"
-            )
-        
-        if 'is_us_movie' in feature_names:
-            is_us = st.checkbox(
-                "US Production", 
-                True,
-                help="💡 US movies have wider distribution networks"
-            )
-        
+        # Rotten Tomatoes Score
         if 'rotten_tomatoes_score' in feature_names:
             rt_score = st.slider(
                 "Rotten Tomatoes Score (Expected)", 
                 0, 100, 70, 5,
-                help="💡 'Fresh' rating (>60%) helps with marketing"
+                help="💡 Critics' consensus score - drives word-of-mouth and theatrical longevity"
             )
+            
+            if rt_score >= 75:
+                st.success(f"🍅 {rt_score}% - 'Certified Fresh' - Strong critical acclaim")
+            elif rt_score >= 60:
+                st.info(f"🍅 {rt_score}% - 'Fresh' - Generally positive reception")
+            else:
+                st.warning(f"🍅 {rt_score}% - 'Rotten' - Poor reception may hurt box office")
+        
+        # Primary Genre
+        if 'primary_genre_encoded' in feature_names:
+            genre = st.selectbox(
+                "Primary Genre", 
+                ["Action", "Adventure", "Animation", "Comedy", "Crime", "Documentary", 
+                 "Drama", "Family", "Fantasy", "Horror", "Mystery", "Romance", 
+                 "Science Fiction", "Thriller", "War", "Western"],
+                index=6,  # Default to Drama
+                help="💡 Genre affects target audience size and success probability"
+            )
+            
+            genre_list = ["Action", "Adventure", "Animation", "Comedy", "Crime", "Documentary", 
+                          "Drama", "Family", "Fantasy", "Horror", "Mystery", "Romance", 
+                          "Science Fiction", "Thriller", "War", "Western"]
+            genre_encoded = genre_list.index(genre)
+            
+            # Genre-specific insights (shorter for space)
+            genre_insights = {
+                "Action": "⚔️ Mass appeal, strong international box office",
+                "Adventure": "🗺️ Family-friendly, performs well globally",
+                "Animation": "🎨 Highest success rate across all demographics",
+                "Comedy": "😄 Domestic-heavy, lower budgets = better ROI",
+                "Crime": "🔫 Niche appeal, moderate success rates",
+                "Documentary": "📹 Limited theatrical, strong streaming potential",
+                "Drama": "🎭 Awards potential but lowest commercial success",
+                "Family": "👨‍👩‍👧‍👦 Holidays crucial, repeat viewings boost revenue",
+                "Fantasy": "🧙 Franchise potential, requires higher budgets",
+                "Horror": "👻 Most profitable (low budgets, dedicated fans)",
+                "Mystery": "🔍 Moderate appeal, works well with star power",
+                "Romance": "💕 Valentine's release key, female-skewed audience",
+                "Science Fiction": "🚀 VFX-heavy, strong overseas performance",
+                "Thriller": "🔪 Broad appeal, consistent moderate success",
+                "War": "💣 Mixed results, depends on marketing",
+                "Western": "🤠 Niche genre, limited modern appeal"
+            }
+            st.caption(genre_insights.get(genre, ""))
+        
+        # Genre Count
+        if 'genre_count' in feature_names:
+            genre_count = st.slider(
+                "Number of Genres (multi-genre blend)",
+                min_value=1, max_value=4, value=2, step=1,
+                help="💡 Multi-genre movies appeal to wider audiences (e.g., Action-Comedy)"
+            )
+            
+            if genre_count == 1:
+                st.caption("🎯 Pure genre - clear target audience")
+            elif genre_count == 2:
+                st.caption("🎭 Dual genre - broader appeal (most common)")
+            else:
+                st.caption("🌈 Multi-genre - widest appeal but harder to market")
+        
+        # Awards Potential
+        if 'has_awards' in feature_names:
+            has_awards_val = st.checkbox(
+                "🏆 Award Season Potential", 
+                False,
+                help="💡 Oscar/Golden Globe buzz extends theatrical run and boosts prestige"
+            )
+            
+            if has_awards_val:
+                st.caption("✨ Awards buzz can add 15-25% to box office")
+        
+        # US Production
+        if 'is_us_movie' in feature_names:
+            is_us = st.checkbox(
+                "🇺🇸 US Production (Hollywood)", 
+                True,
+                help="💡 US productions have wider distribution networks and bigger marketing budgets"
+            )
+            
+            if not is_us:
+                st.caption("🌍 International film - different distribution patterns")
+        
+        # Budget Category (auto-calculated, just show info)
+        if 'budget_category_encoded' in feature_names:
+            if budget < 20:
+                budget_category = 0
+                st.caption("💰 **Micro Budget** (<$20M) - Low risk, limited marketing")
+            elif budget < 75:
+                budget_category = 1
+                st.caption("💰 **Mid Budget** ($20-75M) - Most common tier")
+            else:
+                budget_category = 2
+                st.caption("💰 **Blockbuster** (>$75M) - High risk, needs massive audience")
     
     st.markdown("---")
     
@@ -136,9 +210,9 @@ def render_prediction_tab(model, scaler, feature_names):
             if 'primary_genre_encoded' in feature_names:
                 feature_dict['primary_genre_encoded'] = genre_encoded
             if 'budget_category_encoded' in feature_names:
-                feature_dict['budget_category_encoded'] = 1 if budget < 50 else 2
+                feature_dict['budget_category_encoded'] = budget_category
             if 'genre_count' in feature_names:
-                feature_dict['genre_count'] = 2
+                feature_dict['genre_count'] = genre_count
             
             # Create feature vector in correct order
             feature_vector = np.array([feature_dict.get(feat, 0) for feat in feature_names]).reshape(1, -1)
@@ -273,6 +347,19 @@ def _display_recommendation(pred_label, confidence, probabilities):
         - How can we improve predicted ratings (better script/cast)?
         
         This could work, but it needs some optimization.
+        """)
+    
+    elif pred_label == 'Hit':  # Low confidence hit (<40%)
+        st.warning("""
+        **⚠️ MARGINAL HIT - PROCEED WITH CAUTION**
+        
+        The model predicts a hit, but with low confidence (close call between categories).
+        This suggests the movie is on the borderline:
+        - Expected to be profitable, but it's not a sure thing
+        - Small changes in marketing/release could swing the outcome
+        - Consider hedging risk with a more conservative budget
+        
+        **Recommendation:** Greenlight, but with careful monitoring and contingency plans.
         """)
     
     elif pred_label == 'Break-even':

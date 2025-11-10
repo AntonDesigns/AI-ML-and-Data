@@ -17,9 +17,9 @@ def render_analytics_tab(metrics):
     iterations_df = pd.DataFrame({
         'Iteration': ['Iteration 0\nBaseline k-NN', 'Iteration 1\nRandom Forest', 'Iteration 2\nOptimized k-NN'],
         'Accuracy': [
-            metrics['iteration_0']['accuracy']*100,  # FIXED: Changed from metrics['iteration_0_acc']
-            metrics['iteration_1']['accuracy']*100,  # FIXED: Changed from metrics['iteration_1_acc']
-            metrics['iteration_2']['accuracy']*100   # FIXED: Changed from metrics['iteration_2_acc']
+            metrics['iteration_0']['accuracy']*100,  
+            metrics['iteration_1']['accuracy']*100,  
+            metrics['iteration_2']['accuracy']*100 
         ],
         'What I Did': [
             '4 features, k=20',
