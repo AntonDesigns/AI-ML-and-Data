@@ -106,7 +106,6 @@ def render_sidebar(all_models):
             <p style='color: #95a5a6; font-size: 0.85rem; margin: 0;'>
                 <strong>Anton Horvat</strong><br/>
                 Semester 4 ML Project<br/>
-                FontysVenlo • 2025
             </p>
         </div>
         """, unsafe_allow_html=True)

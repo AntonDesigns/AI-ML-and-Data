@@ -6,10 +6,151 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 
+# Movie presets for quick demos
+MOVIE_PRESETS = {
+    "Avatar (2009)": {
+        "budget": 237,
+        "runtime": 162,
+        "vote_average": 7.6,
+        "imdb_rating": 7.9,
+        "release_season": "Holiday (Nov-Dec)",
+        "genre": "Science Fiction",
+        "rt_score": 81,
+        "genre_count": 3,
+        "has_awards": True,
+        "is_us": True,
+        "actual_result": "Hit (Made $2.9B - 12x return)"
+    },
+    "The Shawshank Redemption (1994)": {
+        "budget": 25,
+        "runtime": 142,
+        "vote_average": 8.7,
+        "imdb_rating": 9.3,
+        "release_season": "Other",
+        "genre": "Drama",
+        "rt_score": 91,
+        "genre_count": 2,
+        "has_awards": True,
+        "is_us": True,
+        "actual_result": "Break-even initially, later became cult classic"
+    },
+    "John Carter (2012)": {
+        "budget": 250,
+        "runtime": 132,
+        "vote_average": 6.3,
+        "imdb_rating": 6.6,
+        "release_season": "Other",
+        "genre": "Science Fiction",
+        "rt_score": 52,
+        "genre_count": 3,
+        "has_awards": False,
+        "is_us": True,
+        "actual_result": "Flop (Lost $200M - biggest flop ever at the time)"
+    },
+    "The Blair Witch Project (1999)": {
+        "budget": 1,
+        "runtime": 81,
+        "vote_average": 6.3,
+        "imdb_rating": 6.5,
+        "release_season": "Summer (Jun-Aug)",
+        "genre": "Horror",
+        "rt_score": 87,
+        "genre_count": 2,
+        "has_awards": False,
+        "is_us": True,
+        "actual_result": "Hit (Made $248M - 248x return!)"
+    },
+    "Avengers: Endgame (2019)": {
+        "budget": 356,
+        "runtime": 181,
+        "vote_average": 8.3,
+        "imdb_rating": 8.4,
+        "release_season": "Summer (Jun-Aug)",
+        "genre": "Action",
+        "rt_score": 94,
+        "genre_count": 3,
+        "has_awards": False,
+        "is_us": True,
+        "actual_result": "Hit (Made $2.8B - 8x return)"
+    },
+    "Cats (2019)": {
+        "budget": 95,
+        "runtime": 110,
+        "vote_average": 4.1,
+        "imdb_rating": 2.8,
+        "release_season": "Holiday (Nov-Dec)",
+        "genre": "Family",
+        "rt_score": 19,
+        "genre_count": 3,
+        "has_awards": False,
+        "is_us": True,
+        "actual_result": "Flop (Lost $113M - one of worst bombs)"
+    },
+    "Parasite (2019)": {
+        "budget": 11,
+        "runtime": 132,
+        "vote_average": 8.5,
+        "imdb_rating": 8.5,
+        "release_season": "Other",
+        "genre": "Thriller",
+        "rt_score": 98,
+        "genre_count": 3,
+        "has_awards": True,
+        "is_us": False,
+        "actual_result": "Hit (Made $258M - 23x return, won Best Picture)"
+    }
+}
+
 def render_prediction_tab(model, scaler, feature_names):
     """Render the prediction interface"""
     
     st.markdown("## Input Movie Details")
+    
+    # Movie preset selector
+    st.markdown("### 🎬 Quick Start: Try a Real Movie")
+    
+    col_preset, col_info = st.columns([2, 2])
+    
+    with col_preset:
+        selected_preset = st.selectbox(
+            "Choose a famous movie to auto-fill values",
+            ["Custom (manual entry)"] + list(MOVIE_PRESETS.keys()),
+            help="Select a movie to see how the model performs on real examples"
+        )
+    
+    # Set defaults based on selection
+    if selected_preset != "Custom (manual entry)":
+        preset = MOVIE_PRESETS[selected_preset]
+        budget_default = preset["budget"]
+        runtime_default = preset["runtime"]
+        vote_avg_default = preset["vote_average"]
+        imdb_default = preset["imdb_rating"]
+        season_default = preset["release_season"]
+        genre_default = preset.get("genre", "Drama")
+        rt_default = preset.get("rt_score", 70)
+        genre_count_default = preset.get("genre_count", 2)
+        awards_default = preset.get("has_awards", False)
+        us_default = preset.get("is_us", True)
+        
+        with col_info:
+            st.success(f"**📽️ {selected_preset}**")
+            st.caption(f"**Actual Result:** {preset['actual_result']}")
+    else:
+        budget_default = 50
+        runtime_default = 120
+        vote_avg_default = 7.0
+        imdb_default = 7.0
+        season_default = "Other"
+        genre_default = "Drama"
+        rt_default = 70
+        genre_count_default = 2
+        awards_default = False
+        us_default = True
+        
+        with col_info:
+            st.info("💡 Enter your own values or select a preset above")
+    
+    st.markdown("---")
     st.markdown("*Fill in the information below. The model uses these features to predict success.*")
     
     col1, col2 = st.columns(2)
@@ -19,14 +160,14 @@ def render_prediction_tab(model, scaler, feature_names):
         
         budget = st.slider(
             "Production Budget (millions USD)", 
-            min_value=1, max_value=300, value=50, step=5,
+            min_value=1, max_value=400, value=budget_default, step=5,
             help="💡 This is just the production cost, not including marketing. Big-budget movies ($150M+) need huge box office to be profitable."
         )
         st.caption(f"→ You entered: ${budget}M")
         
         runtime = st.slider(
             "Movie Runtime (minutes)", 
-            min_value=60, max_value=240, value=120, step=5,
+            min_value=60, max_value=240, value=runtime_default, step=5,
             help="💡 Most successful movies are 90-150 minutes. Very long movies (>180min) can limit daily screenings."
         )
         st.caption(f"→ You entered: {runtime} minutes ({runtime//60}h {runtime%60}m)")
@@ -36,13 +177,13 @@ def render_prediction_tab(model, scaler, feature_names):
         
         vote_average = st.slider(
             "TMDB Rating Prediction", 
-            min_value=1.0, max_value=10.0, value=7.0, step=0.1,
+            min_value=1.0, max_value=10.0, value=vote_avg_default, step=0.1,
             help="💡 This is audience rating. Most movies fall between 6-8. Below 6 = poorly received, above 8 = very well received."
         )
         
         imdb_rating = st.slider(
             "IMDb Rating Prediction", 
-            min_value=1.0, max_value=10.0, value=7.0, step=0.1,
+            min_value=1.0, max_value=10.0, value=imdb_default, step=0.1,
             help="💡 IMDb tends to skew slightly lower than TMDB. Critical acclaim matters!"
         )
     
@@ -50,9 +191,13 @@ def render_prediction_tab(model, scaler, feature_names):
         st.markdown("### 📅 Release Timing")
         st.caption("When you release matters! Summer = blockbuster season, holidays = family audiences")
         
+        season_options = ["Summer (Jun-Aug)", "Holiday (Nov-Dec)", "Other"]
+        season_index = season_options.index(season_default) if season_default in season_options else 2
+        
         release_season = st.radio(
             "Release Season", 
-            ["Summer (Jun-Aug)", "Holiday (Nov-Dec)", "Other"],
+            season_options,
+            index=season_index,
             help="💡 Summer and holidays have higher success rates due to audience availability"
         )
         
@@ -67,8 +212,18 @@ def render_prediction_tab(model, scaler, feature_names):
             st.warning("📆 Off-season releases have lower success rates (~25-30%)")
         
         st.markdown("### 🎬 Additional Info")
-        st.caption("*These features can significantly impact success predictions*")
         
+        # Check if ANY additional features exist
+        additional_features = ['rotten_tomatoes_score', 'primary_genre_encoded', 'genre_count', 
+                              'has_awards', 'is_us_movie', 'budget_category_encoded']
+        has_additional = any(feat in feature_names for feat in additional_features)
+        
+        if not has_additional:
+            st.info("📝 **Note:** This model uses only the 4 core features above. Select 'Iteration 2' in the sidebar to try the expanded feature set with genre, awards, etc.")
+        else:
+            st.caption("*These features can significantly impact success predictions*")
+        
+        # Initialize default values
         genre_encoded = 0
         has_awards_val = False
         is_us = True
@@ -80,7 +235,7 @@ def render_prediction_tab(model, scaler, feature_names):
         if 'rotten_tomatoes_score' in feature_names:
             rt_score = st.slider(
                 "Rotten Tomatoes Score (Expected)", 
-                0, 100, 70, 5,
+                0, 100, rt_default, 5,
                 help="💡 Critics' consensus score - drives word-of-mouth and theatrical longevity"
             )
             
@@ -93,18 +248,19 @@ def render_prediction_tab(model, scaler, feature_names):
         
         # Primary Genre
         if 'primary_genre_encoded' in feature_names:
-            genre = st.selectbox(
-                "Primary Genre", 
-                ["Action", "Adventure", "Animation", "Comedy", "Crime", "Documentary", 
-                 "Drama", "Family", "Fantasy", "Horror", "Mystery", "Romance", 
-                 "Science Fiction", "Thriller", "War", "Western"],
-                index=6,  # Default to Drama
-                help="💡 Genre affects target audience size and success probability"
-            )
-            
             genre_list = ["Action", "Adventure", "Animation", "Comedy", "Crime", "Documentary", 
                           "Drama", "Family", "Fantasy", "Horror", "Mystery", "Romance", 
                           "Science Fiction", "Thriller", "War", "Western"]
+            
+            genre_index = genre_list.index(genre_default) if genre_default in genre_list else 6
+            
+            genre = st.selectbox(
+                "Primary Genre", 
+                genre_list,
+                index=genre_index,
+                help="💡 Genre affects target audience size and success probability"
+            )
+            
             genre_encoded = genre_list.index(genre)
             
             # Genre-specific insights (shorter for space)
@@ -132,7 +288,7 @@ def render_prediction_tab(model, scaler, feature_names):
         if 'genre_count' in feature_names:
             genre_count = st.slider(
                 "Number of Genres (multi-genre blend)",
-                min_value=1, max_value=4, value=2, step=1,
+                min_value=1, max_value=4, value=genre_count_default, step=1,
                 help="💡 Multi-genre movies appeal to wider audiences (e.g., Action-Comedy)"
             )
             
@@ -147,7 +303,7 @@ def render_prediction_tab(model, scaler, feature_names):
         if 'has_awards' in feature_names:
             has_awards_val = st.checkbox(
                 "🏆 Award Season Potential", 
-                False,
+                awards_default,
                 help="💡 Oscar/Golden Globe buzz extends theatrical run and boosts prestige"
             )
             
@@ -158,7 +314,7 @@ def render_prediction_tab(model, scaler, feature_names):
         if 'is_us_movie' in feature_names:
             is_us = st.checkbox(
                 "🇺🇸 US Production (Hollywood)", 
-                True,
+                us_default,
                 help="💡 US productions have wider distribution networks and bigger marketing budgets"
             )
             
@@ -226,14 +382,19 @@ def render_prediction_tab(model, scaler, feature_names):
             pred_label = labels[prediction]
         
         # Show results
-        _display_prediction_results(pred_label, prediction, probabilities, labels, budget)
+        _display_prediction_results(pred_label, prediction, probabilities, labels, budget, selected_preset)
 
 
-def _display_prediction_results(pred_label, prediction, probabilities, labels, budget):
+def _display_prediction_results(pred_label, prediction, probabilities, labels, budget, preset_name):
     """Display the prediction results in a nice format"""
     
     st.markdown("---")
     st.markdown("## 🎯 Prediction Results")
+    
+    # Show comparison if using preset
+    if preset_name != "Custom (manual entry)":
+        actual_result = MOVIE_PRESETS[preset_name]["actual_result"]
+        st.info(f"**🎬 {preset_name}** - Actual Result: {actual_result}")
     
     # Main prediction
     col1, col2, col3 = st.columns(3)
@@ -303,10 +464,10 @@ def _display_prediction_results(pred_label, prediction, probabilities, labels, b
         st.metric("Budget", f"${budget}M")
     
     with col2:
-        # Weighted expected return multiple
-        expected_multiple = (probabilities[2] * 3.5 +  # Hit: 3.5x
-                           probabilities[1] * 2.2 +   # Break-even: 2.2x
-                           probabilities[0] * 0.8)    # Flop: 0.8x
+        # FIXED: Weighted expected return multiple with correct values
+        expected_multiple = (probabilities[2] * 3.5 +  # Hit: 3.5x return
+                           probabilities[1] * 2.0 +   # Break-even: 2.0x (exact break-even)
+                           probabilities[0] * 0.6)    # Flop: 0.6x (40% loss)
         st.metric("Expected Return", f"{expected_multiple:.2f}×")
     
     with col3:
