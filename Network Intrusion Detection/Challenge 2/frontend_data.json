@@ -1,0 +1,915 @@
+{
+  "metadata": {
+    "project": "Network Intrusion Detection System",
+    "student": "Anton Horvat",
+    "dataset": "NSL-KDD",
+    "classes": [
+      "DoS",
+      "Normal",
+      "Probe",
+      "R2L",
+      "U2R"
+    ]
+  },
+  "samples": [
+    {
+      "sample_id": 11983,
+      "true_label": "DoS",
+      "models": {
+        "decision_tree": {
+          "prediction": "Probe",
+          "confidence": 60.0
+        },
+        "random_forest": {
+          "prediction": "DoS",
+          "confidence": 51.071289992236636
+        },
+        "neural_network": {
+          "prediction": "DoS",
+          "confidence": 99.9999999233881,
+          "shap_explanation": [
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.022030405968795064
+            },
+            {
+              "feature": "src_bytes",
+              "value": -0.00776224074056876,
+              "shap_value": -0.01495685135778313
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": -0.0004767988881245813
+            },
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.00017171982790762085
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004918644383724874,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "DoS",
+          "confidence": 87.18726348876953
+        }
+      }
+    },
+    {
+      "sample_id": 17056,
+      "true_label": "DoS",
+      "models": {
+        "decision_tree": {
+          "prediction": "Probe",
+          "confidence": 60.0
+        },
+        "random_forest": {
+          "prediction": "DoS",
+          "confidence": 38.99280779457466
+        },
+        "neural_network": {
+          "prediction": "DoS",
+          "confidence": 99.99999995421986,
+          "shap_explanation": [
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004918644383724874,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "src_bytes",
+              "value": -0.00776224074056876,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Normal",
+          "confidence": 47.081512451171875
+        }
+      }
+    },
+    {
+      "sample_id": 4137,
+      "true_label": "DoS",
+      "models": {
+        "decision_tree": {
+          "prediction": "Normal",
+          "confidence": 72.72727272727273
+        },
+        "random_forest": {
+          "prediction": "Normal",
+          "confidence": 51.68036151792912
+        },
+        "neural_network": {
+          "prediction": "Normal",
+          "confidence": 99.99999999185525,
+          "shap_explanation": [
+            {
+              "feature": "dst_bytes",
+              "value": -0.00480251143266005,
+              "shap_value": 0.019111788576091086
+            },
+            {
+              "feature": "src_bytes",
+              "value": -0.007706536677582757,
+              "shap_value": -0.01894775014290622
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": -0.0010503397416019977
+            },
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Normal",
+          "confidence": 89.57988739013672
+        }
+      }
+    },
+    {
+      "sample_id": 11325,
+      "true_label": "Normal",
+      "models": {
+        "decision_tree": {
+          "prediction": "Probe",
+          "confidence": 100.0
+        },
+        "random_forest": {
+          "prediction": "Probe",
+          "confidence": 55.179830086546275
+        },
+        "neural_network": {
+          "prediction": "Normal",
+          "confidence": 99.99928366369785,
+          "shap_explanation": [
+            {
+              "feature": "src_bytes",
+              "value": 0.007293528356767376,
+              "shap_value": -0.08735490062511074
+            },
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.07412601115114384
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004918644383724874,
+              "shap_value": 0.01568532095558395
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": -0.0015376330596121627
+            },
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0004638393082241981
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Probe",
+          "confidence": 85.34320831298828
+        }
+      }
+    },
+    {
+      "sample_id": 228,
+      "true_label": "Normal",
+      "models": {
+        "decision_tree": {
+          "prediction": "Normal",
+          "confidence": 72.72727272727273
+        },
+        "random_forest": {
+          "prediction": "Normal",
+          "confidence": 66.73317861931574
+        },
+        "neural_network": {
+          "prediction": "Normal",
+          "confidence": 100.0,
+          "shap_explanation": [
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": -0.00036776663457964605
+            },
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004900988196303883,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "src_bytes",
+              "value": -0.007754915741460509,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Normal",
+          "confidence": 96.53529357910156
+        }
+      }
+    },
+    {
+      "sample_id": 12398,
+      "true_label": "Normal",
+      "models": {
+        "decision_tree": {
+          "prediction": "DoS",
+          "confidence": 36.36363636363637
+        },
+        "random_forest": {
+          "prediction": "Probe",
+          "confidence": 55.862857635609316
+        },
+        "neural_network": {
+          "prediction": "DoS",
+          "confidence": 99.99997570246481,
+          "shap_explanation": [
+            {
+              "feature": "src_bytes",
+              "value": -0.007673659356003862,
+              "shap_value": -0.07144266507038348
+            },
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.06387915287804646
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": -0.0010017465397921391
+            },
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.00031965866777352935
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004918644383724874,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Probe",
+          "confidence": 85.02339935302734
+        }
+      }
+    },
+    {
+      "sample_id": 1214,
+      "true_label": "Probe",
+      "models": {
+        "decision_tree": {
+          "prediction": "DoS",
+          "confidence": 100.0
+        },
+        "random_forest": {
+          "prediction": "DoS",
+          "confidence": 71.54225736717507
+        },
+        "neural_network": {
+          "prediction": "DoS",
+          "confidence": 99.99999999999855,
+          "shap_explanation": [
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": -0.09328438346513818
+            },
+            {
+              "feature": "src_bytes",
+              "value": -0.00776224074056876,
+              "shap_value": 0.0796251210856189
+            },
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004918644383724874,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "DoS",
+          "confidence": 82.5492935180664
+        }
+      }
+    },
+    {
+      "sample_id": 22316,
+      "true_label": "Probe",
+      "models": {
+        "decision_tree": {
+          "prediction": "Normal",
+          "confidence": 72.72727272727273
+        },
+        "random_forest": {
+          "prediction": "Normal",
+          "confidence": 51.68036151792914
+        },
+        "neural_network": {
+          "prediction": "Normal",
+          "confidence": 99.99999999984838,
+          "shap_explanation": [
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.003683208621647694,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "src_bytes",
+              "value": -0.0077150541184063046,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Normal",
+          "confidence": 89.57988739013672
+        }
+      }
+    },
+    {
+      "sample_id": 972,
+      "true_label": "Probe",
+      "models": {
+        "decision_tree": {
+          "prediction": "Normal",
+          "confidence": 72.72727272727273
+        },
+        "random_forest": {
+          "prediction": "Normal",
+          "confidence": 54.08081549786103
+        },
+        "neural_network": {
+          "prediction": "Normal",
+          "confidence": 99.99999999999112,
+          "shap_explanation": [
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.0042434817238940475,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "src_bytes",
+              "value": -0.007707558770481583,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Normal",
+          "confidence": 89.73474884033203
+        }
+      }
+    },
+    {
+      "sample_id": 4889,
+      "true_label": "R2L",
+      "models": {
+        "decision_tree": {
+          "prediction": "Probe",
+          "confidence": 60.0
+        },
+        "random_forest": {
+          "prediction": "Probe",
+          "confidence": 53.2530983090988
+        },
+        "neural_network": {
+          "prediction": "Normal",
+          "confidence": 92.10341401673897,
+          "shap_explanation": [
+            {
+              "feature": "src_bytes",
+              "value": -0.00776224074056876,
+              "shap_value": -0.2918784304227015
+            },
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.26895759261535696
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": 0.0026581620355209364
+            },
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0005383012316369624
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004918644383724874,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Probe",
+          "confidence": 56.92919921875
+        }
+      }
+    },
+    {
+      "sample_id": 22182,
+      "true_label": "R2L",
+      "models": {
+        "decision_tree": {
+          "prediction": "Normal",
+          "confidence": 72.72727272727273
+        },
+        "random_forest": {
+          "prediction": "Normal",
+          "confidence": 51.68036151792913
+        },
+        "neural_network": {
+          "prediction": "Normal",
+          "confidence": 99.99624898502123,
+          "shap_explanation": [
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004895517264990337,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "src_bytes",
+              "value": -0.007757470973707573,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "duration",
+              "value": -0.10871342272733454,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Normal",
+          "confidence": 89.57988739013672
+        }
+      }
+    },
+    {
+      "sample_id": 2622,
+      "true_label": "R2L",
+      "models": {
+        "decision_tree": {
+          "prediction": "Probe",
+          "confidence": 100.0
+        },
+        "random_forest": {
+          "prediction": "Probe",
+          "confidence": 64.4805309868642
+        },
+        "neural_network": {
+          "prediction": "Normal",
+          "confidence": 99.93483890022817,
+          "shap_explanation": [
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004918644383724874,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "src_bytes",
+              "value": 0.040551749889291167,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "duration",
+              "value": -0.0027431892509979937,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Probe",
+          "confidence": 94.79547882080078
+        }
+      }
+    },
+    {
+      "sample_id": 3217,
+      "true_label": "U2R",
+      "models": {
+        "decision_tree": {
+          "prediction": "Normal",
+          "confidence": 72.72727272727273
+        },
+        "random_forest": {
+          "prediction": "Normal",
+          "confidence": 51.91467799732988
+        },
+        "neural_network": {
+          "prediction": "Normal",
+          "confidence": 99.99999999987679,
+          "shap_explanation": [
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.010122493946753505
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": -0.0003724433317816248
+            },
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004692346770300913,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "src_bytes",
+              "value": -0.007706536677582757,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Normal",
+          "confidence": 89.57988739013672
+        }
+      }
+    },
+    {
+      "sample_id": 15153,
+      "true_label": "U2R",
+      "models": {
+        "decision_tree": {
+          "prediction": "Probe",
+          "confidence": 60.0
+        },
+        "random_forest": {
+          "prediction": "DoS",
+          "confidence": 39.30193228294443
+        },
+        "neural_network": {
+          "prediction": "DoS",
+          "confidence": 99.9999999626872,
+          "shap_explanation": [
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004918644383724874,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "src_bytes",
+              "value": -0.00776224074056876,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "Normal",
+          "confidence": 47.081512451171875
+        }
+      }
+    },
+    {
+      "sample_id": 14220,
+      "true_label": "U2R",
+      "models": {
+        "decision_tree": {
+          "prediction": "Probe",
+          "confidence": 60.0
+        },
+        "random_forest": {
+          "prediction": "DoS",
+          "confidence": 51.07128999223664
+        },
+        "neural_network": {
+          "prediction": "DoS",
+          "confidence": 99.99999995106839,
+          "shap_explanation": [
+            {
+              "feature": "wrong_fragment",
+              "value": -0.08948642202040107,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "land",
+              "value": -0.01408881176061316,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "dst_bytes",
+              "value": -0.004918644383724874,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "src_bytes",
+              "value": -0.00776224074056876,
+              "shap_value": 0.0
+            },
+            {
+              "feature": "duration",
+              "value": -0.11024922321249885,
+              "shap_value": 0.0
+            }
+          ]
+        },
+        "xgboost": {
+          "prediction": "DoS",
+          "confidence": 87.18726348876953
+        }
+      }
+    }
+  ],
+  "feature_importance": {
+    "decision_tree": {
+      "features": [
+        "src_bytes",
+        "count",
+        "dst_host_diff_srv_rate",
+        "dst_host_same_src_port_rate",
+        "protocol_type_encoded",
+        "dst_host_srv_count",
+        "num_compromised",
+        "service_encoded",
+        "diff_srv_rate",
+        "dst_host_same_srv_rate",
+        "flag_encoded",
+        "hot",
+        "dst_host_serror_rate",
+        "dst_host_srv_diff_host_rate",
+        "duration"
+      ],
+      "importance": [
+        0.558784808038963,
+        0.16129733036724514,
+        0.07485313844292883,
+        0.049207197416207035,
+        0.04817191149488572,
+        0.027180799391816172,
+        0.016728486657358675,
+        0.010239376390878172,
+        0.009042707728806271,
+        0.00833439818808919,
+        0.005144265819602457,
+        0.004625957351685412,
+        0.004554999741411116,
+        0.0043717939908736545,
+        0.0043189495021065845
+      ]
+    },
+    "random_forest": {
+      "features": [
+        "src_bytes",
+        "same_srv_rate",
+        "diff_srv_rate",
+        "dst_bytes",
+        "flag_encoded",
+        "dst_host_serror_rate",
+        "count",
+        "dst_host_same_src_port_rate",
+        "dst_host_diff_srv_rate",
+        "protocol_type_encoded",
+        "dst_host_same_srv_rate",
+        "serror_rate",
+        "dst_host_srv_count",
+        "srv_count",
+        "dst_host_srv_serror_rate"
+      ],
+      "importance": [
+        0.12753913103519193,
+        0.11640223576599956,
+        0.08575220279378447,
+        0.08538286678336297,
+        0.06609173846121214,
+        0.05007274270662907,
+        0.04799380939728455,
+        0.045775426530701074,
+        0.038906756823477336,
+        0.03507174750174226,
+        0.033736017988228645,
+        0.033534964504875725,
+        0.03139529404192967,
+        0.024943734494693035,
+        0.022703462147209065
+      ]
+    },
+    "xgboost": {
+      "features": [
+        "same_srv_rate",
+        "src_bytes",
+        "diff_srv_rate",
+        "flag_encoded",
+        "wrong_fragment",
+        "protocol_type_encoded",
+        "dst_host_diff_srv_rate",
+        "count",
+        "dst_host_srv_diff_host_rate",
+        "dst_host_same_src_port_rate",
+        "num_compromised",
+        "srv_serror_rate",
+        "dst_host_serror_rate",
+        "dst_bytes",
+        "hot"
+      ],
+      "importance": [
+        0.47484973073005676,
+        0.06454309076070786,
+        0.051187943667173386,
+        0.04666509851813316,
+        0.0400313176214695,
+        0.034617748111486435,
+        0.033310554921627045,
+        0.032951947301626205,
+        0.0319337323307991,
+        0.022462451830506325,
+        0.02060917392373085,
+        0.01694944128394127,
+        0.014852254651486874,
+        0.014356766827404499,
+        0.01307486928999424
+      ]
+    },
+    "neural_network_shap": {
+      "features": [
+        "root_shell",
+        "urgent",
+        "hot",
+        "service_encoded",
+        "num_shells",
+        "dst_host_srv_count",
+        "num_file_creations",
+        "num_access_files",
+        "logged_in",
+        "dst_host_count",
+        "dst_host_same_src_port_rate",
+        "dst_host_same_srv_rate",
+        "num_failed_logins",
+        "same_srv_rate",
+        "dst_host_diff_srv_rate"
+      ],
+      "importance": [
+        0.023794482265628428,
+        0.008798720301479301,
+        0.004176507689947409,
+        0.003143492033257431,
+        0.002559376841763584,
+        0.0022385038169033976,
+        0.002175582748982984,
+        0.001231734022308298,
+        0.0010995579043609996,
+        0.0010223088570784835,
+        0.0008857344601395584,
+        0.0006066311695728888,
+        0.0005553140135387759,
+        0.0005057770059581984,
+        0.00036370054469432237
+      ]
+    }
+  },
+  "performance": {
+    "decision_tree": {
+      "accuracy": 0.7583836053938964,
+      "u2r_f1": 0.0
+    },
+    "random_forest": {
+      "accuracy": 0.7466288147622427,
+      "u2r_f1": 0.0
+    },
+    "neural_network": {
+      "accuracy": 0.7493789921930447,
+      "u2r_f1": 0.4318181818181818
+    },
+    "xgboost": {
+      "accuracy": 0.7669002838892832,
+      "u2r_f1": 0.1095890410958904
+    }
+  }
+}

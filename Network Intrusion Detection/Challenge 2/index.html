@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Intrusion Detection | Anton Horvat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="insights.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Network Intrusion Detection System</h1>
+            <p class="subtitle">Machine Learning for Cybersecurity Analysis</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Performance Overview -->
+        <section class="section">
+            <h2>Model Performance</h2>
+            <div class="stats-grid" id="performanceGrid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Model Comparison Insights -->
+        <section class="section insights-section">
+            <h2>Model Comparison & Analysis</h2>
+            <p class="section-description">Understanding the trade-offs: Why different algorithms perform differently on this dataset</p>
+            
+            <div class="insight-tabs">
+                <button class="insight-tab active" data-insight="overview">Quick Overview</button>
+                <button class="insight-tab" data-insight="neural-network">Neural Network Deep Dive</button>
+                <button class="insight-tab" data-insight="recommendations">Which Model to Use?</button>
+            </div>
+
+            <div id="insightContent" class="insight-content">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Interactive Demo -->
+        <section class="section">
+            <h2>Test Sample Analysis</h2>
+            <p class="section-description">Explore how different models classify network traffic samples across 5 attack types</p>
+            
+            <!-- Attack Type Filter -->
+            <div class="filter-box">
+                <label>Filter by attack type:</label>
+                <div class="filter-buttons" id="attackTypeFilter">
+                    <button class="filter-btn active" data-type="all">All (15)</button>
+                    <button class="filter-btn" data-type="DoS">DoS</button>
+                    <button class="filter-btn" data-type="Normal">Normal</button>
+                    <button class="filter-btn" data-type="Probe">Probe</button>
+                    <button class="filter-btn" data-type="R2L">R2L</button>
+                    <button class="filter-btn" data-type="U2R">U2R</button>
+                </div>
+            </div>
+
+            <!-- Sample Cards -->
+            <div class="samples-grid" id="samplesGrid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Sample Detail Modal -->
+        <div id="sampleModal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div id="modalBody">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature Importance -->
+        <section class="section">
+            <h2>Feature Importance</h2>
+            <p class="section-description">Key network features that influence attack detection</p>
+            
+            <div class="model-selector">
+                <label>Select model:</label>
+                <select id="importanceModelSelect">
+                    <option value="decision_tree">Decision Tree</option>
+                    <option value="random_forest">Random Forest</option>
+                    <option value="neural_network_shap" selected>Neural Network (SHAP)</option>
+                    <option value="xgboost">XGBoost</option>
+                </select>
+            </div>
+
+            <div class="importance-chart" id="importanceChart">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Project Info -->
+        <section class="section info-section">
+            <h2>About This Project</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Dataset:</strong> NSL-KDD (125,973 training samples)
+                </div>
+                <div class="info-item">
+                    <strong>Attack Types:</strong> DoS, Probe, R2L, U2R, Normal Traffic
+                </div>
+                <div class="info-item">
+                    <strong>Models:</strong> Decision Tree, Random Forest, Neural Network, XGBoost
+                </div>
+                <div class="info-item">
+                    <strong>Explainability:</strong> SHAP values for Neural Network interpretability
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Anton Horvat | AI/ML Cybersecurity Project | 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

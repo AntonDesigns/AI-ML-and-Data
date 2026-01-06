@@ -1,0 +1,251 @@
+/* ============================================================================
+   MODEL INSIGHTS & ANALYSIS SECTION - CLEAN & SIMPLE
+   ============================================================================ */
+
+.insights-section {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+}
+
+/* Tabs */
+.insight-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.insight-tab {
+    padding: 1rem 1.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #6b7280;
+    transition: all 0.2s;
+}
+
+.insight-tab:hover {
+    color: #111827;
+}
+
+.insight-tab.active {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+}
+
+/* Content Area */
+.insight-content {
+    background: white;
+    border-radius: 6px;
+    padding: 2rem;
+}
+
+.insight-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1.5rem;
+}
+
+/* Comparison Table */
+.comparison-table {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th {
+    text-align: left;
+    padding: 0.75rem;
+    background: #f9fafb;
+    border-bottom: 2px solid #e5e7eb;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.comparison-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.comparison-table .highlight-row {
+    background: #f0f9ff;
+}
+
+.comparison-table .highlight-row td {
+    font-weight: 500;
+    color: #111827;
+}
+
+/* Key Insight Box */
+.key-insight {
+    background: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    padding: 1rem 1.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #78350f;
+}
+
+/* Reason Boxes */
+.reason-box {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.reason-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.reason-box p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #4b5563;
+    margin: 0;
+}
+
+/* Simple Lists */
+.simple-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.simple-list li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #4b5563;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.simple-list li:last-child {
+    border-bottom: none;
+}
+
+.simple-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+ol.simple-list {
+    counter-reset: item;
+}
+
+ol.simple-list li:before {
+    content: counter(item) ".";
+    counter-increment: item;
+    font-size: 0.9375rem;
+}
+
+/* Recommendation Boxes */
+.rec-box {
+    border: 2px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.rec-primary {
+    border-color: #10b981;
+    background: #f0fdf4;
+}
+
+.rec-secondary {
+    border-color: #3b82f6;
+    background: #eff6ff;
+}
+
+.rec-specialist {
+    border-color: #f59e0b;
+    background: #fffbeb;
+}
+
+.rec-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.rec-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+}
+
+.rec-model {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.rec-box p {
+    margin: 0.5rem 0;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+/* Bottom Line */
+.bottom-line {
+    background: #f3f4f6;
+    border-left: 4px solid #2563eb;
+    padding: 1.25rem;
+    margin-top: 2rem;
+}
+
+.bottom-line p {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: #374151;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .insight-tabs {
+        flex-direction: column;
+    }
+    
+    .insight-tab {
+        border-bottom: 1px solid #e5e7eb;
+        border-left: 3px solid transparent;
+    }
+    
+    .insight-tab.active {
+        border-bottom-color: #e5e7eb;
+        border-left-color: #2563eb;
+    }
+    
+    .insight-content {
+        padding: 1.5rem;
+    }
+    
+}
