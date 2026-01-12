@@ -104,7 +104,7 @@ function renderInsights(tab) {
             
             <div class="key-insight">
                 <strong>Key Finding:</strong> Neural Network achieved lower overall accuracy but significantly better U2R detection (43.18% vs 24.39%). 
-                This demonstrates that algorithm complexity doesn't guarantee better performance data quality and problem fit matter more.
+                This demonstrates that algorithm complexity doesn't guarantee better performance—data quality and problem fit matter more.
             </div>
         `,
         
@@ -155,7 +155,7 @@ function renderInsights(tab) {
                     <span class="rec-label">Recommended</span>
                     <span class="rec-model">XGBoost</span>
                 </div>
-                <p><strong>76.69% accuracy</strong> Best overall performance across all attack types</p>
+                <p><strong>76.69% accuracy</strong> — Best overall performance across all attack types</p>
                 <p>Use for general-purpose intrusion detection systems</p>
             </div>
             
@@ -164,7 +164,7 @@ function renderInsights(tab) {
                     <span class="rec-label">Alternative</span>
                     <span class="rec-model">Decision Tree</span>
                 </div>
-                <p><strong>75.84% accuracy</strong> 50x faster training, fully explainable</p>
+                <p><strong>75.84% accuracy</strong> — 50x faster training, fully explainable</p>
                 <p>Use when explainability and audit trails are required</p>
             </div>
             
@@ -173,8 +173,12 @@ function renderInsights(tab) {
                     <span class="rec-label">Specialist Only</span>
                     <span class="rec-model">Neural Network</span>
                 </div>
-                <p><strong>43.18% U2R F1</strong> Nearly 2x better than Decision Tree</p>
+                <p><strong>43.18% U2R F1</strong> — Nearly 2x better than Decision Tree</p>
                 <p>Reserve for U2R-specialized systems where privilege escalation detection is critical</p>
+            </div>
+            
+            <div class="bottom-line">
+                <p><strong>Bottom Line:</strong> Start with XGBoost for production deployment. Reserve Neural Network for specialized U2R detection. Always address class imbalance before comparing complex models.</p>
             </div>
         `
     };
@@ -388,87 +392,195 @@ function renderModelDetail(sample, modelKey, trueLabel) {
     const pred = sample.models[modelKey];
     const isCorrect = pred.prediction === trueLabel;
     
-    // Check if this is a high-confidence error (the paradox case)
-    const isHighConfidenceError = !isCorrect && pred.confidence >= 90;
-    
-    // Get confidence explanation
-    const confidenceExplanation = explainConfidence(pred.confidence, isCorrect);
-    
     // Check if SHAP is available
     const hasShap = modelKey === 'neural_network' && pred.shap_explanation && 
                     pred.shap_explanation.some(s => Math.abs(s.shap_value) > 0.001);
 
     return `
         <div class="modal-section detail-section">
-            ${isHighConfidenceError ? `
-                <div class="confidence-paradox-banner">
-                    <div class="paradox-icon">⚠️</div>
-                    <div class="paradox-content">
-                        <div class="paradox-title">High Confidence, Wrong Prediction - Why?</div>
-                        <div class="paradox-text">
-                            This is an important case study! The AI was ${pred.confidence.toFixed(0)}% sure, but wrong. 
-                            This demonstrates why cybersecurity systems <strong>never rely on a single model</strong> and 
-                            always include human analysis. See below for what fooled the AI.
-                        </div>
-                    </div>
-                </div>
-            ` : ''}
-            
-            <div class="prediction-result-card ${isCorrect ? 'result-correct' : 'result-incorrect'}">
-                <div class="result-header">
+            <!-- Simple Prediction Box -->
+            <div class="simple-prediction-box">
+                <div class="prediction-header-row">
                     <div>
-                        <div class="result-label">${modelNames[modelKey]} Prediction</div>
-                        <div class="result-value">${pred.prediction}</div>
-                        ${!isCorrect ? `
-                            <div class="actual-label-display">
-                                Actually was: <span class="actual-value">${trueLabel}</span>
-                            </div>
-                        ` : ''}
+                        <div class="model-label">${modelNames[modelKey]}</div>
+                        <div class="prediction-value-large">${pred.prediction}</div>
+                        ${!isCorrect ? `<div class="actual-note">Actually: <strong>${trueLabel}</strong></div>` : ''}
                     </div>
-                    <div class="result-status ${isCorrect ? 'status-correct' : 'status-incorrect'}">
+                    <div class="result-badge ${isCorrect ? 'badge-correct' : 'badge-incorrect'}">
                         ${isCorrect ? '✓ Correct' : '✗ Incorrect'}
                     </div>
                 </div>
                 
-                <div class="confidence-detail">
-                    <div class="confidence-header-large">
-                        <span class="confidence-label-large">Confidence Level</span>
-                        <span class="confidence-value-large">${pred.confidence.toFixed(1)}%</span>
-                    </div>
-                    <div class="confidence-bar-extra-large">
-                        <div class="confidence-fill-extra-large ${!isCorrect ? 'confidence-error' : ''}" style="width: ${pred.confidence}%"></div>
-                    </div>
-                    <div class="confidence-explanation">
-                        <strong>What this means:</strong> ${confidenceExplanation}
+                <div class="confidence-row">
+                    <span class="conf-label">Confidence</span>
+                    <span class="conf-value">${pred.confidence.toFixed(1)}%</span>
+                    <div class="conf-bar-track">
+                        <div class="conf-bar-fill" style="width: ${pred.confidence}%"></div>
                     </div>
                 </div>
             </div>
 
+            <!-- SHAP or Model Explanation -->
             ${hasShap ? `
-                <div class="shap-section-detailed">
-                    <h3 class="section-title">${isHighConfidenceError ? 'What Fooled the AI?' : `Why ${pred.confidence.toFixed(0)}% Confidence?`}</h3>
-                    <p class="section-description">
-                        ${isHighConfidenceError 
-                            ? `Despite being wrong, the AI was ${pred.confidence.toFixed(0)}% confident because these features <strong>looked like ${pred.prediction} traffic</strong> patterns the AI learned during training. This shows how attackers can disguise ${trueLabel} attacks to appear as ${pred.prediction} traffic.`
-                            : `The AI analyzed these network traffic characteristics to reach ${pred.confidence.toFixed(0)}% confidence that this is <strong>${pred.prediction}</strong> traffic. Each feature either increased (red) or decreased (blue) the AI's certainty.`
-                        }
-                    </p>
-                    ${renderSHAPImproved(pred.shap_explanation)}
+                <div class="shap-section-clean">
+                    <h3 class="subsection-title">Feature Analysis</h3>
+                    ${renderSHAPClean(pred.shap_explanation, pred.prediction)}
                 </div>
             ` : `
-                <div class="model-explanation-box">
-                    <h3 class="section-title">How ${modelNames[modelKey]} Works</h3>
-                    <p class="explanation-text">${getModelExplanation(modelKey, pred.confidence, isCorrect)}</p>
-                    ${modelKey !== 'neural_network' ? `
-                        <div class="feature-note">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 0C3.58 0 0 3.58 0 8C0 12.42 3.58 16 8 16C12.42 16 16 12.42 16 8C16 3.58 12.42 0 8 0ZM8.8 12H7.2V7.2H8.8V12ZM8.8 5.6H7.2V4H8.8V5.6Z" fill="currentColor"/>
-                            </svg>
-                            <span>Detailed feature-level explanations are only available for the Neural Network model using SHAP analysis.</span>
-                        </div>
-                    ` : ''}
+                <div class="model-explanation-clean">
+                    <h3 class="subsection-title">How ${modelNames[modelKey]} Works</h3>
+                    <p>${getModelExplanationSimple(modelKey, pred.confidence, isCorrect)}</p>
                 </div>
             `}
+        </div>
+    `;
+}
+
+// Simple model explanations
+function getModelExplanationSimple(modelKey, confidence, isCorrect) {
+    const explanations = {
+        'decision_tree': `Makes predictions using yes/no questions about network features. Confidence of ${confidence.toFixed(0)}% based on learned rules. ${isCorrect ? 'Correctly identified this pattern.' : 'Rules led to incorrect classification.'}`,
+        
+        'random_forest': `Combines multiple decision trees and votes. ${confidence.toFixed(0)}% confidence shows agreement level. ${isCorrect ? 'Forest correctly identified the pattern.' : 'Majority vote was incorrect.'}`,
+        
+        'xgboost': `Builds trees sequentially, each correcting previous mistakes. ${confidence.toFixed(0)}% confidence from combined prediction. ${isCorrect ? 'Advanced learning captured this correctly.' : 'Misclassified despite sophistication.'}`
+    };
+    
+    return explanations[modelKey] || 'Analyzes network traffic patterns to make predictions.';
+}
+
+// Clean, simple SHAP rendering with comprehensive explanations
+function renderSHAPClean(shapFeatures, prediction) {
+    if (!shapFeatures || shapFeatures.length === 0) {
+        return '<p class="no-shap">No SHAP data available</p>';
+    }
+
+    // Filter and sort
+    const meaningfulShap = shapFeatures
+        .filter(f => Math.abs(f.shap_value) > 0.001)
+        .sort((a, b) => Math.abs(b.shap_value) - Math.abs(a.shap_value))
+        .slice(0, 8);
+
+    if (meaningfulShap.length === 0) {
+        return '<p class="no-shap">No significant features found</p>';
+    }
+
+    // Generate AI reasoning summary - WHY it predicted this
+    const topFeatures = meaningfulShap.slice(0, 3);
+    const topFeature = topFeatures[0];
+    const topExplanation = getFeatureExplanation(topFeature.feature);
+    
+    let aiReasoningText = '';
+    let confidenceExplanation = '';
+    
+    if (prediction === 'DoS') {
+        aiReasoningText = `The Neural Network detected this as a <strong>DoS (Denial of Service) attack</strong> because the pattern of features matches what it learned from thousands of real DoS attacks during training. The strongest indicators were:`;
+        confidenceExplanation = `The model reached high confidence by identifying <strong>${topExplanation.name.toLowerCase()}</strong> combined with other attack patterns. DoS attacks typically flood networks with requests, causing high error rates and connection counts—exactly what the model found here.`;
+    } else if (prediction === 'Probe') {
+        aiReasoningText = `The Neural Network detected this as a <strong>Probe/Scanning attack</strong> because the traffic pattern matches reconnaissance behavior it learned during training. The key indicators were:`;
+        confidenceExplanation = `The model's confidence comes from recognizing <strong>${topExplanation.name.toLowerCase()}</strong> patterns typical of attackers scanning networks for vulnerabilities. Port scans create many failed connections and unusual port usage—signature patterns the model learned to identify.`;
+    } else if (prediction === 'U2R') {
+        aiReasoningText = `The Neural Network detected this as a <strong>U2R (User-to-Root) privilege escalation attack</strong> because it found patterns indicating attempts to gain administrator access. Critical indicators were:`;
+        confidenceExplanation = `The model achieved high confidence by detecting <strong>${topExplanation.name.toLowerCase()}</strong> and other privilege escalation signatures. U2R attacks involve gaining root/admin access through exploits—the model learned these patterns are the strongest indicators of system compromise.`;
+    } else if (prediction === 'R2L') {
+        aiReasoningText = `The Neural Network detected this as an <strong>R2L (Remote-to-Local) attack</strong> because the pattern suggests unauthorized remote access attempts. Key indicators were:`;
+        confidenceExplanation = `The model's confidence stems from identifying <strong>${topExplanation.name.toLowerCase()}</strong> combined with access attempt patterns. R2L attacks involve gaining unauthorized access from remote locations—typically through password attacks or exploits the model learned to recognize.`;
+    } else {
+        aiReasoningText = `The Neural Network classified this as <strong>normal/legitimate traffic</strong> because the feature patterns match benign network behavior from its training data. The key indicators were:`;
+        confidenceExplanation = `The model is confident this is legitimate traffic because <strong>${topExplanation.name.toLowerCase()}</strong> and other features show normal patterns. The low error rates, proper authentication, and natural service usage are hallmarks of genuine users the model learned during training.`;
+    }
+
+    // Build feature list for reasoning
+    let featureListHTML = '<ul style="margin: 8px 0 0 20px; padding: 0; list-style: disc;">';
+    topFeatures.forEach(feature => {
+        const explanation = getFeatureExplanation(feature.feature);
+        const value = formatFeatureValue(feature.value);
+        const direction = feature.shap_value > 0 ? 'attack' : 'normal';
+        featureListHTML += `<li style="margin-bottom: 4px;"><strong>${explanation.name}:</strong> ${value} (pushed toward ${direction})</li>`;
+    });
+    featureListHTML += '</ul>';
+
+    return `
+        <div class="explanation-box collapsible-box">
+            <div class="box-header-clickable" onclick="toggleExplanation('why-predicted')">
+                <div class="box-title">Why the Neural Network Predicted "${prediction}"</div>
+                <div class="expand-icon" id="icon-why-predicted">▼</div>
+            </div>
+            <div class="box-content collapsible-content" id="content-why-predicted" style="display: none;">
+                <p style="margin: 0 0 12px 0;">${aiReasoningText}</p>
+                ${featureListHTML}
+                <div class="confidence-explanation-box">
+                    <strong>How it reached its confidence level:</strong><br>
+                    ${confidenceExplanation}
+                </div>
+            </div>
+        </div>
+
+        <div class="explanation-box collapsible-box">
+            <div class="box-header-clickable" onclick="toggleExplanation('impact-scores')">
+                <div class="box-title">Understanding the Impact Scores</div>
+                <div class="expand-icon" id="icon-impact-scores">▼</div>
+            </div>
+            <div class="box-content collapsible-content" id="content-impact-scores" style="display: none;">
+                <div class="legend-grid">
+                    <div class="legend-item">
+                        <span class="legend-badge legend-badge-attack">Attack +0.045</span>
+                        <span class="legend-text"><strong>Red badges with +:</strong> This feature increased the model's belief it's an attack</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-badge legend-badge-normal">Normal -0.019</span>
+                        <span class="legend-text"><strong>Blue badges with -:</strong> This feature decreased the model's belief it's an attack</span>
+                    </div>
+                </div>
+                <div class="numbers-explanation">
+                    <strong>The signs match:</strong> When a feature pushes toward attack (red), both the Value and Impact show positive (+). When it pushes toward normal (blue), Impact shows negative (-). Larger absolute values (like ±0.045) mean stronger influence.
+                </div>
+            </div>
+        </div>
+
+        <div class="explanation-box collapsible-box">
+            <div class="box-header-clickable" onclick="toggleExplanation('table-explanation')">
+                <div class="box-title">What the Table Shows</div>
+                <div class="expand-icon" id="icon-table-explanation">▼</div>
+            </div>
+            <div class="box-content collapsible-content" id="content-table-explanation" style="display: none;">
+                <p style="margin: 0;">Each row below shows a network traffic feature the Neural Network analyzed. The <strong>Value</strong> column shows what was measured (+ means pushing toward attack). The <strong>Impact</strong> column shows how much that value influenced the prediction.</p>
+            </div>
+        </div>
+        
+        <div class="features-table">
+            <div class="table-header">
+                <div>Feature</div>
+                <div>Value</div>
+                <div>Impact</div>
+            </div>
+            ${meaningfulShap.map(feature => {
+                const isPositive = feature.shap_value > 0;
+                const explanation = getFeatureExplanation(feature.feature);
+                const value = formatFeatureValue(feature.value);
+                const impact = feature.shap_value > 0 ? 'Attack' : 'Normal';
+                const impactClass = isPositive ? 'impact-attack' : 'impact-normal';
+                const impactValue = Math.abs(feature.shap_value).toFixed(3);
+                
+                return `
+                    <div class="table-row">
+                        <div class="feature-name-col">
+                            <div class="feat-name">${explanation.name}</div>
+                            <div class="feat-desc">${explanation.explanation}</div>
+                        </div>
+                        <div class="value-col">${isPositive ? '+' : ''}${value.replace('-', '')}</div>
+                        <div class="impact-col">
+                            <span class="impact-badge ${impactClass}">
+                                ${impact} ${feature.shap_value > 0 ? '+' : ''}${impactValue}
+                            </span>
+                        </div>
+                    </div>
+                `;
+            }).join('')}
+        </div>
+        
+        <div class="bottom-note">
+            <strong>Note:</strong> The Neural Network doesn't look at features in isolation—it analyzes how they work together as a pattern. Even if one feature value seems normal by itself, the combination can reveal an attack signature the model learned during training.
         </div>
     `;
 }
@@ -515,7 +627,7 @@ function getModelExplanation(modelKey, confidence, isCorrect) {
     return explanations[modelKey] || 'This model analyzes network traffic patterns to make predictions.';
 }
 
-function renderSHAPImproved(shapFeatures) {
+function renderSHAPImproved(shapFeatures, prediction = 'unknown') {
     // Filter out near-zero values
     const meaningfulShap = shapFeatures.filter(f => Math.abs(f.shap_value) > 0.001);
     
@@ -525,7 +637,32 @@ function renderSHAPImproved(shapFeatures) {
 
     const maxAbs = Math.max(...meaningfulShap.map(f => Math.abs(f.shap_value)));
 
+    // Generate sample-specific AI reasoning summary
+    const aiReasoningSummary = generateAIReasoning(shapExplanation, prediction);
+    
     return `
+        <div class="shap-intro-box" style="background: linear-gradient(135deg, ${prediction === 'DoS' || prediction === 'Probe' ? '#fee2e2' : prediction === 'U2R' || prediction === 'R2L' ? '#fef3c7' : '#dcfce7'} 0%, ${prediction === 'DoS' || prediction === 'Probe' ? '#fecaca' : prediction === 'U2R' || prediction === 'R2L' ? '#fed7aa' : '#bbf7d0'} 100%); border: 2px solid ${prediction === 'DoS' || prediction === 'Probe' ? '#ef4444' : prediction === 'U2R' || prediction === 'R2L' ? '#f59e0b' : '#22c55e'}; border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+            <div style="display: flex; align-items: start; gap: 16px;">
+                <div style="font-size: 32px; flex-shrink: 0;">🔍</div>
+                <div style="flex: 1;">
+                    <div style="font-size: 16px; font-weight: 700; color: ${prediction === 'DoS' || prediction === 'Probe' ? '#991b1b' : prediction === 'U2R' || prediction === 'R2L' ? '#92400e' : '#166534'}; margin-bottom: 12px;">Why the AI Detected This as ${prediction}</div>
+                    <div style="font-size: 14px; color: ${prediction === 'DoS' || prediction === 'Probe' ? '#7f1d1d' : prediction === 'U2R' || prediction === 'R2L' ? '#78350f' : '#14532d'}; line-height: 1.6;">
+                        ${aiReasoningSummary}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shap-guide-box" style="background: #f3f4f6; border: 1px solid #d1d5db; border-radius: 8px; padding: 16px; margin-bottom: 20px;">
+            <div style="font-size: 13px; color: #374151; line-height: 1.5;">
+                <strong>📊 How to read the features below:</strong>
+                <ul style="margin: 8px 0 0 20px; padding: 0;">
+                    <li><strong>Detected Value</strong> = The actual measurement (like -11.0% or 50%)</li>
+                    <li><strong>Impact Score</strong> = How much this pushed the AI's decision (+/- number)</li>
+                    <li><strong>Red bars (→ Attack Signal)</strong> = Increased confidence it's an attack</li>
+                    <li><strong>Blue bars (→ Normal Signal)</strong> = Decreased confidence it's an attack</li>
+                </ul>
+            </div>
+        </div>
         <div class="shap-explainer">
             <div class="shap-legend">
                 <div class="legend-item">
@@ -610,7 +747,152 @@ function renderSHAPImproved(shapFeatures) {
     `;
 }
 
-// Format feature value for display
+// Generate sample-specific explanation of why AI made this prediction
+function generateAIReasoning(shapExplanation, prediction) {
+    if (!shapExplanation || shapExplanation.length === 0) {
+        return `<p style="margin: 0;">The AI classified this as <strong>${prediction}</strong> based on pattern recognition from training data.</p>`;
+    }
+    
+    // Get top positive (attack) and negative (normal) features
+    const positiveFeatures = shapExplanation
+        .filter(f => f.shap_value > 0.001)
+        .sort((a, b) => b.shap_value - a.shap_value)
+        .slice(0, 3);
+    
+    const negativeFeatures = shapExplanation
+        .filter(f => f.shap_value < -0.001)
+        .sort((a, b) => a.shap_value - b.shap_value)
+        .slice(0, 2);
+    
+    let reasoning = '';
+    
+    // Build the reasoning based on the prediction type
+    if (prediction === 'DoS') {
+        reasoning = '<p style="margin: 0 0 12px 0;"><strong>The AI detected a Denial of Service (DoS) attack pattern because:</strong></p><ul style="margin: 0 0 12px 20px; padding: 0;">';
+        
+        if (positiveFeatures.length > 0) {
+            positiveFeatures.forEach(feature => {
+                const explanation = getFeatureExplanation(feature.feature);
+                const value = formatFeatureValue(feature.value);
+                
+                if (feature.feature.includes('error') || feature.feature.includes('serror')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — High error rates are the signature of DoS floods overwhelming the target</li>`;
+                } else if (feature.feature.includes('count')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Massive connection counts indicate flooding behavior</li>`;
+                } else if (feature.feature.includes('same_srv') || feature.feature.includes('srv_count')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Repeatedly hammering the same service is typical DoS behavior</li>`;
+                } else {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — This pattern matches DoS attacks the AI learned from training</li>`;
+                }
+            });
+        }
+        reasoning += '</ul>';
+        
+        if (negativeFeatures.length > 0) {
+            reasoning += '<p style="margin: 0; font-size: 13px; color: #6b7280;">Some features suggested it might be normal traffic, but the DoS indicators above were much stronger.</p>';
+        }
+        
+    } else if (prediction === 'Probe') {
+        reasoning = '<p style="margin: 0 0 12px 0;"><strong>The AI detected a Probe/Scanning attack because:</strong></p><ul style="margin: 0 0 12px 20px; padding: 0;">';
+        
+        if (positiveFeatures.length > 0) {
+            positiveFeatures.forEach(feature => {
+                const explanation = getFeatureExplanation(feature.feature);
+                const value = formatFeatureValue(feature.value);
+                
+                if (feature.feature.includes('error') || feature.feature.includes('serror')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — High errors from trying many ports/services that don't exist</li>`;
+                } else if (feature.feature.includes('same_src_port') || feature.feature.includes('dst_host')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Systematic scanning pattern across multiple targets</li>`;
+                } else if (feature.feature.includes('count')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Rapid connection attempts typical of port/service scanning</li>`;
+                } else {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Matches reconnaissance attack patterns</li>`;
+                }
+            });
+        }
+        reasoning += '</ul>';
+        
+    } else if (prediction === 'U2R') {
+        reasoning = '<p style="margin: 0 0 12px 0;"><strong>The AI detected a User-to-Root (U2R) privilege escalation attack because:</strong></p><ul style="margin: 0 0 12px 20px; padding: 0;">';
+        
+        if (positiveFeatures.length > 0) {
+            positiveFeatures.forEach(feature => {
+                const explanation = getFeatureExplanation(feature.feature);
+                const value = formatFeatureValue(feature.value);
+                
+                if (feature.feature.includes('root_shell')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>🚨 ${explanation.name}: ${value}</strong> — ROOT SHELL ACCESS is the strongest possible U2R indicator!</li>`;
+                } else if (feature.feature.includes('num_root') || feature.feature.includes('su_attempted')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Attempting to gain administrator privileges</li>`;
+                } else if (feature.feature.includes('hot') || feature.feature.includes('num_file_creations')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Accessing sensitive files or creating backdoors</li>`;
+                } else if (feature.feature.includes('num_shells')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Gaining shell access to escalate privileges</li>`;
+                } else {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Suspicious privilege escalation behavior</li>`;
+                }
+            });
+        }
+        reasoning += '</ul>';
+        reasoning += '<p style="margin: 0; font-size: 13px; background: #fef3c7; padding: 8px; border-radius: 4px;"><strong>⚠️ U2R attacks are CRITICAL:</strong> The attacker is trying to gain root/admin access to fully compromise the system.</p>';
+        
+    } else if (prediction === 'R2L') {
+        reasoning = '<p style="margin: 0 0 12px 0;"><strong>The AI detected a Remote-to-Local (R2L) attack because:</strong></p><ul style="margin: 0 0 12px 20px; padding: 0;">';
+        
+        if (positiveFeatures.length > 0) {
+            positiveFeatures.forEach(feature => {
+                const explanation = getFeatureExplanation(feature.feature);
+                const value = formatFeatureValue(feature.value);
+                
+                if (feature.feature.includes('failed_login') || feature.feature.includes('num_failed')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Multiple failed logins indicate brute-force password attacks</li>`;
+                } else if (feature.feature.includes('logged_in')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — ${feature.value > 0 ? 'Successful unauthorized access after attempts' : 'Attempting to gain unauthorized access'}</li>`;
+                } else if (feature.feature.includes('hot') || feature.feature.includes('num_compromised')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Signs of system compromise or sensitive file access</li>`;
+                } else {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Unauthorized remote access pattern</li>`;
+                }
+            });
+        }
+        reasoning += '</ul>';
+        
+    } else if (prediction === 'normal') {
+        reasoning = '<p style="margin: 0 0 12px 0;"><strong>The AI determined this is legitimate traffic because:</strong></p><ul style="margin: 0 0 12px 20px; padding: 0;">';
+        
+        if (negativeFeatures.length > 0) {
+            negativeFeatures.forEach(feature => {
+                const explanation = getFeatureExplanation(feature.feature);
+                const value = formatFeatureValue(feature.value);
+                
+                if (feature.feature.includes('error')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Low error rates indicate clean, successful connections</li>`;
+                } else if (feature.feature.includes('logged_in')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Proper authentication suggests legitimate user</li>`;
+                } else if (feature.feature.includes('same_srv') || feature.feature.includes('diff_srv')) {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Natural service usage patterns, not automated attacks</li>`;
+                } else {
+                    reasoning += `<li style="margin-bottom: 6px;"><strong>${explanation.name}: ${value}</strong> — Matches normal traffic behavior</li>`;
+                }
+            });
+        }
+        reasoning += '</ul>';
+        
+        if (positiveFeatures.length > 0) {
+            reasoning += '<p style="margin: 0; font-size: 13px; color: #6b7280;">A few features looked slightly suspicious, but overall the traffic pattern is clearly legitimate.</p>';
+        }
+    }
+    
+    // Add pattern explanation
+    reasoning += `<div style="margin-top: 12px; padding: 10px; background: rgba(255,255,255,0.5); border-radius: 6px; font-size: 13px;">
+        <strong>💡 Key Point:</strong> The AI doesn't just look at individual values—it analyzes <strong>the entire pattern</strong> of features together. 
+        Even if one value seems "normal" by itself, the combination reveals the ${prediction === 'normal' ? 'legitimate' : 'attack'} signature.
+    </div>`;
+    
+    return reasoning;
+}
+
 function formatFeatureValue(value) {
     if (value >= -1 && value <= 1) {
         // Normalized value (0-1 or -1 to 1)
@@ -620,98 +902,152 @@ function formatFeatureValue(value) {
     }
 }
 
-// Analyze what the feature value means and WHY it indicates attack/normal
+// Analyze what the feature value means and WHY it impacts the AI's decision
 function analyzeFeatureValue(featureName, value, pushesAttack) {
     // Convert normalized value to percentage for easier understanding
     const normalizedPercent = (value * 100).toFixed(0);
     
     const analyses = {
         'duration': value => {
-            if (value > 0.5) return `⚠️ This connection lasted <strong>much longer than typical</strong> (${normalizedPercent}% of maximum). Attacks like DoS often keep connections open for extended periods to exhaust server resources.`;
-            else if (value < -0.5) return `✓ This connection was <strong>extremely brief</strong> (${normalizedPercent}%). While very short connections can indicate port scanning, this specific timing pattern suggests normal quick requests.`;
-            else return `This connection duration is in the normal range (${normalizedPercent}%).`;
+            if (pushesAttack && Math.abs(value) > 0.5) {
+                return `The AI learned that connection times like this (${normalizedPercent}%) are <strong>unusual for normal traffic</strong>. ${value > 0 ? 'Very long connections can indicate DoS attacks trying to hold resources.' : 'Very short connections combined with other features suggest scanning behavior.'}`;
+            } else if (pushesAttack) {
+                return `While the duration (${normalizedPercent}%) seems normal by itself, <strong>the AI found it increases attack probability</strong> when combined with this specific pattern of other features.`;
+            } else {
+                return `The duration (${normalizedPercent}%) <strong>fits the pattern of legitimate traffic</strong> the AI has seen during training.`;
+            }
         },
         
         'src_bytes': value => {
-            if (pushesAttack && value > 0.3) return `⚠️ <strong>Large amount of data sent</strong> from source (${normalizedPercent}%). This volume is ${value > 0.7 ? 'extremely high and' : ''} typical of DoS attacks that flood the network with data packets.`;
-            else if (!pushesAttack && value < -0.3) return `✓ <strong>Minimal data sent</strong> (${normalizedPercent}%). This low volume is consistent with normal legitimate requests that don't send much data.`;
-            else if (pushesAttack) return `⚠️ The data volume pattern (${normalizedPercent}%) combined with other factors suggests malicious intent rather than normal usage.`;
-            else return `✓ This data volume (${normalizedPercent}%) fits normal traffic patterns when considered with other characteristics.`;
+            if (pushesAttack && Math.abs(value) > 0.3) {
+                return `The AI identified that data volume like this (${normalizedPercent}%) <strong>matches attack patterns</strong> it learned from training. ${value > 0 ? 'High volumes often indicate DoS floods.' : 'Low volumes with other suspicious features suggest scanning.'}`;
+            } else if (pushesAttack) {
+                return `Even though ${normalizedPercent}% seems moderate, <strong>this specific data pattern increased the AI's suspicion</strong> based on how it correlates with attacks in training data.`;
+            } else {
+                return `Data volume (${normalizedPercent}%) <strong>matches legitimate traffic patterns</strong> the AI learned, making an attack less likely.`;
+            }
         },
         
         'dst_bytes': value => {
-            if (pushesAttack && value > 0.3) return `⚠️ <strong>Large amount of data received</strong> (${normalizedPercent}%). Unusual for typical attacks but may indicate data exfiltration or response to attack probes.`;
-            else if (!pushesAttack && Math.abs(value) < 0.2) return `✓ <strong>Balanced data flow</strong> (${normalizedPercent}%). Normal traffic typically has similar amounts of data in both directions.`;
-            else return `The data received (${normalizedPercent}%) ${pushesAttack ? 'shows anomalous patterns' : 'aligns with normal traffic behavior'}.`;
+            if (pushesAttack) {
+                return `The AI learned that receiving ${normalizedPercent}% of data in this scenario <strong>is unusual for normal behavior</strong>. ${Math.abs(value) > 0.5 ? 'This could indicate data exfiltration or attack responses.' : 'Combined with other features, this pattern looks suspicious.'}`;
+            } else {
+                return `Received data (${normalizedPercent}%) <strong>fits normal traffic distribution</strong> patterns, reducing attack probability.`;
+            }
         },
         
         'count': value => {
-            if (value > 0.5) return `⚠️ <strong>Very high connection count</strong> (${normalizedPercent}%). Normal users make few connections, but attackers often create ${value > 0.8 ? 'hundreds or thousands' : 'many rapid'} connections (like in port scanning or DoS).`;
-            else if (value < -0.3) return `✓ <strong>Few connections</strong> (${normalizedPercent}%). This low activity level is characteristic of normal single-purpose requests.`;
-            else return `Connection count (${normalizedPercent}%) is in a range that requires other factors to determine if it's malicious.`;
+            if (pushesAttack && value > 0.5) {
+                return `The AI flagged this connection count (${normalizedPercent}%) as <strong>significantly higher than normal traffic</strong>. Attackers create many connections for scanning or flooding.`;
+            } else if (pushesAttack) {
+                return `The connection count (${normalizedPercent}%) <strong>increases attack probability</strong> when seen with this combination of other features.`;
+            } else if (value < -0.3) {
+                return `Low connection count (${normalizedPercent}%) <strong>matches normal single-request behavior</strong> patterns.`;
+            } else {
+                return `Connection count (${normalizedPercent}%) <strong>aligns with legitimate usage</strong> the AI has seen.`;
+            }
         },
         
         'srv_count': value => {
-            if (value > 0.5) return `⚠️ <strong>High same-service connection rate</strong> (${normalizedPercent}%). Attackers often repeatedly target the same service, while normal users vary their activity.`;
-            else return `Service connection rate (${normalizedPercent}%) ${pushesAttack ? 'combined with other factors suggests attack' : 'is within normal bounds'}.`;
+            if (pushesAttack && value > 0.5) {
+                return `The AI noticed ${normalizedPercent}% same-service connections is <strong>unusually high and attack-like</strong>. Attackers focus on specific targets.`;
+            } else {
+                return `Service connection rate (${normalizedPercent}%) ${pushesAttack ? 'contributed to attack suspicion in this pattern' : 'is consistent with normal behavior'}.`;
+            }
         },
         
         'same_srv_rate': value => {
-            if (value > 0.7) return `⚠️ <strong>${normalizedPercent}% of connections</strong> went to the same service. This extreme focus on one service is typical of targeted attacks or automated scanning.`;
-            else if (value < 0.3) return `✓ <strong>Diverse service usage</strong> (only ${normalizedPercent}% to same service). Normal users naturally vary between different services.`;
-            else return `Same service rate of ${normalizedPercent}% ${pushesAttack ? 'appears suspicious in this context' : 'is acceptable for normal usage'}.`;
+            if (pushesAttack && value > 0.7) {
+                return `<strong>${normalizedPercent}% of connections targeting one service</strong> is extreme focus that the AI associates with automated attacks or scanning.`;
+            } else if (!pushesAttack && value < 0.3) {
+                return `Diverse service usage (only ${normalizedPercent}% to same service) <strong>is typical of human browsing</strong> behavior.`;
+            } else {
+                return `Same service rate (${normalizedPercent}%) ${pushesAttack ? 'seems high for normal use in this context' : 'is reasonable for legitimate activity'}.`;
+            }
         },
         
         'diff_srv_rate': value => {
-            if (value < -0.5) return `⚠️ <strong>Very low service diversity</strong> (${normalizedPercent}%). The lack of variety suggests automated attack tools focused on specific targets.`;
-            else if (value > 0.5) return `✓ <strong>Good service variety</strong> (${normalizedPercent}%). Normal human behavior involves accessing different services naturally.`;
-            else return `Service diversity (${normalizedPercent}%) ${pushesAttack ? 'is lower than expected for legitimate use' : 'is reasonable'}.`;
+            if (pushesAttack && value < -0.5) {
+                return `Very low service diversity (${normalizedPercent}%) <strong>suggests automated tools</strong> rather than human behavior.`;
+            } else if (!pushesAttack && value > 0.5) {
+                return `Good service variety (${normalizedPercent}%) <strong>matches natural human browsing</strong> patterns.`;
+            } else {
+                return `Service diversity (${normalizedPercent}%) ${pushesAttack ? 'is suspiciously low' : 'is acceptable'}.`;
+            }
         },
         
         'serror_rate': value => {
-            if (value > 0.5) return `⚠️ <strong>${normalizedPercent}% error rate</strong> - extremely high! This many SYN errors strongly indicates port scanning, where attackers probe for open ports.`;
-            else if (value < -0.5) return `✓ <strong>Very low error rate</strong> (${normalizedPercent}%). Clean connections with few errors indicate legitimate established communication.`;
-            else return `Error rate of ${normalizedPercent}% ${pushesAttack ? 'is elevated above normal' : 'is within acceptable range'}.`;
+            if (pushesAttack && value > 0.5) {
+                return `<strong>${normalizedPercent}% error rate is extremely high!</strong> The AI strongly associates this with port scanning attacks where most connection attempts fail.`;
+            } else if (!pushesAttack && value < -0.5) {
+                return `Very low error rate (${normalizedPercent}%) <strong>indicates clean, legitimate connections</strong> that the AI recognizes as normal.`;
+            } else {
+                return `Error rate (${normalizedPercent}%) ${pushesAttack ? 'is elevated above what the AI expects for normal traffic' : 'is within typical ranges'}.`;
+            }
         },
         
         'dst_host_serror_rate': value => {
-            if (value > 0.6) return `⚠️ <strong>Host experiencing ${normalizedPercent}% errors</strong>. When a host has this many connection errors, it's usually being scanned or probed by attackers.`;
-            else return `Host error rate (${normalizedPercent}%) ${pushesAttack ? 'suggests the host is under attack' : 'indicates stable connections'}.`;
+            if (pushesAttack && value > 0.6) {
+                return `<strong>${normalizedPercent}% error rate at the destination host</strong> is what the AI flagged. This pattern strongly indicates the host is being scanned or attacked.`;
+            } else {
+                return `Destination error rate (${normalizedPercent}%) ${pushesAttack ? 'contributes to attack suspicion' : 'indicates stable connections'}.`;
+            }
         },
         
         'logged_in': value => {
-            if (value > 0) return `✓ <strong>User successfully logged in</strong>. Successful authentication is a positive sign of legitimate access.`;
-            else return `⚠️ <strong>No successful login</strong>. Connection without authentication can indicate automated attacks or unauthorized access attempts.`;
+            if (value > 0) {
+                return `Successful authentication (logged_in=1) ${pushesAttack ? 'is interesting because attackers can authenticate before escalating privileges' : 'is a normal indicator of legitimate access'}.`;
+            } else {
+                return `No successful login ${pushesAttack ? 'combined with other patterns suggests unauthorized access attempts' : 'might be normal for certain service types'}.`;
+            }
         },
         
         'num_failed_logins': value => {
-            if (value > 0.3) return `⚠️ <strong>Multiple failed login attempts</strong> detected (${normalizedPercent}%). This is a classic sign of brute-force password attacks.`;
-            else return `${pushesAttack ? '⚠️' : '✓'} Failed login indicator at ${normalizedPercent}%.`;
+            if (pushesAttack && value > 0.3) {
+                return `Multiple failed login attempts (${normalizedPercent}%) is a <strong>classic brute-force attack signature</strong> that the AI learned to recognize.`;
+            } else {
+                return `Failed login count (${normalizedPercent}%) ${pushesAttack ? 'adds to suspicion' : 'is not concerning'}.`;
+            }
         },
         
         'root_shell': value => {
-            if (value > 0) return `⚠️ <strong>ROOT SHELL ACCESS DETECTED!</strong> Getting root shell access is the ultimate goal of privilege escalation attacks (U2R). This is the strongest indicator of a successful system compromise.`;
-            else return `No root shell access detected.`;
+            if (value > 0) {
+                return `<strong>ROOT SHELL ACCESS DETECTED!</strong> The AI flags any root shell access as the strongest U2R (privilege escalation) indicator—this is the ultimate goal of these attacks.`;
+            } else {
+                return `No root shell access detected in this connection.`;
+            }
         },
         
         'num_root': value => {
-            if (value > 0.5) return `⚠️ <strong>Multiple root-level operations</strong> (${normalizedPercent}%). This many administrator-level actions strongly suggests privilege escalation or system compromise.`;
-            else return `Root operations at ${normalizedPercent}% ${pushesAttack ? 'is suspicious' : 'is minimal'}.`;
+            if (pushesAttack && value > 0.5) {
+                return `Multiple root operations (${normalizedPercent}%) is what the AI associates with <strong>privilege escalation or system compromise</strong>.`;
+            } else {
+                return `Root operations (${normalizedPercent}%) ${pushesAttack ? 'contributed to the overall attack pattern' : 'is minimal'}.`;
+            }
         },
         
         'num_file_creations': value => {
-            if (value > 0.4) return `⚠️ <strong>Unusual file creation activity</strong> (${normalizedPercent}%). High file creation rates can indicate malware installation or attackers establishing persistence.`;
-            else return `File creation (${normalizedPercent}%) ${pushesAttack ? 'combined with other factors is concerning' : 'is normal'}.`;
+            if (pushesAttack && value > 0.4) {
+                return `High file creation activity (${normalizedPercent}%) is a pattern the AI links to <strong>malware installation or attackers establishing persistence</strong>.`;
+            } else {
+                return `File creation (${normalizedPercent}%) ${pushesAttack ? 'is part of the suspicious pattern' : 'is normal activity'}.`;
+            }
         },
         
         'hot': value => {
-            if (value > 0.3) return `⚠️ <strong>Accessing sensitive system files</strong> (hot indicator: ${normalizedPercent}%). Attackers typically access security-critical files to escalate privileges or steal data.`;
-            else return `Sensitive file access (${normalizedPercent}%) ${pushesAttack ? 'is noted' : 'is minimal'}.`;
+            if (pushesAttack && value > 0.3) {
+                return `Accessing sensitive files (${normalizedPercent}%) is what the AI flags. Attackers typically access security-critical files (like /etc/passwd) to <strong>escalate privileges</strong>.`;
+            } else {
+                return `Sensitive file access (${normalizedPercent}%) ${pushesAttack ? 'adds to the attack pattern' : 'is minimal'}.`;
+            }
         },
         
         'num_shells': value => {
-            if (value > 0.2) return `⚠️ <strong>Shell access obtained</strong> (${normalizedPercent}%). Getting command-line access is a major step in successful attacks.`;
-            else return `Shell access indicators at ${normalizedPercent}%.`;
+            if (pushesAttack && value > 0.2) {
+                return `Shell access obtained (${normalizedPercent}%) is a <strong>major attack success indicator</strong> that the AI learned to recognize.`;
+            } else {
+                return `Shell access indicators at ${normalizedPercent}%.`;
+            }
         },
         
         'wrong_fragment': value => {
@@ -840,4 +1176,21 @@ function setupEventListeners() {
     document.getElementById('importanceModelSelect').addEventListener('change', (e) => {
         renderFeatureImportance(e.target.value);
     });
+}
+
+// ============================================================================
+// COLLAPSIBLE EXPLANATION BOXES
+// ============================================================================
+
+function toggleExplanation(boxId) {
+    const content = document.getElementById(`content-${boxId}`);
+    const icon = document.getElementById(`icon-${boxId}`);
+    
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+        icon.textContent = '▲';
+    } else {
+        content.style.display = 'none';
+        icon.textContent = '▼';
+    }
 }
