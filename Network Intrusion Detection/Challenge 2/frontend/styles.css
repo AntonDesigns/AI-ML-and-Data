@@ -1810,3 +1810,69 @@ body {
         max-height: 1000px;
     }
 }
+
+/* ============================================================================
+   XAI COMPARISON STYLING (Before/After Format)
+   ============================================================================ */
+
+.xai-comparison-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.xai-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.xai-section-header {
+    font-weight: 700;
+    padding: 12px 16px;
+    border-radius: 8px 8px 0 0;
+}
+
+.prediction-box-blackbox {
+    border: 2px solid #e5e7eb;
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+    background: white;
+}
+
+.prediction-box-withxai {
+    border: 2px solid #10b981;
+    border-radius: 0 0 8px 8px;
+    padding: 24px;
+    background: white;
+}
+
+/* Mobile responsive */
+@media (max-width: 968px) {
+    .xai-comparison-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Collapsible Header */
+.collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.collapsible-header:hover {
+    opacity: 0.8;
+}
+
+.toggle-icon {
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+
+.collapsible-content {
+    margin-top: 16px;
+}

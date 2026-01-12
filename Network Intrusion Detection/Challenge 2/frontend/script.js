@@ -424,7 +424,7 @@ function renderModelDetail(sample, modelKey, trueLabel) {
             ${hasShap ? `
                 <div class="shap-section-clean">
                     <h3 class="subsection-title">Feature Analysis</h3>
-                    ${renderSHAPClean(pred.shap_explanation, pred.prediction)}
+                    ${renderSHAPClean(pred.shap_explanation, pred.prediction, isCorrect, trueLabel)}
                 </div>
             ` : `
                 <div class="model-explanation-clean">
@@ -450,7 +450,7 @@ function getModelExplanationSimple(modelKey, confidence, isCorrect) {
 }
 
 // Clean, simple SHAP rendering with comprehensive explanations
-function renderSHAPClean(shapFeatures, prediction) {
+function renderSHAPClean(shapFeatures, prediction, isCorrect, actualLabel) {
     if (!shapFeatures || shapFeatures.length === 0) {
         return '<p class="no-shap">No SHAP data available</p>';
     }
@@ -465,122 +465,120 @@ function renderSHAPClean(shapFeatures, prediction) {
         return '<p class="no-shap">No significant features found</p>';
     }
 
-    // Generate AI reasoning summary - WHY it predicted this
+    // Top 3 features
     const topFeatures = meaningfulShap.slice(0, 3);
-    const topFeature = topFeatures[0];
-    const topExplanation = getFeatureExplanation(topFeature.feature);
     
-    let aiReasoningText = '';
-    let confidenceExplanation = '';
-    
-    if (prediction === 'DoS') {
-        aiReasoningText = `The Neural Network detected this as a <strong>DoS (Denial of Service) attack</strong> because the pattern of features matches what it learned from thousands of real DoS attacks during training. The strongest indicators were:`;
-        confidenceExplanation = `The model reached high confidence by identifying <strong>${topExplanation.name.toLowerCase()}</strong> combined with other attack patterns. DoS attacks typically flood networks with requests, causing high error rates and connection counts—exactly what the model found here.`;
-    } else if (prediction === 'Probe') {
-        aiReasoningText = `The Neural Network detected this as a <strong>Probe/Scanning attack</strong> because the traffic pattern matches reconnaissance behavior it learned during training. The key indicators were:`;
-        confidenceExplanation = `The model's confidence comes from recognizing <strong>${topExplanation.name.toLowerCase()}</strong> patterns typical of attackers scanning networks for vulnerabilities. Port scans create many failed connections and unusual port usage—signature patterns the model learned to identify.`;
-    } else if (prediction === 'U2R') {
-        aiReasoningText = `The Neural Network detected this as a <strong>U2R (User-to-Root) privilege escalation attack</strong> because it found patterns indicating attempts to gain administrator access. Critical indicators were:`;
-        confidenceExplanation = `The model achieved high confidence by detecting <strong>${topExplanation.name.toLowerCase()}</strong> and other privilege escalation signatures. U2R attacks involve gaining root/admin access through exploits—the model learned these patterns are the strongest indicators of system compromise.`;
-    } else if (prediction === 'R2L') {
-        aiReasoningText = `The Neural Network detected this as an <strong>R2L (Remote-to-Local) attack</strong> because the pattern suggests unauthorized remote access attempts. Key indicators were:`;
-        confidenceExplanation = `The model's confidence stems from identifying <strong>${topExplanation.name.toLowerCase()}</strong> combined with access attempt patterns. R2L attacks involve gaining unauthorized access from remote locations—typically through password attacks or exploits the model learned to recognize.`;
-    } else {
-        aiReasoningText = `The Neural Network classified this as <strong>normal/legitimate traffic</strong> because the feature patterns match benign network behavior from its training data. The key indicators were:`;
-        confidenceExplanation = `The model is confident this is legitimate traffic because <strong>${topExplanation.name.toLowerCase()}</strong> and other features show normal patterns. The low error rates, proper authentication, and natural service usage are hallmarks of genuine users the model learned during training.`;
-    }
-
-    // Build feature list for reasoning
-    let featureListHTML = '<ul style="margin: 8px 0 0 20px; padding: 0; list-style: disc;">';
+    // Create interpretation text based on top 3 features
+    let interpretationLines = [];
     topFeatures.forEach(feature => {
         const explanation = getFeatureExplanation(feature.feature);
         const value = formatFeatureValue(feature.value);
-        const direction = feature.shap_value > 0 ? 'attack' : 'normal';
-        featureListHTML += `<li style="margin-bottom: 4px;"><strong>${explanation.name}:</strong> ${value} (pushed toward ${direction})</li>`;
+        let line = '';
+        
+        if (feature.feature.includes('error') || feature.feature.includes('serror')) {
+            line = `High ${explanation.name} (${value}) indicates connection flooding.`;
+        } else if (feature.feature.includes('same_srv')) {
+            line = `Repetitive same-service requests (${value}) shows automated attack.`;
+        } else if (feature.feature.includes('dst_host')) {
+            line = `Target system overwhelmed (${value} error rate on destination).`;
+        } else if (feature.feature.includes('root_shell')) {
+            line = `Root shell access detected - privilege escalation confirmed.`;
+        } else if (feature.feature.includes('logged_in')) {
+            line = value === '1' ? 'Authenticated access required for privilege escalation.' : 'Unauthenticated access attempt detected.';
+        } else if (feature.feature.includes('count')) {
+            line = `High connection count (${value}) indicates rapid automated activity.`;
+        } else {
+            line = `${explanation.name} (${value}) contributes to attack signature.`;
+        }
+        interpretationLines.push(line);
     });
-    featureListHTML += '</ul>';
+    
+    // Determine pattern description
+    let patternDesc = '';
+    if (prediction === 'DoS') {
+        patternDesc = 'Classic DoS flooding attack signature.';
+    } else if (prediction === 'Probe') {
+        patternDesc = 'Systematic reconnaissance/scanning pattern.';
+    } else if (prediction === 'U2R') {
+        patternDesc = 'Privilege escalation attack pattern.';
+    } else if (prediction === 'R2L') {
+        patternDesc = 'Unauthorized remote access pattern.';
+    } else {
+        patternDesc = 'Legitimate network usage pattern.';
+    }
+    
+    // DYNAMIC messaging based on correctness (using parameters passed to function)
+    const analystThinkingCorrect = `"Yes, these patterns match ${prediction}. I trust this alert and will act."`;
+    const analystThinkingWrong = `"Wait... the XAI shows ${prediction}, but it's actually ${actualLabel}. Even with explanations, AI can be fooled by deceptive patterns!"`;
+    
+    const bottomNoteCorrect = `<strong>✅ When AI is correct:</strong> XAI helps analysts verify the reasoning, learn attack patterns, and act with confidence.`;
+    const bottomNoteWrong = `<strong>⚠️ When AI is WRONG:</strong> XAI is still valuable - it shows exactly WHY the AI was fooled! Analysts can see the misleading features and update the model. This is why human oversight is critical.`;
 
     return `
-        <div class="explanation-box collapsible-box">
-            <div class="box-header-clickable" onclick="toggleExplanation('why-predicted')">
-                <div class="box-title">Why the Neural Network Predicted "${prediction}"</div>
-                <div class="expand-icon" id="icon-why-predicted">▼</div>
-            </div>
-            <div class="box-content collapsible-content" id="content-why-predicted" style="display: none;">
-                <p style="margin: 0 0 12px 0;">${aiReasoningText}</p>
-                ${featureListHTML}
-                <div class="confidence-explanation-box">
-                    <strong>How it reached its confidence level:</strong><br>
-                    ${confidenceExplanation}
+        <div class="xai-comparison-container">
+            <!-- WITHOUT XAI (Black Box) -->
+            <div class="xai-section">
+                <div class="xai-section-header" style="background: #f8fafc; color: #334155; padding: 12px 16px; border-radius: 6px 6px 0 0; font-weight: 600; font-size: 14px; border: 1px solid #e2e8f0; border-bottom: none;">
+                    Without XAI (Black Box):
+                </div>
+                <div class="prediction-box-blackbox" style="border: 1px solid #e2e8f0; border-radius: 0 0 6px 6px; padding: 20px; background: white; margin-bottom: 20px;">
+                    <div style="color: #64748b; font-size: 14px; margin-bottom: 4px;">Prediction: <strong style="color: #1e293b;">${prediction}</strong></div>
+                    <div style="color: #64748b; font-size: 14px;">Confidence: <strong style="color: #1e293b;">100%</strong></div>
+                </div>
+                <div style="background: #fef2f2; border-left: 3px solid #dc2626; padding: 12px 16px; border-radius: 4px; margin-top: -12px; margin-bottom: 20px;">
+                    <div style="color: #991b1b; font-size: 14px;">Analyst: "Why should I trust this?"</div>
                 </div>
             </div>
-        </div>
 
-        <div class="explanation-box collapsible-box">
-            <div class="box-header-clickable" onclick="toggleExplanation('impact-scores')">
-                <div class="box-title">Understanding the Impact Scores</div>
-                <div class="expand-icon" id="icon-impact-scores">▼</div>
-            </div>
-            <div class="box-content collapsible-content" id="content-impact-scores" style="display: none;">
-                <div class="legend-grid">
-                    <div class="legend-item">
-                        <span class="legend-badge legend-badge-attack">Attack +0.045</span>
-                        <span class="legend-text"><strong>Red badges with +:</strong> This feature increased the model's belief it's an attack</span>
+            <!-- WITH MY XAI (SHAP) -->
+            <div class="xai-section">
+                <div class="xai-section-header" style="background: ${isCorrect ? '#f0fdf4' : '#fffbeb'}; color: ${isCorrect ? '#166534' : '#92400e'}; padding: 12px 16px; border-radius: 6px 6px 0 0; font-weight: 600; font-size: 14px; border: 1px solid ${isCorrect ? '#bbf7d0' : '#fde68a'}; border-bottom: none;">
+                    With XAI (SHAP):
+                </div>
+                <div class="prediction-box-withxai" style="border: 1px solid ${isCorrect ? '#bbf7d0' : '#fde68a'}; border-radius: 0 0 6px 6px; padding: 20px; background: white;">
+                    <div style="color: #64748b; font-size: 14px; margin-bottom: 4px;">Prediction: <strong style="color: #1e293b;">${prediction}</strong></div>
+                    <div style="color: #64748b; font-size: 14px; margin-bottom: ${isCorrect ? '16px' : '8px'};">Confidence: <strong style="color: #1e293b;">100%</strong></div>
+                    ${!isCorrect ? `<div style="background: #fef2f2; border-left: 3px solid #dc2626; padding: 10px 14px; border-radius: 4px; margin-bottom: 16px; color: #991b1b; font-weight: 600; font-size: 13px;">Actually: ${actualLabel}</div>` : ''}
+                    
+                    <div style="background: #f8fafc; border-radius: 6px; padding: 14px; margin-bottom: 14px; border: 1px solid #e2e8f0;">
+                        <div style="font-weight: 600; color: #475569; font-size: 13px; margin-bottom: 10px;">TOP CONTRIBUTING FEATURES:</div>
+                        ${meaningfulShap.slice(0, 3).map((feature, idx) => {
+                            const explanation = getFeatureExplanation(feature.feature);
+                            const value = formatFeatureValue(feature.value);
+                            const impactValue = feature.shap_value.toFixed(3);
+                            return `
+                                <div style="margin-bottom: 6px; color: #334155; font-size: 13px;">
+                                    ${idx + 1}. ${explanation.name} = ${value} 
+                                    <span style="color: #64748b;">(Impact: ${impactValue > 0 ? '+' : ''}${impactValue})</span>
+                                </div>
+                            `;
+                        }).join('')}
                     </div>
-                    <div class="legend-item">
-                        <span class="legend-badge legend-badge-normal">Normal -0.019</span>
-                        <span class="legend-text"><strong>Blue badges with -:</strong> This feature decreased the model's belief it's an attack</span>
+                    
+                    <div style="background: #f8fafc; border-radius: 6px; padding: 14px; margin-bottom: 14px; border: 1px solid #e2e8f0;">
+                        <div style="font-weight: 600; color: #475569; font-size: 13px; margin-bottom: 10px;">INTERPRETATION:</div>
+                        ${interpretationLines.slice(0, 3).map(line => `<div style="margin-bottom: 4px; color: #334155; font-size: 13px;">${line}</div>`).join('')}
+                        ${!isCorrect ? `<div style="margin-top: 10px; padding: 10px; background: #fffbeb; border-left: 3px solid #f59e0b; border-radius: 4px; color: #92400e; font-size: 13px; font-weight: 600;">These features misled the AI. They resemble ${prediction} patterns but are actually ${actualLabel}.</div>` : ''}
+                    </div>
+                    
+                    <div style="background: #eff6ff; border-left: 3px solid #3b82f6; padding: 12px 14px; border-radius: 4px;">
+                        <div style="font-weight: 600; color: #1e40af; font-size: 13px; margin-bottom: 4px;">PATTERN:</div>
+                        <div style="color: #1e3a8a; font-size: 13px;">${patternDesc}</div>
                     </div>
                 </div>
-                <div class="numbers-explanation">
-                    <strong>The signs match:</strong> When a feature pushes toward attack (red), both the Value and Impact show positive (+). When it pushes toward normal (blue), Impact shows negative (-). Larger absolute values (like ±0.045) mean stronger influence.
-                </div>
-            </div>
-        </div>
-
-        <div class="explanation-box collapsible-box">
-            <div class="box-header-clickable" onclick="toggleExplanation('table-explanation')">
-                <div class="box-title">What the Table Shows</div>
-                <div class="expand-icon" id="icon-table-explanation">▼</div>
-            </div>
-            <div class="box-content collapsible-content" id="content-table-explanation" style="display: none;">
-                <p style="margin: 0;">Each row below shows a network traffic feature the Neural Network analyzed. The <strong>Value</strong> column shows what was measured (+ means pushing toward attack). The <strong>Impact</strong> column shows how much that value influenced the prediction.</p>
-            </div>
-        </div>
-        
-        <div class="features-table">
-            <div class="table-header">
-                <div>Feature</div>
-                <div>Value</div>
-                <div>Impact</div>
-            </div>
-            ${meaningfulShap.map(feature => {
-                const isPositive = feature.shap_value > 0;
-                const explanation = getFeatureExplanation(feature.feature);
-                const value = formatFeatureValue(feature.value);
-                const impact = feature.shap_value > 0 ? 'Attack' : 'Normal';
-                const impactClass = isPositive ? 'impact-attack' : 'impact-normal';
-                const impactValue = Math.abs(feature.shap_value).toFixed(3);
                 
-                return `
-                    <div class="table-row">
-                        <div class="feature-name-col">
-                            <div class="feat-name">${explanation.name}</div>
-                            <div class="feat-desc">${explanation.explanation}</div>
-                        </div>
-                        <div class="value-col">${isPositive ? '+' : ''}${value.replace('-', '')}</div>
-                        <div class="impact-col">
-                            <span class="impact-badge ${impactClass}">
-                                ${impact} ${feature.shap_value > 0 ? '+' : ''}${impactValue}
-                            </span>
-                        </div>
+                <div style="background: ${isCorrect ? '#f0fdf4' : '#fffbeb'}; border-left: 3px solid ${isCorrect ? '#22c55e' : '#f59e0b'}; padding: 12px 16px; border-radius: 4px; margin-top: 12px;">
+                    <div style="color: ${isCorrect ? '#166534' : '#92400e'}; font-size: 14px;">
+                        Analyst: ${isCorrect ? analystThinkingCorrect : analystThinkingWrong}
                     </div>
-                `;
-            }).join('')}
+                </div>
+            </div>
         </div>
         
-        <div class="bottom-note">
-            <strong>Note:</strong> The Neural Network doesn't look at features in isolation—it analyzes how they work together as a pattern. Even if one feature value seems normal by itself, the combination can reveal an attack signature the model learned during training.
+        <div style="margin-top: 20px; padding: 14px; background: #f8fafc; border-radius: 6px; border: 1px solid #e2e8f0;">
+            <div style="font-size: 14px; color: #475569;">
+                ${isCorrect ? bottomNoteCorrect : bottomNoteWrong}
+            </div>
         </div>
     `;
 }

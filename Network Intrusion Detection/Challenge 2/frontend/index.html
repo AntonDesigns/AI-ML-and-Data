@@ -6,6 +6,7 @@
     <title>Network Intrusion Detection | Anton Horvat</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="insights.css">
+    <link rel="stylesheet" href="simulator.css">
 </head>
 <body>
     <!-- Header -->
@@ -40,6 +41,158 @@
 
             <div id="insightContent" class="insight-content">
                 <!-- Populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Live Attack Simulator - COLLAPSIBLE -->
+        <section class="section">
+            <div class="collapsible-header" onclick="toggleSimulator()">
+                <h2 style="margin: 0; cursor: pointer;">Live Attack Simulator</h2>
+                <span class="toggle-icon" id="simulatorToggle">▼</span>
+            </div>
+            
+            <div id="simulatorContent" class="collapsible-content" style="display: none;">
+                <p class="section-description">Build custom network traffic and see how AI classifies it</p>
+                
+                <!-- Model Selection -->
+                <div class="model-selector" style="margin-bottom: 24px;">
+                    <label>Select model:</label>
+                    <select id="simulatorModel">
+                        <option value="neural_network">Neural Network</option>
+                        <option value="xgboost">XGBoost</option>
+                        <option value="decision_tree">Decision Tree</option>
+                        <option value="random_forest">Random Forest</option>
+                    </select>
+                    <div id="modelHint" style="margin-top: 8px; font-size: 14px; color: #64748b;"></div>
+                </div>
+
+                <!-- Quick Presets -->
+                <div style="margin-bottom: 24px;">
+                    <label style="font-weight: 600; margin-bottom: 8px; display: block;">Quick Scenarios:</label>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <button onclick="loadPreset('normal')" class="filter-btn">Normal Traffic</button>
+                        <button onclick="loadPreset('dos')" class="filter-btn">DoS Attack</button>
+                        <button onclick="loadPreset('probe')" class="filter-btn">Port Scan</button>
+                        <button onclick="loadPreset('u2r')" class="filter-btn">Privilege Escalation</button>
+                        <button onclick="loadPreset('r2l')" class="filter-btn">Remote Access</button>
+                    </div>
+                </div>
+
+                <!-- Traffic Builder -->
+                <div style="background: #f8fafc; border-radius: 8px; padding: 20px; margin-bottom: 16px;">
+                    <h3 style="margin-top: 0; font-size: 16px;">Build Custom Traffic</h3>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                        <!-- Column 1 -->
+                        <div>
+                            <div style="margin-bottom: 16px;">
+                                <label style="display: block; font-weight: 600; margin-bottom: 4px; font-size: 14px;">Protocol</label>
+                                <select id="protocol_type" style="width: 100%; padding: 8px; border: 1px solid #e2e8f0; border-radius: 4px;">
+                                    <option value="tcp">TCP</option>
+                                    <option value="udp">UDP</option>
+                                    <option value="icmp">ICMP</option>
+                                </select>
+                                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Impact on prediction: ~5%</div>
+                            </div>
+                            
+                            <div style="margin-bottom: 16px;">
+                                <label style="display: block; font-weight: 600; margin-bottom: 4px; font-size: 14px;">Service</label>
+                                <select id="service" style="width: 100%; padding: 8px; border: 1px solid #e2e8f0; border-radius: 4px;">
+                                    <option value="http">HTTP</option>
+                                    <option value="private">Private</option>
+                                    <option value="ftp">FTP</option>
+                                    <option value="telnet">Telnet</option>
+                                    <option value="ssh">SSH</option>
+                                </select>
+                                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Impact on prediction: ~10%</div>
+                            </div>
+                            
+                            <div style="margin-bottom: 16px;">
+                                <label style="display: block; font-weight: 600; margin-bottom: 4px; font-size: 14px;">Flag</label>
+                                <select id="flag" style="width: 100%; padding: 8px; border: 1px solid #e2e8f0; border-radius: 4px;">
+                                    <option value="SF">SF (Normal)</option>
+                                    <option value="S0">S0 (DoS indicator)</option>
+                                    <option value="REJ">REJ (Probe indicator)</option>
+                                </select>
+                                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Impact on prediction: ~15%</div>
+                            </div>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div>
+                            <div style="margin-bottom: 16px;">
+                                <label style="display: block; font-weight: 600; margin-bottom: 4px; font-size: 14px;">SYN Error Rate (%)</label>
+                                <input type="range" id="serror_rate" min="0" max="100" value="0" style="width: 100%;">
+                                <div style="text-align: center; font-weight: 600; color: #3b82f6;"><span id="serror_rate_val">0</span>%</div>
+                                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Impact on prediction: ~25% (Top feature!)</div>
+                            </div>
+                            
+                            <div style="margin-bottom: 16px;">
+                                <label style="display: block; font-weight: 600; margin-bottom: 4px; font-size: 14px;">Host Error Rate (%)</label>
+                                <input type="range" id="dst_host_serror_rate" min="0" max="100" value="0" style="width: 100%;">
+                                <div style="text-align: center; font-weight: 600; color: #3b82f6;"><span id="dst_host_serror_rate_val">0</span>%</div>
+                                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Impact on prediction: ~20% (2nd most important)</div>
+                            </div>
+                            
+                            <div style="margin-bottom: 16px;">
+                                <label style="display: block; font-weight: 600; margin-bottom: 4px; font-size: 14px;">Connection Count</label>
+                                <input type="range" id="count" min="1" max="500" value="10" style="width: 100%;">
+                                <div style="text-align: center; font-weight: 600; color: #3b82f6;"><span id="count_val">10</span></div>
+                                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Impact on prediction: ~12%</div>
+                            </div>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div>
+                            <div style="margin-bottom: 16px;">
+                                <label style="display: block; font-weight: 600; margin-bottom: 4px; font-size: 14px;">Duration (seconds)</label>
+                                <input type="range" id="duration" min="0" max="60" value="5" style="width: 100%;">
+                                <div style="text-align: center; font-weight: 600; color: #3b82f6;"><span id="duration_val">5</span>s</div>
+                                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Impact on prediction: ~8%</div>
+                            </div>
+                            
+                            <div style="margin-bottom: 16px;">
+                                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                    <input type="checkbox" id="logged_in">
+                                    <span style="font-weight: 600; font-size: 14px;">Authenticated</span>
+                                </label>
+                                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Impact on prediction: ~10% (Required for U2R)</div>
+                            </div>
+                            
+                            <div style="margin-bottom: 16px;">
+                                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                    <input type="checkbox" id="root_shell">
+                                    <span style="font-weight: 600; font-size: 14px;">Root Shell Access</span>
+                                </label>
+                                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Impact on prediction: ~30% (Critical for U2R!)</div>
+                            </div>
+                            
+                            <div style="margin-bottom: 16px;">
+                                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                    <input type="checkbox" id="su_attempted">
+                                    <span style="font-weight: 600; font-size: 14px;">Privilege Escalation</span>
+                                </label>
+                                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Impact on prediction: ~18%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hidden fields for other parameters -->
+                    <input type="hidden" id="srv_serror_rate" value="0">
+                    <input type="hidden" id="same_srv_rate" value="50">
+                    <input type="hidden" id="num_failed_logins" value="0">
+
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button onclick="classifyTraffic()" style="background: #1e293b; color: white; border: none; padding: 12px 32px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 15px;">
+                            Classify Traffic
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Results Display -->
+                <div id="simulatorResults" style="display: none;">
+                    <!-- Will be populated by JavaScript -->
+                </div>
             </div>
         </section>
 
@@ -123,6 +276,7 @@
         <p>Anton Horvat | AI/ML Cybersecurity Project | 2024</p>
     </footer>
 
+    <script src="simulator.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
